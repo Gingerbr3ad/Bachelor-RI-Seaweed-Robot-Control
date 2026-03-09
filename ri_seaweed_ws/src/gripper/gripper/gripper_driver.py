@@ -31,11 +31,13 @@ class GripperDriver(Node):
     def gripper_closed(self):
         msg = Bool()
         msg.data = True
+        self.get_logger().info("Gripper state changed: CLOSED")
         self.publisher.publish(msg)
     
     def gripper_open(self):
         msg = Bool()
         msg.data = False
+        self.get_logger().info("Gripper state changed: OPEN")
         self.publisher.publish(msg)
     
     #Listener callback function sends lock/unlock signal to arduino on change in 'gripper/close_command' topic
@@ -49,9 +51,7 @@ class GripperDriver(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-
     gripper_driver = GripperDriver()
-
     rclpy.spin(gripper_driver)
     gripper_driver.destroy_node()
     rclpy.shutdown()

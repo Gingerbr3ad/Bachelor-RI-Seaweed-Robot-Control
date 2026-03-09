@@ -22,8 +22,10 @@ class GripperDummyController(Node):
 
         if(self.close_commad == False):
             self.close_commad = True
+            self.get_logger().debug("Dummy gripper command: CLOSE")
         elif(self.close_commad == True):
             self.close_commad = False
+            self.get_logger().debug("Dummy gripper command: OPEN")
         
         msg.data = self.close_commad
         self.publisher_.publish(msg)
@@ -33,11 +35,8 @@ class GripperDummyController(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-
     gripper_dummy_controller = GripperDummyController()
-
     rclpy.spin(gripper_dummy_controller)
-
     gripper_dummy_controller.destroy_node()
     rclpy.shutdown()
 
