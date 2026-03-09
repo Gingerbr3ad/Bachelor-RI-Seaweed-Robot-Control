@@ -1,0 +1,216 @@
+[0.055s] Invoking command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces
+[0.124s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.229s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.239s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.435s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.564s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[4.489s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[6.786s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.697s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.729s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[10.441s] -- Found PythonExtra: /usr/bin/python3  
+[12.672s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[12.858s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[13.150s] -- Added test 'lint_cmake' to check CMake code style
+[13.164s] -- Added test 'xmllint' to check XML markup files
+[13.188s] -- Configuring done (13.1s)
+[13.399s] -- Generating done (0.2s)
+[13.466s] -- Build files have been written to: /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces
+[13.488s] Invoked command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces
+[13.496s] Invoking command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces -- -j4 -l4
+[13.835s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[13.884s] [  2%] Built target ament_cmake_python_copy_ri_seaweed_interfaces
+[14.842s] [  2%] Built target ri_seaweed_interfaces__rosidl_generator_type_description
+[14.911s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[14.988s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[15.312s] running egg_info
+[15.321s] creating ri_seaweed_interfaces.egg-info
+[15.480s] writing ri_seaweed_interfaces.egg-info/PKG-INFO
+[15.481s] writing dependency_links to ri_seaweed_interfaces.egg-info/dependency_links.txt
+[15.483s] writing top-level names to ri_seaweed_interfaces.egg-info/top_level.txt
+[15.485s] writing manifest file 'ri_seaweed_interfaces.egg-info/SOURCES.txt'
+[15.892s] reading manifest file 'ri_seaweed_interfaces.egg-info/SOURCES.txt'
+[15.894s] writing manifest file 'ri_seaweed_interfaces.egg-info/SOURCES.txt'
+[16.114s] [  8%] Built target ament_cmake_python_build_ri_seaweed_interfaces_egg
+[16.340s] [  8%] Built target ri_seaweed_interfaces__cpp
+[16.513s] [ 11%] [32mBuilding C object CMakeFiles/ri_seaweed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ri_seaweed_interfaces/msg/detail/gripper__description.c.o[0m
+[16.516s] [ 14%] [32mBuilding C object CMakeFiles/ri_seaweed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ri_seaweed_interfaces/msg/detail/gripper__functions.c.o[0m
+[16.521s] [ 17%] [32mBuilding C object CMakeFiles/ri_seaweed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ri_seaweed_interfaces/msg/detail/gripper__type_support.c.o[0m
+[16.892s] [ 20%] [32m[1mLinking C shared library libri_seaweed_interfaces__rosidl_generator_c.so[0m
+[17.145s] [ 20%] Built target ri_seaweed_interfaces__rosidl_generator_c
+[17.223s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[17.230s] [ 29%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[17.231s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[17.231s] [ 32%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[18.647s] [ 35%] [32mBuilding CXX object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ri_seaweed_interfaces/msg/gripper__type_support.cpp.o[0m
+[18.815s] [ 38%] [32mBuilding C object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ri_seaweed_interfaces/msg/detail/gripper__type_support.c.o[0m
+[18.830s] [ 41%] [32mBuilding CXX object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ri_seaweed_interfaces/msg/detail/gripper__type_support.cpp.o[0m
+[18.900s] [ 44%] [32mBuilding CXX object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ri_seaweed_interfaces/msg/detail/dds_fastrtps/gripper__type_support.cpp.o[0m
+[19.014s] [ 47%] [32m[1mLinking CXX shared library libri_seaweed_interfaces__rosidl_typesupport_c.so[0m
+[19.153s] [ 50%] [32m[1mLinking C shared library libri_seaweed_interfaces__rosidl_typesupport_introspection_c.so[0m
+[19.299s] [ 50%] Built target ri_seaweed_interfaces__rosidl_typesupport_c
+[19.384s] [ 52%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[19.400s] [ 52%] Built target ri_seaweed_interfaces__rosidl_typesupport_introspection_c
+[19.478s] [ 55%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[20.973s] [ 58%] [32mBuilding CXX object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ri_seaweed_interfaces/msg/gripper__type_support.cpp.o[0m
+[21.638s] [ 61%] [32mBuilding CXX object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ri_seaweed_interfaces/msg/detail/gripper__type_support_c.cpp.o[0m
+[21.918s] [ 64%] [32m[1mLinking CXX shared library libri_seaweed_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[22.242s] [ 64%] Built target ri_seaweed_interfaces__rosidl_typesupport_introspection_cpp
+[23.114s] [ 67%] [32m[1mLinking CXX shared library libri_seaweed_interfaces__rosidl_typesupport_cpp.so[0m
+[23.238s] [ 70%] [32m[1mLinking CXX shared library libri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[23.393s] [ 70%] Built target ri_seaweed_interfaces__rosidl_typesupport_cpp
+[23.561s] [ 70%] Built target ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp
+[24.305s] [ 73%] [32m[1mLinking CXX shared library libri_seaweed_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[24.574s] [ 73%] Built target ri_seaweed_interfaces__rosidl_typesupport_fastrtps_c
+[24.704s] [ 73%] Built target ri_seaweed_interfaces
+[24.834s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[26.058s] [ 76%] Built target ri_seaweed_interfaces__py
+[26.186s] [ 79%] [32mBuilding C object CMakeFiles/ri_seaweed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ri_seaweed_interfaces/msg/_gripper_s.c.o[0m
+[26.896s] [ 82%] [32m[1mLinking C shared library libri_seaweed_interfaces__rosidl_generator_py.so[0m
+[27.140s] [ 82%] Built target ri_seaweed_interfaces__rosidl_generator_py
+[27.278s] [ 85%] [32mBuilding C object CMakeFiles/ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[27.281s] [ 88%] [32mBuilding C object CMakeFiles/ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[27.287s] [ 91%] [32mBuilding C object CMakeFiles/ri_seaweed_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[27.835s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_c.so[0m
+[27.855s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[27.890s] [100%] [32m[1mLinking C shared module rosidl_generator_py/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[28.048s] [100%] Built target ri_seaweed_interfaces_s__rosidl_typesupport_c
+[28.066s] [100%] Built target ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c
+[28.097s] [100%] Built target ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c
+[28.163s] Invoked command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces -- -j4 -l4
+[28.219s] Invoking command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces
+[28.266s] -- Install configuration: ""
+[28.267s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ament_index/resource_index/rosidl_interfaces/ri_seaweed_interfaces
+[28.269s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/msg/Gripper.json
+[28.270s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces
+[28.271s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg
+[28.272s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail
+[28.272s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__type_support.h
+[28.274s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__functions.h
+[28.275s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__description.c
+[28.277s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__struct.h
+[28.278s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__functions.c
+[28.280s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__type_support.c
+[28.281s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/rosidl_generator_c__visibility_control.h
+[28.282s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/gripper.h
+[28.284s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/library_path.sh
+[28.285s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/library_path.dsv
+[28.287s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_generator_c.so
+[28.291s] -- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_generator_c.so" to ""
+[28.292s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces
+[28.293s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg
+[28.293s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail
+[28.294s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__rosidl_typesupport_fastrtps_c.h
+[28.295s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[28.296s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_fastrtps_c.so
+[28.300s] -- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[28.300s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces
+[28.301s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg
+[28.301s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[28.302s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail
+[28.303s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__rosidl_typesupport_introspection_c.h
+[28.304s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__type_support.c
+[28.306s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_introspection_c.so
+[28.310s] -- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[28.310s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_c.so
+[28.314s] -- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_c.so" to ""
+[28.314s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces
+[28.315s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg
+[28.315s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[28.316s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/gripper.hpp
+[28.317s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail
+[28.318s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__traits.hpp
+[28.319s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__struct.hpp
+[28.320s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__type_support.hpp
+[28.322s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__builder.hpp
+[28.323s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces
+[28.324s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg
+[28.324s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[28.325s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail
+[28.326s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/dds_fastrtps
+[28.327s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__rosidl_typesupport_fastrtps_cpp.hpp
+[28.329s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[28.333s] -- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[28.334s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces
+[28.335s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg
+[28.335s] -- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail
+[28.335s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__type_support.cpp
+[28.336s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__rosidl_typesupport_introspection_cpp.hpp
+[28.338s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_introspection_cpp.so
+[28.342s] -- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[28.342s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_cpp.so
+[28.346s] -- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_cpp.so" to ""
+[28.347s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/pythonpath.sh
+[28.348s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/pythonpath.dsv
+[28.349s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces-0.0.0-py3.12.egg-info
+[28.350s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[28.351s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[28.353s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[28.354s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[28.356s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces
+[28.357s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[28.358s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg
+[28.359s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg/__init__.py
+[28.362s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg/_gripper_s.c
+[28.363s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg/_gripper.py
+[28.364s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[28.365s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/__init__.py
+[28.366s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c.so
+[28.369s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_c.c
+[28.370s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[28.373s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_c.so
+[28.558s] Listing '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces'...
+[28.559s] Compiling '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/__init__.py'...
+[28.561s] Listing '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg'...
+[28.562s] Compiling '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg/__init__.py'...
+[28.564s] Compiling '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg/_gripper.py'...
+[28.592s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[28.596s] -- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[28.597s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c.so
+[28.601s] -- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[28.603s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_c.so
+[28.607s] -- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_c.so" to ""
+[28.608s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_generator_py.so
+[28.611s] -- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_generator_py.so" to ""
+[28.612s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/msg/Gripper.idl
+[28.613s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/msg/Gripper.msg
+[28.615s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ament_index/resource_index/package_run_dependencies/ri_seaweed_interfaces
+[28.617s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ament_index/resource_index/parent_prefix_path/ri_seaweed_interfaces
+[28.619s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/ament_prefix_path.sh
+[28.620s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/ament_prefix_path.dsv
+[28.621s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/path.sh
+[28.622s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/path.dsv
+[28.624s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/local_setup.bash
+[28.625s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/local_setup.sh
+[28.626s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/local_setup.zsh
+[28.628s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/local_setup.dsv
+[28.629s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.dsv
+[28.631s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ament_index/resource_index/packages/ri_seaweed_interfaces
+[28.633s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_generator_cExport.cmake
+[28.634s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_generator_cExport-noconfig.cmake
+[28.636s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[28.638s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[28.640s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[28.642s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[28.643s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_cExport.cmake
+[28.645s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[28.647s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_generator_cppExport.cmake
+[28.649s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[28.650s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[28.652s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[28.654s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[28.656s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_cppExport.cmake
+[28.657s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[28.659s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_generator_pyExport.cmake
+[28.661s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[28.662s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/rosidl_cmake-extras.cmake
+[28.664s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[28.665s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[28.667s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[28.668s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[28.669s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[28.671s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[28.673s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfacesConfig.cmake
+[28.674s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfacesConfig-version.cmake
+[28.675s] -- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.xml
+[28.685s] Invoked command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces

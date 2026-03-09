@@ -1,0 +1,2 @@
+bool gripper_state
+bool close_request

@@ -1,0 +1,172 @@
+[0.465s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'ri_seaweed_interfaces']
+[0.465s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['ri_seaweed_interfaces'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff920b9c10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9226a600>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9226a600>>, mixin_verb=('build',))
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.645s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.646s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.646s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.646s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.646s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/admin/ri_seaweed_ws'
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.647s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.648s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.649s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.773s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.774s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.775s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.776s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.777s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.778s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.780s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.781s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extensions ['ignore', 'ignore_ament_install']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'ignore'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'ignore_ament_install'
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extensions ['colcon_pkg']
+[0.783s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'colcon_pkg'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extensions ['colcon_meta']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'colcon_meta'
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extensions ['ros']
+[0.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/gripper) by extension 'ros'
+[0.796s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gripper' with type 'ros.ament_python' and name 'gripper'
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/ri_seaweed_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.797s] Level 1:colcon.colcon_core.package_identification:_identify(src/ri_seaweed_interfaces) by extension 'ignore'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/ri_seaweed_interfaces) by extension 'ignore_ament_install'
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/ri_seaweed_interfaces) by extensions ['colcon_pkg']
+[0.798s] Level 1:colcon.colcon_core.package_identification:_identify(src/ri_seaweed_interfaces) by extension 'colcon_pkg'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/ri_seaweed_interfaces) by extensions ['colcon_meta']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/ri_seaweed_interfaces) by extension 'colcon_meta'
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/ri_seaweed_interfaces) by extensions ['ros']
+[0.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/ri_seaweed_interfaces) by extension 'ros'
+[0.802s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ri_seaweed_interfaces' with type 'ros.ament_cmake' and name 'ri_seaweed_interfaces'
+[0.802s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.803s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.803s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.803s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.803s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.876s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'gripper' in 'src/gripper'
+[0.878s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.878s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.885s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/admin/ri_seaweed_ws/install
+[0.896s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[0.903s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.109s] Level 5:colcon.colcon_core.verb:set package 'ri_seaweed_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.109s] Level 5:colcon.colcon_core.verb:set package 'ri_seaweed_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.110s] Level 5:colcon.colcon_core.verb:set package 'ri_seaweed_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.110s] Level 5:colcon.colcon_core.verb:set package 'ri_seaweed_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.110s] Level 5:colcon.colcon_core.verb:set package 'ri_seaweed_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.110s] Level 5:colcon.colcon_core.verb:set package 'ri_seaweed_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.110s] Level 5:colcon.colcon_core.verb:set package 'ri_seaweed_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.111s] Level 5:colcon.colcon_core.verb:set package 'ri_seaweed_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.111s] Level 5:colcon.colcon_core.verb:set package 'ri_seaweed_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.111s] DEBUG:colcon.colcon_core.verb:Building package 'ri_seaweed_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces', 'merge_install': False, 'path': '/home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.112s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.115s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.116s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces' with build type 'ament_cmake'
+[1.117s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces'
+[1.126s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.127s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.127s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.173s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces
+[14.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces
+[14.614s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces -- -j4 -l4
+[29.280s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces -- -j4 -l4
+[29.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces
+[29.801s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ri_seaweed_interfaces)
+[29.803s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces
+[29.813s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces' for CMake module files
+[29.819s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces' for CMake config files
+[29.825s] Level 1:colcon.colcon_core.shell:create_environment_hook('ri_seaweed_interfaces', 'cmake_prefix_path')
+[29.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/cmake_prefix_path.ps1'
+[29.829s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/cmake_prefix_path.dsv'
+[29.832s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/cmake_prefix_path.sh'
+[29.836s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib'
+[29.836s] Level 1:colcon.colcon_core.shell:create_environment_hook('ri_seaweed_interfaces', 'ld_library_path_lib')
+[29.837s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/ld_library_path_lib.ps1'
+[29.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/ld_library_path_lib.dsv'
+[29.841s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/ld_library_path_lib.sh'
+[29.842s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/bin'
+[29.843s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/pkgconfig/ri_seaweed_interfaces.pc'
+[29.844s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages'
+[29.845s] Level 1:colcon.colcon_core.shell:create_environment_hook('ri_seaweed_interfaces', 'pythonpath')
+[29.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/pythonpath.ps1'
+[29.847s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/pythonpath.dsv'
+[29.848s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/pythonpath.sh'
+[29.851s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/bin'
+[29.853s] INFO:colcon.colcon_core.shell:Creating package script '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.ps1'
+[29.856s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.dsv'
+[29.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.sh'
+[29.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.bash'
+[29.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.zsh'
+[29.868s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/colcon-core/packages/ri_seaweed_interfaces)
+[29.871s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ri_seaweed_interfaces)
+[29.871s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces' for CMake module files
+[29.876s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces' for CMake config files
+[29.881s] Level 1:colcon.colcon_core.shell:create_environment_hook('ri_seaweed_interfaces', 'cmake_prefix_path')
+[29.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/cmake_prefix_path.ps1'
+[29.884s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/cmake_prefix_path.dsv'
+[29.886s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/cmake_prefix_path.sh'
+[29.889s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib'
+[29.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('ri_seaweed_interfaces', 'ld_library_path_lib')
+[29.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/ld_library_path_lib.ps1'
+[29.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/ld_library_path_lib.dsv'
+[29.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/ld_library_path_lib.sh'
+[29.897s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/bin'
+[29.898s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/pkgconfig/ri_seaweed_interfaces.pc'
+[29.899s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages'
+[29.899s] Level 1:colcon.colcon_core.shell:create_environment_hook('ri_seaweed_interfaces', 'pythonpath')
+[29.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/pythonpath.ps1'
+[29.902s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/pythonpath.dsv'
+[29.904s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/hook/pythonpath.sh'
+[29.907s] Level 1:colcon.colcon_core.environment:checking '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/bin'
+[29.909s] INFO:colcon.colcon_core.shell:Creating package script '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.ps1'
+[29.913s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.dsv'
+[29.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.sh'
+[29.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.bash'
+[29.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.zsh'
+[29.924s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/colcon-core/packages/ri_seaweed_interfaces)
+[29.926s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[29.928s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[29.928s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[29.929s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[29.959s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[29.960s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[29.960s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[29.961s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[29.965s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[29.966s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[29.967s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/admin/ri_seaweed_ws/install/local_setup.ps1'
+[29.972s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/admin/ri_seaweed_ws/install/_local_setup_util_ps1.py'
+[29.977s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/admin/ri_seaweed_ws/install/setup.ps1'
+[29.982s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/admin/ri_seaweed_ws/install/local_setup.sh'
+[29.987s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/admin/ri_seaweed_ws/install/_local_setup_util_sh.py'
+[29.990s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/admin/ri_seaweed_ws/install/setup.sh'
+[29.995s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/admin/ri_seaweed_ws/install/local_setup.bash'
+[29.998s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/admin/ri_seaweed_ws/install/setup.bash'
+[30.003s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/admin/ri_seaweed_ws/install/local_setup.zsh'
+[30.007s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/admin/ri_seaweed_ws/install/setup.zsh'

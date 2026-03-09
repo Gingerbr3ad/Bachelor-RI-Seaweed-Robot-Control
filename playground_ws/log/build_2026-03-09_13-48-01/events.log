@@ -1,0 +1,772 @@
+[0.000000] (-) TimerEvent: {}
+[0.001108] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.001984] (-) JobUnselected: {'identifier': 'gripper_package'}
+[0.002527] (-) JobUnselected: {'identifier': 'polygon_base'}
+[0.003177] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.003341] (-) JobUnselected: {'identifier': 'py_srvcli'}
+[0.003591] (-) JobUnselected: {'identifier': 'python_parameters'}
+[0.003760] (tutorial_interfaces) JobQueued: {'identifier': 'tutorial_interfaces', 'dependencies': OrderedDict()}
+[0.003973] (tutorial_interfaces) JobStarted: {'identifier': 'tutorial_interfaces'}
+[0.057135] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'cmake'}
+[0.059230] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/admin/RI-Seaweed/playground_ws/src/tutorial_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces'], 'cwd': '/home/admin/RI-Seaweed/playground_ws/build/tutorial_interfaces', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admin', 'SSH_CLIENT': '10.0.0.126 57274 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh', 'HOME': '/home/admin', 'OLDPWD': '/home/admin/RI-Seaweed', 'TERM_PROGRAM_VERSION': '1.110.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-bf3f620d-6000-4237-b21a-d60542ed0753.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'admin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-47b8c5bef1c488a4.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/admin/.vscode-server/data/User/workspaceStorage/e69a6fc4da48aef553f5632a4d14a5f0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-b75a3c0d0d.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/admin/RI-Seaweed/playground_ws/build/tutorial_interfaces', 'SSH_CONNECTION': '10.0.0.126 57274 10.0.0.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099065] (-) TimerEvent: {}
+[0.199799] (-) TimerEvent: {}
+[0.300577] (-) TimerEvent: {}
+[0.401329] (-) TimerEvent: {}
+[0.412469] (tutorial_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.501578] (-) TimerEvent: {}
+[0.602908] (-) TimerEvent: {}
+[0.703936] (-) TimerEvent: {}
+[0.732799] (tutorial_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.804032] (-) TimerEvent: {}
+[0.831740] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.904252] (-) TimerEvent: {}
+[1.005034] (-) TimerEvent: {}
+[1.105782] (-) TimerEvent: {}
+[1.206764] (-) TimerEvent: {}
+[1.307641] (-) TimerEvent: {}
+[1.369372] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.406593] (tutorial_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.407786] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.408700] (-) TimerEvent: {}
+[1.409875] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.464331] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.508961] (-) TimerEvent: {}
+[1.609665] (-) TimerEvent: {}
+[1.710516] (-) TimerEvent: {}
+[1.811445] (-) TimerEvent: {}
+[1.912449] (-) TimerEvent: {}
+[2.013447] (-) TimerEvent: {}
+[2.046267] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.091449] (tutorial_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.092651] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.094521] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.113631] (-) TimerEvent: {}
+[2.128085] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.213902] (-) TimerEvent: {}
+[2.314607] (-) TimerEvent: {}
+[2.415458] (-) TimerEvent: {}
+[2.516214] (-) TimerEvent: {}
+[2.616980] (-) TimerEvent: {}
+[2.717735] (-) TimerEvent: {}
+[2.818655] (-) TimerEvent: {}
+[2.919448] (-) TimerEvent: {}
+[2.946659] (tutorial_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.019664] (-) TimerEvent: {}
+[3.120473] (-) TimerEvent: {}
+[3.221421] (-) TimerEvent: {}
+[3.322229] (-) TimerEvent: {}
+[3.423013] (-) TimerEvent: {}
+[3.525924] (-) TimerEvent: {}
+[3.627087] (-) TimerEvent: {}
+[3.705068] (tutorial_interfaces) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.6 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[3.727282] (-) TimerEvent: {}
+[3.827984] (-) TimerEvent: {}
+[3.928698] (-) TimerEvent: {}
+[4.029997] (-) TimerEvent: {}
+[4.094559] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[4.130182] (-) TimerEvent: {}
+[4.211620] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[4.230401] (-) TimerEvent: {}
+[4.331123] (-) TimerEvent: {}
+[4.339999] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.431337] (-) TimerEvent: {}
+[4.477910] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.531538] (-) TimerEvent: {}
+[4.632344] (-) TimerEvent: {}
+[4.733005] (-) TimerEvent: {}
+[4.753336] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[4.833217] (-) TimerEvent: {}
+[4.891822] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[4.924283] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[4.933420] (-) TimerEvent: {}
+[5.034123] (-) TimerEvent: {}
+[5.135004] (-) TimerEvent: {}
+[5.235714] (-) TimerEvent: {}
+[5.336974] (-) TimerEvent: {}
+[5.438245] (-) TimerEvent: {}
+[5.538991] (-) TimerEvent: {}
+[5.639743] (-) TimerEvent: {}
+[5.740585] (-) TimerEvent: {}
+[5.841358] (-) TimerEvent: {}
+[5.942166] (-) TimerEvent: {}
+[6.042999] (-) TimerEvent: {}
+[6.143811] (-) TimerEvent: {}
+[6.244989] (-) TimerEvent: {}
+[6.345963] (-) TimerEvent: {}
+[6.446972] (-) TimerEvent: {}
+[6.548007] (-) TimerEvent: {}
+[6.648708] (-) TimerEvent: {}
+[6.749536] (-) TimerEvent: {}
+[6.850294] (-) TimerEvent: {}
+[6.951006] (-) TimerEvent: {}
+[7.051673] (-) TimerEvent: {}
+[7.153218] (-) TimerEvent: {}
+[7.254451] (-) TimerEvent: {}
+[7.355305] (-) TimerEvent: {}
+[7.456431] (-) TimerEvent: {}
+[7.557578] (-) TimerEvent: {}
+[7.658521] (-) TimerEvent: {}
+[7.759437] (-) TimerEvent: {}
+[7.860622] (-) TimerEvent: {}
+[7.961809] (-) TimerEvent: {}
+[8.062624] (-) TimerEvent: {}
+[8.163436] (-) TimerEvent: {}
+[8.264234] (-) TimerEvent: {}
+[8.365043] (-) TimerEvent: {}
+[8.402142] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[8.465237] (-) TimerEvent: {}
+[8.566513] (-) TimerEvent: {}
+[8.667296] (-) TimerEvent: {}
+[8.768064] (-) TimerEvent: {}
+[8.869132] (-) TimerEvent: {}
+[8.970399] (-) TimerEvent: {}
+[9.071265] (-) TimerEvent: {}
+[9.171961] (-) TimerEvent: {}
+[9.272659] (-) TimerEvent: {}
+[9.373386] (-) TimerEvent: {}
+[9.474186] (-) TimerEvent: {}
+[9.574983] (-) TimerEvent: {}
+[9.675788] (-) TimerEvent: {}
+[9.776676] (-) TimerEvent: {}
+[9.877643] (-) TimerEvent: {}
+[9.978954] (-) TimerEvent: {}
+[10.079635] (-) TimerEvent: {}
+[10.180533] (-) TimerEvent: {}
+[10.281281] (-) TimerEvent: {}
+[10.381990] (-) TimerEvent: {}
+[10.482786] (-) TimerEvent: {}
+[10.583465] (-) TimerEvent: {}
+[10.684253] (-) TimerEvent: {}
+[10.785034] (-) TimerEvent: {}
+[10.885914] (-) TimerEvent: {}
+[10.986631] (-) TimerEvent: {}
+[11.087441] (-) TimerEvent: {}
+[11.188264] (-) TimerEvent: {}
+[11.289005] (-) TimerEvent: {}
+[11.389601] (-) TimerEvent: {}
+[11.490636] (-) TimerEvent: {}
+[11.591442] (-) TimerEvent: {}
+[11.692307] (-) TimerEvent: {}
+[11.792971] (-) TimerEvent: {}
+[11.893757] (-) TimerEvent: {}
+[11.994800] (-) TimerEvent: {}
+[12.096027] (-) TimerEvent: {}
+[12.196887] (-) TimerEvent: {}
+[12.297778] (-) TimerEvent: {}
+[12.398716] (-) TimerEvent: {}
+[12.499784] (-) TimerEvent: {}
+[12.600686] (-) TimerEvent: {}
+[12.702041] (-) TimerEvent: {}
+[12.802815] (-) TimerEvent: {}
+[12.874121] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[12.903028] (-) TimerEvent: {}
+[13.003751] (-) TimerEvent: {}
+[13.104475] (-) TimerEvent: {}
+[13.205334] (-) TimerEvent: {}
+[13.306312] (-) TimerEvent: {}
+[13.407452] (-) TimerEvent: {}
+[13.508341] (-) TimerEvent: {}
+[13.609778] (-) TimerEvent: {}
+[13.710784] (-) TimerEvent: {}
+[13.811546] (-) TimerEvent: {}
+[13.912506] (-) TimerEvent: {}
+[14.013643] (-) TimerEvent: {}
+[14.114412] (-) TimerEvent: {}
+[14.215228] (-) TimerEvent: {}
+[14.315974] (-) TimerEvent: {}
+[14.416774] (-) TimerEvent: {}
+[14.517526] (-) TimerEvent: {}
+[14.618971] (-) TimerEvent: {}
+[14.637115] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.668131] (tutorial_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[14.719144] (-) TimerEvent: {}
+[14.820276] (-) TimerEvent: {}
+[14.921190] (-) TimerEvent: {}
+[15.022635] (-) TimerEvent: {}
+[15.123734] (-) TimerEvent: {}
+[15.224555] (-) TimerEvent: {}
+[15.325341] (-) TimerEvent: {}
+[15.396615] (tutorial_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[15.425588] (-) TimerEvent: {}
+[15.526543] (-) TimerEvent: {}
+[15.627387] (-) TimerEvent: {}
+[15.728579] (-) TimerEvent: {}
+[15.829390] (-) TimerEvent: {}
+[15.930253] (-) TimerEvent: {}
+[16.030983] (-) TimerEvent: {}
+[16.131901] (-) TimerEvent: {}
+[16.232751] (-) TimerEvent: {}
+[16.333661] (-) TimerEvent: {}
+[16.434956] (-) TimerEvent: {}
+[16.535690] (-) TimerEvent: {}
+[16.636405] (-) TimerEvent: {}
+[16.737083] (-) TimerEvent: {}
+[16.838003] (-) TimerEvent: {}
+[16.938890] (-) TimerEvent: {}
+[17.039707] (-) TimerEvent: {}
+[17.140963] (-) TimerEvent: {}
+[17.241764] (-) TimerEvent: {}
+[17.342633] (-) TimerEvent: {}
+[17.443391] (-) TimerEvent: {}
+[17.544295] (-) TimerEvent: {}
+[17.626154] (tutorial_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[17.644473] (-) TimerEvent: {}
+[17.745251] (-) TimerEvent: {}
+[17.845987] (-) TimerEvent: {}
+[17.945769] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[17.946468] (-) TimerEvent: {}
+[17.958698] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[17.985112] (tutorial_interfaces) StdoutLine: {'line': b'-- Configuring done (17.9s)\n'}
+[18.046698] (-) TimerEvent: {}
+[18.147443] (-) TimerEvent: {}
+[18.248299] (-) TimerEvent: {}
+[18.349011] (-) TimerEvent: {}
+[18.404415] (tutorial_interfaces) StdoutLine: {'line': b'-- Generating done (0.4s)\n'}
+[18.449257] (-) TimerEvent: {}
+[18.507766] (tutorial_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/admin/RI-Seaweed/playground_ws/build/tutorial_interfaces\n'}
+[18.549718] (-) TimerEvent: {}
+[18.564023] (tutorial_interfaces) CommandEnded: {'returncode': 0}
+[18.566267] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'build'}
+[18.568819] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/admin/RI-Seaweed/playground_ws/build/tutorial_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/admin/RI-Seaweed/playground_ws/build/tutorial_interfaces', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admin', 'SSH_CLIENT': '10.0.0.126 57274 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh', 'HOME': '/home/admin', 'OLDPWD': '/home/admin/RI-Seaweed', 'TERM_PROGRAM_VERSION': '1.110.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-bf3f620d-6000-4237-b21a-d60542ed0753.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'admin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-47b8c5bef1c488a4.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/admin/.vscode-server/data/User/workspaceStorage/e69a6fc4da48aef553f5632a4d14a5f0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-b75a3c0d0d.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/admin/RI-Seaweed/playground_ws/build/tutorial_interfaces', 'SSH_CONNECTION': '10.0.0.126 57274 10.0.0.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[18.649993] (-) TimerEvent: {}
+[18.751119] (-) TimerEvent: {}
+[18.851938] (-) TimerEvent: {}
+[18.895205] (tutorial_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[18.952159] (-) TimerEvent: {}
+[18.971216] (tutorial_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_tutorial_interfaces\n'}
+[19.052360] (-) TimerEvent: {}
+[19.153443] (-) TimerEvent: {}
+[19.254281] (-) TimerEvent: {}
+[19.355013] (-) TimerEvent: {}
+[19.456173] (-) TimerEvent: {}
+[19.556901] (-) TimerEvent: {}
+[19.658303] (-) TimerEvent: {}
+[19.759031] (-) TimerEvent: {}
+[19.860243] (-) TimerEvent: {}
+[19.961617] (-) TimerEvent: {}
+[20.004713] (tutorial_interfaces) StdoutLine: {'line': b'[  1%] Built target tutorial_interfaces__rosidl_generator_type_description\n'}
+[20.062054] (-) TimerEvent: {}
+[20.081155] (tutorial_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[20.156196] (tutorial_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[20.162996] (-) TimerEvent: {}
+[20.264630] (-) TimerEvent: {}
+[20.363322] (tutorial_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[20.365427] (-) TimerEvent: {}
+[20.467161] (-) TimerEvent: {}
+[20.547759] (tutorial_interfaces) StdoutLine: {'line': b'writing tutorial_interfaces.egg-info/PKG-INFO\n'}
+[20.550815] (tutorial_interfaces) StdoutLine: {'line': b'writing dependency_links to tutorial_interfaces.egg-info/dependency_links.txt\n'}
+[20.551704] (tutorial_interfaces) StdoutLine: {'line': b'writing top-level names to tutorial_interfaces.egg-info/top_level.txt\n'}
+[20.567339] (-) TimerEvent: {}
+[20.669390] (-) TimerEvent: {}
+[20.770520] (-) TimerEvent: {}
+[20.872671] (-) TimerEvent: {}
+[20.965362] (tutorial_interfaces) StdoutLine: {'line': b"reading manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'\n"}
+[20.970903] (tutorial_interfaces) StdoutLine: {'line': b"writing manifest file 'tutorial_interfaces.egg-info/SOURCES.txt'\n"}
+[20.973071] (-) TimerEvent: {}
+[21.078940] (-) TimerEvent: {}
+[21.154749] (tutorial_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_tutorial_interfaces_egg\n'}
+[21.179116] (-) TimerEvent: {}
+[21.279771] (-) TimerEvent: {}
+[21.380517] (-) TimerEvent: {}
+[21.481657] (-) TimerEvent: {}
+[21.583173] (-) TimerEvent: {}
+[21.683956] (-) TimerEvent: {}
+[21.786991] (-) TimerEvent: {}
+[21.887994] (-) TimerEvent: {}
+[21.989156] (-) TimerEvent: {}
+[22.092043] (-) TimerEvent: {}
+[22.194122] (-) TimerEvent: {}
+[22.239396] (tutorial_interfaces) StdoutLine: {'line': b'[  5%] Built target tutorial_interfaces__cpp\n'}
+[22.296062] (-) TimerEvent: {}
+[22.396968] (-) TimerEvent: {}
+[22.498144] (-) TimerEvent: {}
+[22.581663] (tutorial_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/num__description.c.o\x1b[0m\n'}
+[22.582700] (tutorial_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/num__functions.c.o\x1b[0m\n'}
+[22.590133] (tutorial_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/sphere__description.c.o\x1b[0m\n'}
+[22.593078] (tutorial_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/num__type_support.c.o\x1b[0m\n'}
+[22.600043] (-) TimerEvent: {}
+[22.701978] (-) TimerEvent: {}
+[22.806211] (-) TimerEvent: {}
+[22.862343] (tutorial_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/sphere__functions.c.o\x1b[0m\n'}
+[22.872075] (tutorial_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/msg/detail/sphere__type_support.c.o\x1b[0m\n'}
+[22.875144] (tutorial_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__description.c.o\x1b[0m\n'}
+[22.906479] (-) TimerEvent: {}
+[22.918724] (tutorial_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__functions.c.o\x1b[0m\n'}
+[23.006758] (-) TimerEvent: {}
+[23.108802] (-) TimerEvent: {}
+[23.114221] (tutorial_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_c.dir/rosidl_generator_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.o\x1b[0m\n'}
+[23.209029] (-) TimerEvent: {}
+[23.310006] (-) TimerEvent: {}
+[23.377122] (tutorial_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libtutorial_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[23.410274] (-) TimerEvent: {}
+[23.511377] (-) TimerEvent: {}
+[23.612482] (-) TimerEvent: {}
+[23.635346] (tutorial_interfaces) StdoutLine: {'line': b'[ 24%] Built target tutorial_interfaces__rosidl_generator_c\n'}
+[23.713033] (-) TimerEvent: {}
+[23.716058] (tutorial_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[23.718329] (tutorial_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[23.720639] (tutorial_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[23.728054] (tutorial_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[23.814055] (-) TimerEvent: {}
+[23.916966] (-) TimerEvent: {}
+[24.022025] (-) TimerEvent: {}
+[24.124359] (-) TimerEvent: {}
+[24.228363] (-) TimerEvent: {}
+[24.332968] (-) TimerEvent: {}
+[24.433782] (-) TimerEvent: {}
+[24.536952] (-) TimerEvent: {}
+[24.639377] (-) TimerEvent: {}
+[24.742081] (-) TimerEvent: {}
+[24.846069] (-) TimerEvent: {}
+[24.947106] (-) TimerEvent: {}
+[25.050857] (-) TimerEvent: {}
+[25.152173] (-) TimerEvent: {}
+[25.256012] (-) TimerEvent: {}
+[25.359670] (-) TimerEvent: {}
+[25.462025] (-) TimerEvent: {}
+[25.563635] (-) TimerEvent: {}
+[25.568709] (tutorial_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/msg/num__type_support.cpp.o\x1b[0m\n'}
+[25.667065] (-) TimerEvent: {}
+[25.768325] (-) TimerEvent: {}
+[25.872709] (-) TimerEvent: {}
+[25.960704] (tutorial_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/msg/detail/num__type_support.c.o\x1b[0m\n'}
+[25.974496] (-) TimerEvent: {}
+[26.075453] (-) TimerEvent: {}
+[26.179056] (-) TimerEvent: {}
+[26.248211] (tutorial_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/msg/detail/sphere__type_support.c.o\x1b[0m\n'}
+[26.269102] (tutorial_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/msg/detail/dds_fastrtps/num__type_support.cpp.o\x1b[0m\n'}
+[26.279268] (-) TimerEvent: {}
+[26.382041] (-) TimerEvent: {}
+[26.425177] (tutorial_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/detail/num__type_support_c.cpp.o\x1b[0m\n'}
+[26.482377] (-) TimerEvent: {}
+[26.555249] (tutorial_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tutorial_interfaces/srv/detail/add_three_ints__type_support.c.o\x1b[0m\n'}
+[26.584179] (-) TimerEvent: {}
+[26.689048] (-) TimerEvent: {}
+[26.790068] (-) TimerEvent: {}
+[26.891769] (-) TimerEvent: {}
+[26.945566] (tutorial_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking C shared library libtutorial_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[26.993085] (-) TimerEvent: {}
+[27.095528] (-) TimerEvent: {}
+[27.199094] (-) TimerEvent: {}
+[27.231407] (tutorial_interfaces) StdoutLine: {'line': b'[ 44%] Built target tutorial_interfaces__rosidl_typesupport_introspection_c\n'}
+[27.301078] (-) TimerEvent: {}
+[27.319155] (tutorial_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/msg/detail/sphere__type_support_c.cpp.o\x1b[0m\n'}
+[27.401334] (-) TimerEvent: {}
+[27.505119] (-) TimerEvent: {}
+[27.609451] (-) TimerEvent: {}
+[27.711548] (-) TimerEvent: {}
+[27.815686] (-) TimerEvent: {}
+[27.910274] (tutorial_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/msg/sphere__type_support.cpp.o\x1b[0m\n'}
+[27.920182] (-) TimerEvent: {}
+[28.024267] (-) TimerEvent: {}
+[28.125428] (-) TimerEvent: {}
+[28.229432] (-) TimerEvent: {}
+[28.330586] (-) TimerEvent: {}
+[28.434506] (-) TimerEvent: {}
+[28.537204] (-) TimerEvent: {}
+[28.640118] (-) TimerEvent: {}
+[28.743691] (-) TimerEvent: {}
+[28.846624] (-) TimerEvent: {}
+[28.949633] (-) TimerEvent: {}
+[29.054639] (-) TimerEvent: {}
+[29.156411] (-) TimerEvent: {}
+[29.260639] (-) TimerEvent: {}
+[29.365577] (-) TimerEvent: {}
+[29.470342] (-) TimerEvent: {}
+[29.572564] (-) TimerEvent: {}
+[29.677094] (-) TimerEvent: {}
+[29.782021] (-) TimerEvent: {}
+[29.820033] (tutorial_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tutorial_interfaces/srv/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[29.832068] (tutorial_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/msg/detail/dds_fastrtps/sphere__type_support.cpp.o\x1b[0m\n'}
+[29.885077] (-) TimerEvent: {}
+[29.986279] (-) TimerEvent: {}
+[30.089312] (-) TimerEvent: {}
+[30.197636] (-) TimerEvent: {}
+[30.298769] (-) TimerEvent: {}
+[30.405051] (-) TimerEvent: {}
+[30.506396] (-) TimerEvent: {}
+[30.608078] (-) TimerEvent: {}
+[30.628080] (tutorial_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tutorial_interfaces/srv/detail/dds_fastrtps/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[30.693295] (tutorial_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tutorial_interfaces/srv/detail/add_three_ints__type_support_c.cpp.o\x1b[0m\n'}
+[30.710057] (-) TimerEvent: {}
+[30.812435] (-) TimerEvent: {}
+[30.916533] (-) TimerEvent: {}
+[31.017884] (-) TimerEvent: {}
+[31.121032] (-) TimerEvent: {}
+[31.223920] (-) TimerEvent: {}
+[31.330056] (-) TimerEvent: {}
+[31.431049] (-) TimerEvent: {}
+[31.532051] (-) TimerEvent: {}
+[31.636063] (-) TimerEvent: {}
+[31.737230] (-) TimerEvent: {}
+[31.840893] (-) TimerEvent: {}
+[31.945286] (-) TimerEvent: {}
+[32.046310] (-) TimerEvent: {}
+[32.149225] (-) TimerEvent: {}
+[32.252348] (-) TimerEvent: {}
+[32.356052] (-) TimerEvent: {}
+[32.457136] (-) TimerEvent: {}
+[32.559550] (-) TimerEvent: {}
+[32.662439] (-) TimerEvent: {}
+[32.751226] (tutorial_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[32.763049] (-) TimerEvent: {}
+[32.868010] (-) TimerEvent: {}
+[32.971055] (-) TimerEvent: {}
+[33.074933] (-) TimerEvent: {}
+[33.179288] (-) TimerEvent: {}
+[33.283721] (-) TimerEvent: {}
+[33.388470] (tutorial_interfaces) StdoutLine: {'line': b'[ 57%] Built target tutorial_interfaces__rosidl_typesupport_cpp\n'}
+[33.389778] (-) TimerEvent: {}
+[33.497088] (-) TimerEvent: {}
+[33.528673] (tutorial_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[33.598075] (-) TimerEvent: {}
+[33.698250] (tutorial_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[33.703572] (-) TimerEvent: {}
+[33.807035] (-) TimerEvent: {}
+[33.907945] (-) TimerEvent: {}
+[34.010011] (-) TimerEvent: {}
+[34.114079] (-) TimerEvent: {}
+[34.216067] (-) TimerEvent: {}
+[34.318988] (-) TimerEvent: {}
+[34.422016] (-) TimerEvent: {}
+[34.426971] (tutorial_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[34.524025] (-) TimerEvent: {}
+[34.624939] (-) TimerEvent: {}
+[34.728499] (-) TimerEvent: {}
+[34.813193] (tutorial_interfaces) StdoutLine: {'line': b'[ 62%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[34.828714] (-) TimerEvent: {}
+[34.931686] (-) TimerEvent: {}
+[35.036003] (-) TimerEvent: {}
+[35.140525] (-) TimerEvent: {}
+[35.242865] (-) TimerEvent: {}
+[35.344996] (-) TimerEvent: {}
+[35.347698] (tutorial_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[35.382162] (tutorial_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/msg/num__type_support.cpp.o\x1b[0m\n'}
+[35.400155] (tutorial_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/msg/sphere__type_support.cpp.o\x1b[0m\n'}
+[35.445281] (-) TimerEvent: {}
+[35.548024] (-) TimerEvent: {}
+[35.652023] (-) TimerEvent: {}
+[35.745286] (tutorial_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/tutorial_interfaces/srv/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[35.753330] (-) TimerEvent: {}
+[35.857013] (-) TimerEvent: {}
+[35.917162] (tutorial_interfaces) StdoutLine: {'line': b'[ 70%] Built target tutorial_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[35.958029] (-) TimerEvent: {}
+[35.973349] (tutorial_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/msg/detail/num__type_support.cpp.o\x1b[0m\n'}
+[35.977790] (tutorial_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/msg/detail/sphere__type_support.cpp.o\x1b[0m\n'}
+[35.988031] (tutorial_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/tutorial_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tutorial_interfaces/srv/detail/add_three_ints__type_support.cpp.o\x1b[0m\n'}
+[36.058245] (-) TimerEvent: {}
+[36.115072] (tutorial_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[36.159033] (-) TimerEvent: {}
+[36.263099] (-) TimerEvent: {}
+[36.363900] (-) TimerEvent: {}
+[36.383376] (tutorial_interfaces) StdoutLine: {'line': b'[ 77%] Built target tutorial_interfaces__rosidl_typesupport_c\n'}
+[36.464064] (-) TimerEvent: {}
+[36.565087] (-) TimerEvent: {}
+[36.667686] (-) TimerEvent: {}
+[36.772580] (-) TimerEvent: {}
+[36.874031] (-) TimerEvent: {}
+[36.977004] (-) TimerEvent: {}
+[37.080058] (-) TimerEvent: {}
+[37.182973] (-) TimerEvent: {}
+[37.284645] (-) TimerEvent: {}
+[37.387950] (-) TimerEvent: {}
+[37.492753] (-) TimerEvent: {}
+[37.596154] (-) TimerEvent: {}
+[37.699052] (-) TimerEvent: {}
+[37.801817] (-) TimerEvent: {}
+[37.902759] (-) TimerEvent: {}
+[38.004044] (-) TimerEvent: {}
+[38.104915] (-) TimerEvent: {}
+[38.205733] (-) TimerEvent: {}
+[38.306594] (-) TimerEvent: {}
+[38.407516] (-) TimerEvent: {}
+[38.460352] (tutorial_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[38.507762] (-) TimerEvent: {}
+[38.609127] (-) TimerEvent: {}
+[38.709994] (-) TimerEvent: {}
+[38.810795] (-) TimerEvent: {}
+[38.865757] (tutorial_interfaces) StdoutLine: {'line': b'[ 79%] Built target tutorial_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[38.911077] (-) TimerEvent: {}
+[38.993634] (tutorial_interfaces) StdoutLine: {'line': b'[ 79%] Built target tutorial_interfaces\n'}
+[39.011289] (-) TimerEvent: {}
+[39.112045] (-) TimerEvent: {}
+[39.125662] (tutorial_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[39.212238] (-) TimerEvent: {}
+[39.312975] (-) TimerEvent: {}
+[39.413773] (-) TimerEvent: {}
+[39.514642] (-) TimerEvent: {}
+[39.615412] (-) TimerEvent: {}
+[39.716250] (-) TimerEvent: {}
+[39.816967] (-) TimerEvent: {}
+[39.917661] (-) TimerEvent: {}
+[40.018614] (-) TimerEvent: {}
+[40.119343] (-) TimerEvent: {}
+[40.220006] (-) TimerEvent: {}
+[40.320680] (-) TimerEvent: {}
+[40.421420] (-) TimerEvent: {}
+[40.522208] (-) TimerEvent: {}
+[40.622948] (-) TimerEvent: {}
+[40.723980] (-) TimerEvent: {}
+[40.824687] (-) TimerEvent: {}
+[40.925409] (-) TimerEvent: {}
+[41.026191] (-) TimerEvent: {}
+[41.128037] (-) TimerEvent: {}
+[41.228940] (-) TimerEvent: {}
+[41.304072] (tutorial_interfaces) StdoutLine: {'line': b'[ 81%] Built target tutorial_interfaces__py\n'}
+[41.329168] (-) TimerEvent: {}
+[41.430014] (-) TimerEvent: {}
+[41.473309] (tutorial_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tutorial_interfaces/msg/_num_s.c.o\x1b[0m\n'}
+[41.478509] (tutorial_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tutorial_interfaces/msg/_sphere_s.c.o\x1b[0m\n'}
+[41.482456] (tutorial_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces__rosidl_generator_py.dir/rosidl_generator_py/tutorial_interfaces/srv/_add_three_ints_s.c.o\x1b[0m\n'}
+[41.532132] (-) TimerEvent: {}
+[41.633005] (-) TimerEvent: {}
+[41.733741] (-) TimerEvent: {}
+[41.836518] (-) TimerEvent: {}
+[41.937701] (-) TimerEvent: {}
+[42.038609] (-) TimerEvent: {}
+[42.141093] (-) TimerEvent: {}
+[42.242761] (-) TimerEvent: {}
+[42.327049] (tutorial_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library libtutorial_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[42.342989] (-) TimerEvent: {}
+[42.443797] (-) TimerEvent: {}
+[42.544671] (-) TimerEvent: {}
+[42.617062] (tutorial_interfaces) StdoutLine: {'line': b'[ 88%] Built target tutorial_interfaces__rosidl_generator_py\n'}
+[42.645032] (-) TimerEvent: {}
+[42.745997] (-) TimerEvent: {}
+[42.802603] (tutorial_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[42.847058] (-) TimerEvent: {}
+[42.850217] (tutorial_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[42.860165] (tutorial_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/tutorial_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[42.951089] (-) TimerEvent: {}
+[43.051776] (-) TimerEvent: {}
+[43.156003] (-) TimerEvent: {}
+[43.256737] (-) TimerEvent: {}
+[43.357523] (-) TimerEvent: {}
+[43.459132] (-) TimerEvent: {}
+[43.563976] (-) TimerEvent: {}
+[43.601247] (tutorial_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[43.665044] (-) TimerEvent: {}
+[43.722063] (tutorial_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[43.765432] (-) TimerEvent: {}
+[43.852985] (tutorial_interfaces) StdoutLine: {'line': b'[ 98%] Built target tutorial_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[43.865763] (-) TimerEvent: {}
+[43.916278] (tutorial_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[43.947810] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target tutorial_interfaces_s__rosidl_typesupport_c\n'}
+[43.965999] (-) TimerEvent: {}
+[44.066700] (-) TimerEvent: {}
+[44.124092] (tutorial_interfaces) StdoutLine: {'line': b'[100%] Built target tutorial_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[44.167109] (-) TimerEvent: {}
+[44.198431] (tutorial_interfaces) CommandEnded: {'returncode': 0}
+[44.200944] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'install'}
+[44.250125] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/admin/RI-Seaweed/playground_ws/build/tutorial_interfaces'], 'cwd': '/home/admin/RI-Seaweed/playground_ws/build/tutorial_interfaces', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admin', 'SSH_CLIENT': '10.0.0.126 57274 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh', 'HOME': '/home/admin', 'OLDPWD': '/home/admin/RI-Seaweed', 'TERM_PROGRAM_VERSION': '1.110.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-bf3f620d-6000-4237-b21a-d60542ed0753.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'admin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-47b8c5bef1c488a4.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/admin/.vscode-server/data/User/workspaceStorage/e69a6fc4da48aef553f5632a4d14a5f0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-b75a3c0d0d.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/admin/RI-Seaweed/playground_ws/build/tutorial_interfaces', 'SSH_CONNECTION': '10.0.0.126 57274 10.0.0.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[44.267289] (-) TimerEvent: {}
+[44.298430] (tutorial_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[44.299778] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/ament_index/resource_index/rosidl_interfaces/tutorial_interfaces\n'}
+[44.300549] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.json\n'}
+[44.302070] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Sphere.json\n'}
+[44.303063] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.json\n'}
+[44.304603] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[44.305867] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[44.306557] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/num.h\n'}
+[44.308016] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[44.308612] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__description.c\n'}
+[44.310099] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.c\n'}
+[44.311266] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__description.c\n'}
+[44.312521] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__functions.h\n'}
+[44.313915] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.h\n'}
+[44.315436] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.c\n'}
+[44.316927] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__struct.h\n'}
+[44.318387] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.h\n'}
+[44.319989] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__struct.h\n'}
+[44.321421] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__functions.c\n'}
+[44.323073] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__functions.h\n'}
+[44.324534] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__functions.c\n'}
+[44.326190] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[44.327980] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/sphere.h\n'}
+[44.328544] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[44.329166] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/add_three_ints.h\n'}
+[44.330141] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[44.331052] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__struct.h\n'}
+[44.332149] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.h\n'}
+[44.333626] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__description.c\n'}
+[44.335246] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.c\n'}
+[44.336895] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__functions.c\n'}
+[44.338706] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__functions.h\n'}
+[44.340754] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.sh\n'}
+[44.342297] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/library_path.dsv\n'}
+[44.343753] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so\n'}
+[44.348150] (tutorial_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_c.so" to ""\n'}
+[44.348715] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[44.349510] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[44.350225] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[44.350702] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_c.h\n'}
+[44.351485] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_fastrtps_c.h\n'}
+[44.353070] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[44.353823] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[44.354410] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[44.355021] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_c.h\n'}
+[44.357150] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[44.360948] (tutorial_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[44.361701] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[44.362500] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[44.363176] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[44.364023] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[44.364731] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__struct.hpp\n'}
+[44.366174] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__traits.hpp\n'}
+[44.367433] (-) TimerEvent: {}
+[44.367977] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__builder.hpp\n'}
+[44.369242] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.hpp\n'}
+[44.370708] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__builder.hpp\n'}
+[44.372244] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.hpp\n'}
+[44.373818] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__traits.hpp\n'}
+[44.375554] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__struct.hpp\n'}
+[44.378309] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/sphere.hpp\n'}
+[44.379665] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/num.hpp\n'}
+[44.380410] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[44.381132] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[44.381735] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.hpp\n'}
+[44.383327] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__struct.hpp\n'}
+[44.384909] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__traits.hpp\n'}
+[44.386494] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__builder.hpp\n'}
+[44.388048] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/add_three_ints.hpp\n'}
+[44.390048] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[44.391400] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[44.392469] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[44.394067] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[44.394955] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/dds_fastrtps\n'}
+[44.395530] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[44.396242] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[44.397061] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[44.397902] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[44.398578] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/dds_fastrtps\n'}
+[44.399195] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[44.401315] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[44.406407] (tutorial_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[44.407307] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[44.408059] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[44.408935] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[44.409603] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[44.410107] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.c\n'}
+[44.410782] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_introspection_c.h\n'}
+[44.412045] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.c\n'}
+[44.413632] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_c.h\n'}
+[44.415241] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[44.416178] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[44.416721] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_c.h\n'}
+[44.418045] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.c\n'}
+[44.420987] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[44.424899] (tutorial_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[44.426175] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so\n'}
+[44.429934] (tutorial_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[44.430772] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces\n'}
+[44.432344] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg\n'}
+[44.433095] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail\n'}
+[44.433568] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__rosidl_typesupport_introspection_cpp.hpp\n'}
+[44.434240] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__rosidl_typesupport_introspection_cpp.hpp\n'}
+[44.436515] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/sphere__type_support.cpp\n'}
+[44.438021] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/msg/detail/num__type_support.cpp\n'}
+[44.440435] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv\n'}
+[44.442125] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail\n'}
+[44.442609] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__rosidl_typesupport_introspection_cpp.hpp\n'}
+[44.444946] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/include/tutorial_interfaces/tutorial_interfaces/srv/detail/add_three_ints__type_support.cpp\n'}
+[44.449422] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[44.451255] (tutorial_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[44.453644] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so\n'}
+[44.458115] (tutorial_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[44.460350] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.sh\n'}
+[44.461008] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/pythonpath.dsv\n'}
+[44.461470] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info\n'}
+[44.461991] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[44.462626] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[44.463411] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[44.464644] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[44.466440] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces\n'}
+[44.467167] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg\n'}
+[44.467625] (-) TimerEvent: {}
+[44.468208] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/_num_s.c\n'}
+[44.469147] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/__init__.py\n'}
+[44.470620] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/_num.py\n'}
+[44.472104] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/_sphere_s.c\n'}
+[44.475042] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/_sphere.py\n'}
+[44.476013] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv\n'}
+[44.476586] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv/_add_three_ints.py\n'}
+[44.478959] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv/__init__.py\n'}
+[44.479681] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv/_add_three_ints_s.c\n'}
+[44.481187] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/__init__.py\n'}
+[44.482488] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[44.484481] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[44.486462] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[44.488946] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/_tutorial_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[44.490786] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.so\n'}
+[44.493364] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[44.567910] (-) TimerEvent: {}
+[44.668609] (-) TimerEvent: {}
+[44.718076] (tutorial_interfaces) StdoutLine: {'line': b"Listing '/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces'...\n"}
+[44.719146] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/__init__.py'...\n"}
+[44.720075] (tutorial_interfaces) StdoutLine: {'line': b"Listing '/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg'...\n"}
+[44.724688] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/__init__.py'...\n"}
+[44.727817] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/_num.py'...\n"}
+[44.728690] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/msg/_sphere.py'...\n"}
+[44.731637] (tutorial_interfaces) StdoutLine: {'line': b"Listing '/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv'...\n"}
+[44.732501] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv/__init__.py'...\n"}
+[44.734464] (tutorial_interfaces) StdoutLine: {'line': b"Compiling '/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/srv/_add_three_ints.py'...\n"}
+[44.768991] (-) TimerEvent: {}
+[44.773466] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[44.779327] (tutorial_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[44.783056] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[44.789099] (tutorial_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[44.790223] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.so\n'}
+[44.793776] (tutorial_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages/tutorial_interfaces/tutorial_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[44.795337] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_py.so\n'}
+[44.799492] (tutorial_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/lib/libtutorial_interfaces__rosidl_generator_py.so" to ""\n'}
+[44.800532] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.idl\n'}
+[44.801571] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Sphere.idl\n'}
+[44.802143] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.idl\n'}
+[44.803006] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Num.msg\n'}
+[44.803563] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/msg/Sphere.msg\n'}
+[44.804639] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/srv/AddThreeInts.srv\n'}
+[44.806386] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/ament_index/resource_index/package_run_dependencies/tutorial_interfaces\n'}
+[44.807357] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/ament_index/resource_index/parent_prefix_path/tutorial_interfaces\n'}
+[44.808456] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.sh\n'}
+[44.809244] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/ament_prefix_path.dsv\n'}
+[44.810044] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.sh\n'}
+[44.811413] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/environment/path.dsv\n'}
+[44.813319] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.bash\n'}
+[44.813799] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.sh\n'}
+[44.814697] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.zsh\n'}
+[44.815735] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/local_setup.dsv\n'}
+[44.816331] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.dsv\n'}
+[44.817563] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/ament_index/resource_index/packages/tutorial_interfaces\n'}
+[44.818595] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cExport.cmake\n'}
+[44.819422] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[44.820205] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[44.820952] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[44.821780] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_cppExport.cmake\n'}
+[44.822918] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[44.823682] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[44.824585] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[44.825360] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[44.826159] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[44.826919] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[44.827691] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[44.828472] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[44.829278] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[44.830012] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[44.830888] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_pyExport.cmake\n'}
+[44.831623] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/export_tutorial_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[44.832572] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[44.833671] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[44.834515] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[44.835868] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[44.836539] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[44.837108] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[44.837561] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[44.838103] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig.cmake\n'}
+[44.838587] (tutorial_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/cmake/tutorial_interfacesConfig-version.cmake\n'}
+[44.839140] (tutorial_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/RI-Seaweed/playground_ws/install/tutorial_interfaces/share/tutorial_interfaces/package.xml\n'}
+[44.847047] (tutorial_interfaces) CommandEnded: {'returncode': 0}
+[44.869211] (-) TimerEvent: {}
+[44.970104] (tutorial_interfaces) JobEnded: {'identifier': 'tutorial_interfaces', 'rc': 0}
+[44.973566] (-) TimerEvent: {}
+[44.973920] (-) EventReactorShutdown: {}

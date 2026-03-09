@@ -1,0 +1,16 @@
+[0.056s] Invoking command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces
+[0.125s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.228s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.238s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.428s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.553s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.562s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[1.563s]   rosidl_generate_interfaces() the passed file 'DEPENDENC' doesn't exist
+[1.563s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[1.563s]   '/home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces'
+[1.564s] Call Stack (most recent call first):
+[1.565s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[1.566s] 
+[1.567s] [0m
+[1.567s] -- Configuring incomplete, errors occurred!
+[1.579s] Invoked command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces

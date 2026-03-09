@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.001037] (-) JobUnselected: {'identifier': 'gripper'}
+[0.001723] (-) JobUnselected: {'identifier': 'ri_seaweed_interfaces'}
+[0.002691] (-) EventReactorShutdown: {}

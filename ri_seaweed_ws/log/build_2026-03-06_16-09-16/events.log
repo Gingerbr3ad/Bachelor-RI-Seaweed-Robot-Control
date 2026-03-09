@@ -1,0 +1,100 @@
+[0.000000] (-) TimerEvent: {}
+[0.001077] (-) JobUnselected: {'identifier': 'ri_seaweed_interfaces'}
+[0.001986] (gripper) JobQueued: {'identifier': 'gripper', 'dependencies': OrderedDict({'ri_seaweed_interfaces': '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces'})}
+[0.002550] (gripper) JobStarted: {'identifier': 'gripper'}
+[0.099185] (-) TimerEvent: {}
+[0.199922] (-) TimerEvent: {}
+[0.300606] (-) TimerEvent: {}
+[0.401329] (-) TimerEvent: {}
+[0.502029] (-) TimerEvent: {}
+[0.602801] (-) TimerEvent: {}
+[0.703412] (-) TimerEvent: {}
+[0.804127] (-) TimerEvent: {}
+[0.904803] (-) TimerEvent: {}
+[1.005580] (-) TimerEvent: {}
+[1.108054] (-) TimerEvent: {}
+[1.210778] (-) TimerEvent: {}
+[1.311519] (-) TimerEvent: {}
+[1.412300] (-) TimerEvent: {}
+[1.513030] (-) TimerEvent: {}
+[1.613832] (-) TimerEvent: {}
+[1.714446] (-) TimerEvent: {}
+[1.815355] (-) TimerEvent: {}
+[1.916043] (-) TimerEvent: {}
+[2.016786] (-) TimerEvent: {}
+[2.117574] (-) TimerEvent: {}
+[2.218396] (-) TimerEvent: {}
+[2.319074] (-) TimerEvent: {}
+[2.419770] (-) TimerEvent: {}
+[2.520413] (-) TimerEvent: {}
+[2.621117] (-) TimerEvent: {}
+[2.721794] (-) TimerEvent: {}
+[2.822488] (-) TimerEvent: {}
+[2.923309] (-) TimerEvent: {}
+[3.024225] (-) TimerEvent: {}
+[3.124840] (-) TimerEvent: {}
+[3.225473] (-) TimerEvent: {}
+[3.326201] (-) TimerEvent: {}
+[3.426812] (-) TimerEvent: {}
+[3.527546] (-) TimerEvent: {}
+[3.628325] (-) TimerEvent: {}
+[3.729012] (-) TimerEvent: {}
+[3.829681] (-) TimerEvent: {}
+[3.930475] (-) TimerEvent: {}
+[4.031701] (-) TimerEvent: {}
+[4.132398] (gripper) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gripper', 'build', '--build-base', '/home/admin/ri_seaweed_ws/build/gripper/build', 'install', '--record', '/home/admin/ri_seaweed_ws/build/gripper/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/admin/ri_seaweed_ws/src/gripper', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admin', 'SSH_CLIENT': '10.0.0.126 55438 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/admin/.vscode-server/cli/servers/Stable-0870c2a0c7c0564e7631bfed2675573a94ba4455/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/admin/.vscode-server/cli/servers/Stable-0870c2a0c7c0564e7631bfed2675573a94ba4455/server/bin/helpers/browser.sh', 'HOME': '/home/admin', 'OLDPWD': '/home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces', 'TERM_PROGRAM_VERSION': '1.110.0', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-eb256e9f-4875-47e6-8583-32e36ec74948.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/cli/servers/Stable-0870c2a0c7c0564e7631bfed2675573a94ba4455/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/cli/servers/Stable-0870c2a0c7c0564e7631bfed2675573a94ba4455/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'COLCON_PREFIX_PATH': '/home/admin/ri_seaweed_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'admin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'screen.xterm-256color', 'XDG_SESSION_ID': '2', 'PATH': '/home/admin/.vscode-server/cli/servers/Stable-0870c2a0c7c0564e7631bfed2675573a94ba4455/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-47b8c5bef1c488a4.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/admin/.vscode-server/data/User/workspaceStorage/e69a6fc4da48aef553f5632a4d14a5f0/ms-python.python/pythonrc.py', 'STY': '7592.pts-1.RI-Seaweed', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-b75a3c0d0d.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/admin/ri_seaweed_ws/install/gripper:/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'WINDOW': '0', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/admin/ri_seaweed_ws/build/gripper', 'SSH_CONNECTION': '10.0.0.126 55438 10.0.0.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'TERMCAP': 'SC|screen.xterm-256color|VT 100/ANSI X3.64 virtual terminal:DO=\\E[%dB:LE=\\E[%dD:RI=\\E[%dC:UP=\\E[%dA:bs:bt=\\E[Z:cd=\\E[J:ce=\\E[K:cl=\\E[H\\E[J:cm=\\E[%i%d;%dH:ct=\\E[3g:do=^J:nd=\\E[C:pt:rc=\\E8:rs=\\Ec:sc=\\E7:st=\\EH:up=\\EM:le=^H:bl=^G:cr=^M:it#8:ho=\\E[H:nw=\\EE:ta=^I:is=\\E)0:li#30:co#248:am:xn:xv:LP:sr=\\EM:al=\\E[L:AL=\\E[%dL:cs=\\E[%i%d;%dr:dl=\\E[M:DL=\\E[%dM:dc=\\E[P:DC=\\E[%dP:im=\\E[4h:ei=\\E[4l:mi:IC=\\E[%d@:ks=\\E[?1h\\E=:ke=\\E[?1l\\E>:vi=\\E[?25l:ve=\\E[34h\\E[?25h:vs=\\E[34l:ti=\\E[?1049h:te=\\E[?1049l:us=\\E[4m:ue=\\E[24m:so=\\E[3m:se=\\E[23m:mb=\\E[5m:md=\\E[1m:mh=\\E[2m:mr=\\E[7m:me=\\E[m:ms:Co#8:pa#64:AF=\\E[3%dm:AB=\\E[4%dm:op=\\E[39;49m:AX:vb=\\Eg:G0:as=\\E(0:ae=\\E(B:ac=\\140\\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:po=\\E[5i:pf=\\E[4i:Km=\\E[<:k0=\\E[10~:k1=\\EOP:k2=\\EOQ:k3=\\EOR:k4=\\EOS:k5=\\E[15~:k6=\\E[17~:k7=\\E[18~:k8=\\E[19~:k9=\\E[20~:k;=\\E[21~:F1=\\E[23~:F2=\\E[24~:kB=\\E[Z:kh=\\E[1~:@1=\\E[1~:kH=\\E[4~:@7=\\E[4~:kN=\\E[6~:kP=\\E[5~:kI=\\E[2~:kD=\\E[3~:ku=\\EOA:kd=\\EOB:kr=\\EOC:kl=\\EOD:km:', 'PYTHONPATH': '/home/admin/ri_seaweed_ws/build/gripper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages:/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages:/home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[4.141349] (-) TimerEvent: {}
+[4.242046] (-) TimerEvent: {}
+[4.342706] (-) TimerEvent: {}
+[4.443554] (-) TimerEvent: {}
+[4.544284] (-) TimerEvent: {}
+[4.645081] (-) TimerEvent: {}
+[4.745771] (-) TimerEvent: {}
+[4.846389] (-) TimerEvent: {}
+[4.947051] (-) TimerEvent: {}
+[5.047673] (-) TimerEvent: {}
+[5.148325] (-) TimerEvent: {}
+[5.249102] (-) TimerEvent: {}
+[5.349765] (-) TimerEvent: {}
+[5.412912] (gripper) StdoutLine: {'line': b'running egg_info\n'}
+[5.449913] (-) TimerEvent: {}
+[5.507138] (gripper) StdoutLine: {'line': b'writing ../../build/gripper/gripper.egg-info/PKG-INFO\n'}
+[5.508427] (gripper) StdoutLine: {'line': b'writing dependency_links to ../../build/gripper/gripper.egg-info/dependency_links.txt\n'}
+[5.509670] (gripper) StdoutLine: {'line': b'writing entry points to ../../build/gripper/gripper.egg-info/entry_points.txt\n'}
+[5.510697] (gripper) StdoutLine: {'line': b'writing requirements to ../../build/gripper/gripper.egg-info/requires.txt\n'}
+[5.511697] (gripper) StdoutLine: {'line': b'writing top-level names to ../../build/gripper/gripper.egg-info/top_level.txt\n'}
+[5.550075] (-) TimerEvent: {}
+[5.650688] (-) TimerEvent: {}
+[5.706440] (gripper) StdoutLine: {'line': b"reading manifest file '../../build/gripper/gripper.egg-info/SOURCES.txt'\n"}
+[5.708090] (gripper) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[5.710359] (gripper) StdoutLine: {'line': b"writing manifest file '../../build/gripper/gripper.egg-info/SOURCES.txt'\n"}
+[5.711220] (gripper) StdoutLine: {'line': b'running build\n'}
+[5.711811] (gripper) StdoutLine: {'line': b'running build_py\n'}
+[5.712633] (gripper) StdoutLine: {'line': b'copying gripper/gripper_driver.py -> /home/admin/ri_seaweed_ws/build/gripper/build/lib/gripper\n'}
+[5.714274] (gripper) StdoutLine: {'line': b'running install\n'}
+[5.739868] (gripper) StdoutLine: {'line': b'running install_lib\n'}
+[5.750856] (-) TimerEvent: {}
+[5.835802] (gripper) StdoutLine: {'line': b'copying /home/admin/ri_seaweed_ws/build/gripper/build/lib/gripper/gripper_driver.py -> /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper\n'}
+[5.839074] (gripper) StdoutLine: {'line': b'byte-compiling /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper/gripper_driver.py to gripper_driver.cpython-312.pyc\n'}
+[5.842680] (gripper) StdoutLine: {'line': b'running install_data\n'}
+[5.843900] (gripper) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.851029] (-) TimerEvent: {}
+[5.946529] (gripper) StdoutLine: {'line': b"removing '/home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[5.948530] (gripper) StdoutLine: {'line': b'Copying ../../build/gripper/gripper.egg-info to /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper-0.0.0-py3.12.egg-info\n'}
+[5.951187] (-) TimerEvent: {}
+[5.954856] (gripper) StdoutLine: {'line': b'running install_scripts\n'}
+[6.051365] (-) TimerEvent: {}
+[6.152124] (-) TimerEvent: {}
+[6.252832] (-) TimerEvent: {}
+[6.353493] (-) TimerEvent: {}
+[6.454147] (-) TimerEvent: {}
+[6.554840] (-) TimerEvent: {}
+[6.655667] (-) TimerEvent: {}
+[6.666575] (gripper) StdoutLine: {'line': b'Installing gripper_controller script to /home/admin/ri_seaweed_ws/install/gripper/lib/gripper\n'}
+[6.668476] (gripper) StdoutLine: {'line': b'Installing gripper_driver script to /home/admin/ri_seaweed_ws/install/gripper/lib/gripper\n'}
+[6.670151] (gripper) StdoutLine: {'line': b"writing list of installed files to '/home/admin/ri_seaweed_ws/build/gripper/install.log'\n"}
+[6.756104] (-) TimerEvent: {}
+[6.819372] (gripper) CommandEnded: {'returncode': 0}
+[6.857085] (-) TimerEvent: {}
+[6.870216] (gripper) JobEnded: {'identifier': 'gripper', 'rc': 0}
+[6.873515] (-) EventReactorShutdown: {}

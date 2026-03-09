@@ -1,0 +1,246 @@
+[0.000000] (-) TimerEvent: {}
+[0.001192] (-) JobUnselected: {'identifier': 'gripper_package'}
+[0.001636] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.001780] (cpp_pubsub) JobQueued: {'identifier': 'cpp_pubsub', 'dependencies': OrderedDict()}
+[0.002687] (cpp_pubsub) JobStarted: {'identifier': 'cpp_pubsub'}
+[0.048312] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'cmake'}
+[0.051233] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'build'}
+[0.053956] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/admin/playground_ws/build/cpp_pubsub', '--', '-j4', '-l4'], 'cwd': '/home/admin/playground_ws/build/cpp_pubsub', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admin', 'SSH_CLIENT': '10.0.0.126 57099 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/helpers/browser.sh', 'HOME': '/home/admin', 'TERM_PROGRAM_VERSION': '1.109.5', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-e6525f92-5a45-46fb-bc18-4f58cf831daf.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'COLCON_PREFIX_PATH': '/home/admin/playground_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'admin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'screen.xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'STY': '7760.pts-0.RI-Seaweed', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-87095713af.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/admin/playground_ws/install/gripper_package:/home/admin/playground_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'WINDOW': '1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/admin/playground_ws/build/cpp_pubsub', 'SSH_CONNECTION': '10.0.0.126 57099 10.0.0.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'TERMCAP': 'SC|screen.xterm-256color|VT 100/ANSI X3.64 virtual terminal:DO=\\E[%dB:LE=\\E[%dD:RI=\\E[%dC:UP=\\E[%dA:bs:bt=\\E[Z:cd=\\E[J:ce=\\E[K:cl=\\E[H\\E[J:cm=\\E[%i%d;%dH:ct=\\E[3g:do=^J:nd=\\E[C:pt:rc=\\E8:rs=\\Ec:sc=\\E7:st=\\EH:up=\\EM:le=^H:bl=^G:cr=^M:it#8:ho=\\E[H:nw=\\EE:ta=^I:is=\\E)0:li#12:co#248:am:xn:xv:LP:sr=\\EM:al=\\E[L:AL=\\E[%dL:cs=\\E[%i%d;%dr:dl=\\E[M:DL=\\E[%dM:dc=\\E[P:DC=\\E[%dP:im=\\E[4h:ei=\\E[4l:mi:IC=\\E[%d@:ks=\\E[?1h\\E=:ke=\\E[?1l\\E>:vi=\\E[?25l:ve=\\E[34h\\E[?25h:vs=\\E[34l:ti=\\E[?1049h:te=\\E[?1049l:us=\\E[4m:ue=\\E[24m:so=\\E[3m:se=\\E[23m:mb=\\E[5m:md=\\E[1m:mh=\\E[2m:mr=\\E[7m:me=\\E[m:ms:Co#8:pa#64:AF=\\E[3%dm:AB=\\E[4%dm:op=\\E[39;49m:AX:vb=\\Eg:G0:as=\\E(0:ae=\\E(B:ac=\\140\\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:po=\\E[5i:pf=\\E[4i:Km=\\E[<:k0=\\E[10~:k1=\\EOP:k2=\\EOQ:k3=\\EOR:k4=\\EOS:k5=\\E[15~:k6=\\E[17~:k7=\\E[18~:k8=\\E[19~:k9=\\E[20~:k;=\\E[21~:F1=\\E[23~:F2=\\E[24~:kB=\\E[Z:kh=\\E[1~:@1=\\E[1~:kH=\\E[4~:@7=\\E[4~:kN=\\E[6~:kP=\\E[5~:kI=\\E[2~:kD=\\E[3~:ku=\\EOA:kd=\\EOB:kr=\\EOC:kl=\\EOD:km:', 'PYTHONPATH': '/home/admin/playground_ws/install/gripper_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/admin/playground_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/admin/playground_ws/install/gripper_package:/opt/ros/jazzy'}), 'shell': False}
+[0.099148] (-) TimerEvent: {}
+[0.200638] (-) TimerEvent: {}
+[0.301436] (-) TimerEvent: {}
+[0.403031] (-) TimerEvent: {}
+[0.449477] (cpp_pubsub) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_lambda_function.cpp.o\x1b[0m\n'}
+[0.457014] (cpp_pubsub) StdoutLine: {'line': b'[ 75%] Built target listener\n'}
+[0.503368] (-) TimerEvent: {}
+[0.605346] (-) TimerEvent: {}
+[0.705977] (-) TimerEvent: {}
+[0.806761] (-) TimerEvent: {}
+[0.907514] (-) TimerEvent: {}
+[1.008186] (-) TimerEvent: {}
+[1.108805] (-) TimerEvent: {}
+[1.209576] (-) TimerEvent: {}
+[1.310449] (-) TimerEvent: {}
+[1.411163] (-) TimerEvent: {}
+[1.511811] (-) TimerEvent: {}
+[1.612534] (-) TimerEvent: {}
+[1.713296] (-) TimerEvent: {}
+[1.814162] (-) TimerEvent: {}
+[1.914852] (-) TimerEvent: {}
+[2.015562] (-) TimerEvent: {}
+[2.116256] (-) TimerEvent: {}
+[2.217028] (-) TimerEvent: {}
+[2.317860] (-) TimerEvent: {}
+[2.418674] (-) TimerEvent: {}
+[2.519524] (-) TimerEvent: {}
+[2.620351] (-) TimerEvent: {}
+[2.721186] (-) TimerEvent: {}
+[2.821974] (-) TimerEvent: {}
+[2.923045] (-) TimerEvent: {}
+[3.023819] (-) TimerEvent: {}
+[3.124662] (-) TimerEvent: {}
+[3.225669] (-) TimerEvent: {}
+[3.326567] (-) TimerEvent: {}
+[3.427520] (-) TimerEvent: {}
+[3.528387] (-) TimerEvent: {}
+[3.629247] (-) TimerEvent: {}
+[3.730232] (-) TimerEvent: {}
+[3.831038] (-) TimerEvent: {}
+[3.931821] (-) TimerEvent: {}
+[4.032621] (-) TimerEvent: {}
+[4.133461] (-) TimerEvent: {}
+[4.234259] (-) TimerEvent: {}
+[4.335171] (-) TimerEvent: {}
+[4.435936] (-) TimerEvent: {}
+[4.536879] (-) TimerEvent: {}
+[4.637730] (-) TimerEvent: {}
+[4.738554] (-) TimerEvent: {}
+[4.839471] (-) TimerEvent: {}
+[4.940266] (-) TimerEvent: {}
+[5.041188] (-) TimerEvent: {}
+[5.141919] (-) TimerEvent: {}
+[5.242800] (-) TimerEvent: {}
+[5.343655] (-) TimerEvent: {}
+[5.444408] (-) TimerEvent: {}
+[5.545172] (-) TimerEvent: {}
+[5.645950] (-) TimerEvent: {}
+[5.746778] (-) TimerEvent: {}
+[5.847628] (-) TimerEvent: {}
+[5.948428] (-) TimerEvent: {}
+[6.049218] (-) TimerEvent: {}
+[6.149932] (-) TimerEvent: {}
+[6.250877] (-) TimerEvent: {}
+[6.351685] (-) TimerEvent: {}
+[6.452480] (-) TimerEvent: {}
+[6.553267] (-) TimerEvent: {}
+[6.654151] (-) TimerEvent: {}
+[6.754872] (-) TimerEvent: {}
+[6.855630] (-) TimerEvent: {}
+[6.956437] (-) TimerEvent: {}
+[7.057212] (-) TimerEvent: {}
+[7.157978] (-) TimerEvent: {}
+[7.258779] (-) TimerEvent: {}
+[7.359666] (-) TimerEvent: {}
+[7.460550] (-) TimerEvent: {}
+[7.561352] (-) TimerEvent: {}
+[7.662165] (-) TimerEvent: {}
+[7.762928] (-) TimerEvent: {}
+[7.863773] (-) TimerEvent: {}
+[7.964596] (-) TimerEvent: {}
+[8.065367] (-) TimerEvent: {}
+[8.166167] (-) TimerEvent: {}
+[8.266896] (-) TimerEvent: {}
+[8.367693] (-) TimerEvent: {}
+[8.468460] (-) TimerEvent: {}
+[8.569256] (-) TimerEvent: {}
+[8.670197] (-) TimerEvent: {}
+[8.770999] (-) TimerEvent: {}
+[8.871816] (-) TimerEvent: {}
+[8.972683] (-) TimerEvent: {}
+[9.073492] (-) TimerEvent: {}
+[9.174275] (-) TimerEvent: {}
+[9.275045] (-) TimerEvent: {}
+[9.375833] (-) TimerEvent: {}
+[9.476620] (-) TimerEvent: {}
+[9.577519] (-) TimerEvent: {}
+[9.678279] (-) TimerEvent: {}
+[9.779145] (-) TimerEvent: {}
+[9.881225] (-) TimerEvent: {}
+[9.982133] (-) TimerEvent: {}
+[10.082885] (-) TimerEvent: {}
+[10.183747] (-) TimerEvent: {}
+[10.284582] (-) TimerEvent: {}
+[10.385381] (-) TimerEvent: {}
+[10.486190] (-) TimerEvent: {}
+[10.586917] (-) TimerEvent: {}
+[10.687743] (-) TimerEvent: {}
+[10.788597] (-) TimerEvent: {}
+[10.889405] (-) TimerEvent: {}
+[10.990196] (-) TimerEvent: {}
+[11.090945] (-) TimerEvent: {}
+[11.191749] (-) TimerEvent: {}
+[11.292569] (-) TimerEvent: {}
+[11.393490] (-) TimerEvent: {}
+[11.494248] (-) TimerEvent: {}
+[11.595248] (-) TimerEvent: {}
+[11.695983] (-) TimerEvent: {}
+[11.796799] (-) TimerEvent: {}
+[11.897637] (-) TimerEvent: {}
+[11.999124] (-) TimerEvent: {}
+[12.099880] (-) TimerEvent: {}
+[12.200703] (-) TimerEvent: {}
+[12.301491] (-) TimerEvent: {}
+[12.402259] (-) TimerEvent: {}
+[12.503023] (-) TimerEvent: {}
+[12.603830] (-) TimerEvent: {}
+[12.704752] (-) TimerEvent: {}
+[12.805612] (-) TimerEvent: {}
+[12.906491] (-) TimerEvent: {}
+[13.007249] (-) TimerEvent: {}
+[13.108012] (-) TimerEvent: {}
+[13.208845] (-) TimerEvent: {}
+[13.309674] (-) TimerEvent: {}
+[13.410482] (-) TimerEvent: {}
+[13.511253] (-) TimerEvent: {}
+[13.612146] (-) TimerEvent: {}
+[13.712913] (-) TimerEvent: {}
+[13.814502] (-) TimerEvent: {}
+[13.915225] (-) TimerEvent: {}
+[14.016044] (-) TimerEvent: {}
+[14.116866] (-) TimerEvent: {}
+[14.217763] (-) TimerEvent: {}
+[14.318850] (-) TimerEvent: {}
+[14.419673] (-) TimerEvent: {}
+[14.520580] (-) TimerEvent: {}
+[14.621361] (-) TimerEvent: {}
+[14.722131] (-) TimerEvent: {}
+[14.822957] (-) TimerEvent: {}
+[14.925014] (-) TimerEvent: {}
+[15.025841] (-) TimerEvent: {}
+[15.126675] (-) TimerEvent: {}
+[15.227490] (-) TimerEvent: {}
+[15.328275] (-) TimerEvent: {}
+[15.429097] (-) TimerEvent: {}
+[15.529886] (-) TimerEvent: {}
+[15.630822] (-) TimerEvent: {}
+[15.731661] (-) TimerEvent: {}
+[15.832487] (-) TimerEvent: {}
+[15.933299] (-) TimerEvent: {}
+[16.034141] (-) TimerEvent: {}
+[16.134912] (-) TimerEvent: {}
+[16.235761] (-) TimerEvent: {}
+[16.336587] (-) TimerEvent: {}
+[16.437380] (-) TimerEvent: {}
+[16.538231] (-) TimerEvent: {}
+[16.639003] (-) TimerEvent: {}
+[16.739815] (-) TimerEvent: {}
+[16.840634] (-) TimerEvent: {}
+[16.941484] (-) TimerEvent: {}
+[17.042251] (-) TimerEvent: {}
+[17.143104] (-) TimerEvent: {}
+[17.243945] (-) TimerEvent: {}
+[17.344851] (-) TimerEvent: {}
+[17.445778] (-) TimerEvent: {}
+[17.546659] (-) TimerEvent: {}
+[17.647445] (-) TimerEvent: {}
+[17.748232] (-) TimerEvent: {}
+[17.849159] (-) TimerEvent: {}
+[17.949969] (-) TimerEvent: {}
+[18.050744] (-) TimerEvent: {}
+[18.151586] (-) TimerEvent: {}
+[18.252329] (-) TimerEvent: {}
+[18.353151] (-) TimerEvent: {}
+[18.453847] (-) TimerEvent: {}
+[18.554770] (-) TimerEvent: {}
+[18.657473] (-) TimerEvent: {}
+[18.758253] (-) TimerEvent: {}
+[18.859023] (-) TimerEvent: {}
+[18.960015] (-) TimerEvent: {}
+[19.061118] (-) TimerEvent: {}
+[19.161954] (-) TimerEvent: {}
+[19.262773] (-) TimerEvent: {}
+[19.363538] (-) TimerEvent: {}
+[19.464276] (-) TimerEvent: {}
+[19.565110] (-) TimerEvent: {}
+[19.665913] (-) TimerEvent: {}
+[19.766818] (-) TimerEvent: {}
+[19.819912] (cpp_pubsub) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable talker\x1b[0m\n'}
+[19.867036] (-) TimerEvent: {}
+[19.967925] (-) TimerEvent: {}
+[20.068868] (-) TimerEvent: {}
+[20.169974] (-) TimerEvent: {}
+[20.271408] (-) TimerEvent: {}
+[20.372659] (-) TimerEvent: {}
+[20.473542] (-) TimerEvent: {}
+[20.574938] (-) TimerEvent: {}
+[20.675957] (-) TimerEvent: {}
+[20.776649] (-) TimerEvent: {}
+[20.813512] (cpp_pubsub) StdoutLine: {'line': b'[100%] Built target talker\n'}
+[20.876877] (-) TimerEvent: {}
+[20.882219] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[20.884895] (cpp_pubsub) JobProgress: {'identifier': 'cpp_pubsub', 'progress': 'install'}
+[20.936689] (cpp_pubsub) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/admin/playground_ws/build/cpp_pubsub'], 'cwd': '/home/admin/playground_ws/build/cpp_pubsub', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admin', 'SSH_CLIENT': '10.0.0.126 57099 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/helpers/browser.sh', 'HOME': '/home/admin', 'TERM_PROGRAM_VERSION': '1.109.5', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-e6525f92-5a45-46fb-bc18-4f58cf831daf.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'COLCON_PREFIX_PATH': '/home/admin/playground_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'admin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'screen.xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'STY': '7760.pts-0.RI-Seaweed', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-87095713af.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/admin/playground_ws/install/gripper_package:/home/admin/playground_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'WINDOW': '1', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/admin/playground_ws/build/cpp_pubsub', 'SSH_CONNECTION': '10.0.0.126 57099 10.0.0.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'TERMCAP': 'SC|screen.xterm-256color|VT 100/ANSI X3.64 virtual terminal:DO=\\E[%dB:LE=\\E[%dD:RI=\\E[%dC:UP=\\E[%dA:bs:bt=\\E[Z:cd=\\E[J:ce=\\E[K:cl=\\E[H\\E[J:cm=\\E[%i%d;%dH:ct=\\E[3g:do=^J:nd=\\E[C:pt:rc=\\E8:rs=\\Ec:sc=\\E7:st=\\EH:up=\\EM:le=^H:bl=^G:cr=^M:it#8:ho=\\E[H:nw=\\EE:ta=^I:is=\\E)0:li#12:co#248:am:xn:xv:LP:sr=\\EM:al=\\E[L:AL=\\E[%dL:cs=\\E[%i%d;%dr:dl=\\E[M:DL=\\E[%dM:dc=\\E[P:DC=\\E[%dP:im=\\E[4h:ei=\\E[4l:mi:IC=\\E[%d@:ks=\\E[?1h\\E=:ke=\\E[?1l\\E>:vi=\\E[?25l:ve=\\E[34h\\E[?25h:vs=\\E[34l:ti=\\E[?1049h:te=\\E[?1049l:us=\\E[4m:ue=\\E[24m:so=\\E[3m:se=\\E[23m:mb=\\E[5m:md=\\E[1m:mh=\\E[2m:mr=\\E[7m:me=\\E[m:ms:Co#8:pa#64:AF=\\E[3%dm:AB=\\E[4%dm:op=\\E[39;49m:AX:vb=\\Eg:G0:as=\\E(0:ae=\\E(B:ac=\\140\\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:po=\\E[5i:pf=\\E[4i:Km=\\E[<:k0=\\E[10~:k1=\\EOP:k2=\\EOQ:k3=\\EOR:k4=\\EOS:k5=\\E[15~:k6=\\E[17~:k7=\\E[18~:k8=\\E[19~:k9=\\E[20~:k;=\\E[21~:F1=\\E[23~:F2=\\E[24~:kB=\\E[Z:kh=\\E[1~:@1=\\E[1~:kH=\\E[4~:@7=\\E[4~:kN=\\E[6~:kP=\\E[5~:kI=\\E[2~:kD=\\E[3~:ku=\\EOA:kd=\\EOB:kr=\\EOC:kl=\\EOD:km:', 'PYTHONPATH': '/home/admin/playground_ws/install/gripper_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/admin/playground_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/admin/playground_ws/install/gripper_package:/opt/ros/jazzy'}), 'shell': False}
+[20.977161] (-) TimerEvent: {}
+[20.983130] (cpp_pubsub) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.984572] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/admin/playground_ws/install/cpp_pubsub/lib/cpp_pubsub/talker\n'}
+[20.997668] (cpp_pubsub) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/playground_ws/install/cpp_pubsub/lib/cpp_pubsub/talker" to ""\n'}
+[20.998867] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/lib/cpp_pubsub/listener\n'}
+[21.000595] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/ament_index/resource_index/package_run_dependencies/cpp_pubsub\n'}
+[21.001563] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/ament_index/resource_index/parent_prefix_path/cpp_pubsub\n'}
+[21.002314] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.sh\n'}
+[21.002870] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/environment/ament_prefix_path.dsv\n'}
+[21.003514] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.sh\n'}
+[21.004371] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/environment/path.dsv\n'}
+[21.004906] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.bash\n'}
+[21.005478] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.sh\n'}
+[21.005883] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.zsh\n'}
+[21.006531] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/local_setup.dsv\n'}
+[21.007144] (cpp_pubsub) StdoutLine: {'line': b'-- Installing: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/package.dsv\n'}
+[21.007735] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/ament_index/resource_index/packages/cpp_pubsub\n'}
+[21.008396] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig.cmake\n'}
+[21.008961] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/cmake/cpp_pubsubConfig-version.cmake\n'}
+[21.009964] (cpp_pubsub) StdoutLine: {'line': b'-- Up-to-date: /home/admin/playground_ws/install/cpp_pubsub/share/cpp_pubsub/package.xml\n'}
+[21.014681] (cpp_pubsub) CommandEnded: {'returncode': 0}
+[21.077339] (-) TimerEvent: {}
+[21.158175] (cpp_pubsub) JobEnded: {'identifier': 'cpp_pubsub', 'rc': 0}
+[21.168273] (-) EventReactorShutdown: {}

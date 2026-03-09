@@ -1,0 +1,6 @@
+[1.087s] Invoking command in '/home/admin/RI-Seaweed/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/RI-Seaweed/ri_seaweed_ws/build/ri_seaweed_interfaces -- -j4 -l4
+[1.135s] [0mCMake Error: The current CMakeCache.txt directory /home/admin/RI-Seaweed/ri_seaweed_ws/build/ri_seaweed_interfaces/CMakeCache.txt is different than the directory /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[1.202s] [0mCMake Error: The source directory "/home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces" does not exist.
+[1.205s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[1.209s] gmake: *** [Makefile:815: cmake_check_build_system] Error 1
+[1.221s] Invoked command in '/home/admin/RI-Seaweed/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/RI-Seaweed/ri_seaweed_ws/build/ri_seaweed_interfaces -- -j4 -l4

@@ -1,0 +1,29 @@
+[0.056s] Invoking command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces
+[0.863s] -- The C compiler identification is GNU 13.3.0
+[1.515s] -- The CXX compiler identification is GNU 13.3.0
+[1.638s] -- Detecting C compiler ABI info
+[2.240s] -- Detecting C compiler ABI info - done
+[2.279s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.280s] -- Detecting C compile features
+[2.283s] -- Detecting C compile features - done
+[2.340s] -- Detecting CXX compiler ABI info
+[2.937s] -- Detecting CXX compiler ABI info - done
+[2.979s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.980s] -- Detecting CXX compile features
+[2.981s] -- Detecting CXX compile features - done
+[3.037s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.885s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[4.720s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[4.796s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.349s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.776s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[5.793s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[5.794s]   rosidl_generate_interfaces() the passed file 'msg/Num.msg' doesn't exist
+[5.795s]   relative to the CMAKE_CURRENT_SOURCE_DIR
+[5.795s]   '/home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces'
+[5.797s] Call Stack (most recent call first):
+[5.798s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[5.798s] 
+[5.799s] [0m
+[5.800s] -- Configuring incomplete, errors occurred!
+[5.815s] Invoked command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces

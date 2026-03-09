@@ -1,0 +1,2 @@
+Invoking command in '/home/admin/playground_ws/build/tutorial_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/playground_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/playground_ws/install/tutorial_interfaces
+Invoked command in '/home/admin/playground_ws/build/tutorial_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/playground_ws/src/tutorial_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/playground_ws/install/tutorial_interfaces

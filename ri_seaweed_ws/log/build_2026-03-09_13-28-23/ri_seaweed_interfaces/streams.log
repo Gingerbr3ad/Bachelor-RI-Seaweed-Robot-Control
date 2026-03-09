@@ -1,0 +1,18 @@
+[0.060s] Invoking command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/admin/ri_seaweed_ws/install/gripper:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces -- -j4 -l4
+[0.200s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.335s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.735s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.746s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.958s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.091s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.100s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:95 (message):
+[1.101s]   rosidl_generate_interfaces() the passed file 'msg/Gripper.msg' doesn't
+[1.101s]   exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[1.102s]   '/home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces'
+[1.103s] Call Stack (most recent call first):
+[1.104s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[1.104s] 
+[1.105s] [0m
+[1.106s] -- Configuring incomplete, errors occurred!
+[1.118s] gmake: *** [Makefile:815: cmake_check_build_system] Error 1
+[1.130s] Invoked command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/admin/ri_seaweed_ws/install/gripper:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces -- -j4 -l4

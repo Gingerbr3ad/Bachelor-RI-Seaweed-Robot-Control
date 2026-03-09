@@ -1,0 +1,103 @@
+[0.000000] (-) TimerEvent: {}
+[0.001059] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.002039] (-) JobUnselected: {'identifier': 'gripper_package'}
+[0.002685] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.003327] (-) JobUnselected: {'identifier': 'python_parameters'}
+[0.003494] (-) JobUnselected: {'identifier': 'tutorial_interfaces'}
+[0.003750] (py_srvcli) JobQueued: {'identifier': 'py_srvcli', 'dependencies': OrderedDict({'tutorial_interfaces': '/home/admin/playground_ws/install/tutorial_interfaces'})}
+[0.003944] (py_srvcli) JobStarted: {'identifier': 'py_srvcli'}
+[0.099133] (-) TimerEvent: {}
+[0.199968] (-) TimerEvent: {}
+[0.300775] (-) TimerEvent: {}
+[0.401428] (-) TimerEvent: {}
+[0.502119] (-) TimerEvent: {}
+[0.602882] (-) TimerEvent: {}
+[0.703643] (-) TimerEvent: {}
+[0.804349] (-) TimerEvent: {}
+[0.904981] (-) TimerEvent: {}
+[1.005825] (-) TimerEvent: {}
+[1.107294] (-) TimerEvent: {}
+[1.208881] (-) TimerEvent: {}
+[1.309651] (-) TimerEvent: {}
+[1.410374] (-) TimerEvent: {}
+[1.511744] (-) TimerEvent: {}
+[1.612437] (-) TimerEvent: {}
+[1.713159] (-) TimerEvent: {}
+[1.813978] (-) TimerEvent: {}
+[1.914694] (-) TimerEvent: {}
+[2.015374] (-) TimerEvent: {}
+[2.116023] (-) TimerEvent: {}
+[2.216762] (-) TimerEvent: {}
+[2.317384] (-) TimerEvent: {}
+[2.418079] (-) TimerEvent: {}
+[2.519173] (-) TimerEvent: {}
+[2.619906] (-) TimerEvent: {}
+[2.720760] (-) TimerEvent: {}
+[2.821411] (-) TimerEvent: {}
+[2.922078] (-) TimerEvent: {}
+[3.022818] (-) TimerEvent: {}
+[3.123544] (-) TimerEvent: {}
+[3.224200] (-) TimerEvent: {}
+[3.324873] (-) TimerEvent: {}
+[3.425625] (-) TimerEvent: {}
+[3.526335] (-) TimerEvent: {}
+[3.626996] (-) TimerEvent: {}
+[3.727875] (-) TimerEvent: {}
+[3.828652] (-) TimerEvent: {}
+[3.929466] (-) TimerEvent: {}
+[4.030411] (-) TimerEvent: {}
+[4.034217] (py_srvcli) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/py_srvcli', 'build', '--build-base', '/home/admin/playground_ws/build/py_srvcli/build', 'install', '--record', '/home/admin/playground_ws/build/py_srvcli/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/admin/playground_ws/src/py_srvcli', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admin', 'SSH_CLIENT': '10.0.0.126 57099 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/admin/playground_ws/install/tutorial_interfaces/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/helpers/browser.sh', 'HOME': '/home/admin', 'OLDPWD': '/home/admin/playground_ws/src/tutorial_interfaces/srv', 'TERM_PROGRAM_VERSION': '1.109.5', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-e6525f92-5a45-46fb-bc18-4f58cf831daf.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'COLCON_PREFIX_PATH': '/home/admin/playground_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'admin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'screen.xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'STY': '7760.pts-0.RI-Seaweed', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-87095713af.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/admin/playground_ws/install/py_srvcli:/home/admin/playground_ws/install/py_pubsub:/home/admin/playground_ws/install/tutorial_interfaces:/home/admin/playground_ws/install/gripper_package:/home/admin/playground_ws/install/cpp_pubsub:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'WINDOW': '0', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/admin/playground_ws/build/py_srvcli', 'SSH_CONNECTION': '10.0.0.126 57099 10.0.0.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'TERMCAP': 'SC|screen.xterm-256color|VT 100/ANSI X3.64 virtual terminal:DO=\\E[%dB:LE=\\E[%dD:RI=\\E[%dC:UP=\\E[%dA:bs:bt=\\E[Z:cd=\\E[J:ce=\\E[K:cl=\\E[H\\E[J:cm=\\E[%i%d;%dH:ct=\\E[3g:do=^J:nd=\\E[C:pt:rc=\\E8:rs=\\Ec:sc=\\E7:st=\\EH:up=\\EM:le=^H:bl=^G:cr=^M:it#8:ho=\\E[H:nw=\\EE:ta=^I:is=\\E)0:li#54:co#248:am:xn:xv:LP:sr=\\EM:al=\\E[L:AL=\\E[%dL:cs=\\E[%i%d;%dr:dl=\\E[M:DL=\\E[%dM:dc=\\E[P:DC=\\E[%dP:im=\\E[4h:ei=\\E[4l:mi:IC=\\E[%d@:ks=\\E[?1h\\E=:ke=\\E[?1l\\E>:vi=\\E[?25l:ve=\\E[34h\\E[?25h:vs=\\E[34l:ti=\\E[?1049h:te=\\E[?1049l:us=\\E[4m:ue=\\E[24m:so=\\E[3m:se=\\E[23m:mb=\\E[5m:md=\\E[1m:mh=\\E[2m:mr=\\E[7m:me=\\E[m:ms:Co#8:pa#64:AF=\\E[3%dm:AB=\\E[4%dm:op=\\E[39;49m:AX:vb=\\Eg:G0:as=\\E(0:ae=\\E(B:ac=\\140\\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:po=\\E[5i:pf=\\E[4i:Km=\\E[<:k0=\\E[10~:k1=\\EOP:k2=\\EOQ:k3=\\EOR:k4=\\EOS:k5=\\E[15~:k6=\\E[17~:k7=\\E[18~:k8=\\E[19~:k9=\\E[20~:k;=\\E[21~:F1=\\E[23~:F2=\\E[24~:kB=\\E[Z:kh=\\E[1~:@1=\\E[1~:kH=\\E[4~:@7=\\E[4~:kN=\\E[6~:kP=\\E[5~:kI=\\E[2~:kD=\\E[3~:ku=\\EOA:kd=\\EOB:kr=\\EOC:kl=\\EOD:km:', 'PYTHONPATH': '/home/admin/playground_ws/build/py_srvcli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin/playground_ws/install/py_srvcli/lib/python3.12/site-packages:/home/admin/playground_ws/install/tutorial_interfaces/lib/python3.12/site-packages:/home/admin/playground_ws/install/py_srvcli/lib/python3.12/site-packages:/home/admin/playground_ws/install/py_pubsub/lib/python3.12/site-packages:/home/admin/playground_ws/install/gripper_package/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/admin/playground_ws/install/tutorial_interfaces:/home/admin/playground_ws/install/cpp_pubsub:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[4.130608] (-) TimerEvent: {}
+[4.231394] (-) TimerEvent: {}
+[4.332347] (-) TimerEvent: {}
+[4.433099] (-) TimerEvent: {}
+[4.533886] (-) TimerEvent: {}
+[4.634678] (-) TimerEvent: {}
+[4.735345] (-) TimerEvent: {}
+[4.835999] (-) TimerEvent: {}
+[4.936750] (-) TimerEvent: {}
+[5.037398] (-) TimerEvent: {}
+[5.138039] (-) TimerEvent: {}
+[5.238786] (-) TimerEvent: {}
+[5.297289] (py_srvcli) StdoutLine: {'line': b'running egg_info\n'}
+[5.338964] (-) TimerEvent: {}
+[5.390749] (py_srvcli) StdoutLine: {'line': b'writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO\n'}
+[5.392075] (py_srvcli) StdoutLine: {'line': b'writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt\n'}
+[5.393405] (py_srvcli) StdoutLine: {'line': b'writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt\n'}
+[5.394455] (py_srvcli) StdoutLine: {'line': b'writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt\n'}
+[5.395309] (py_srvcli) StdoutLine: {'line': b'writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt\n'}
+[5.439130] (-) TimerEvent: {}
+[5.539868] (-) TimerEvent: {}
+[5.584168] (py_srvcli) StdoutLine: {'line': b"reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[5.585880] (py_srvcli) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[5.588311] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[5.589205] (py_srvcli) StdoutLine: {'line': b'running build\n'}
+[5.589855] (py_srvcli) StdoutLine: {'line': b'running build_py\n'}
+[5.590555] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/service_member_function.py -> /home/admin/playground_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[5.592301] (py_srvcli) StdoutLine: {'line': b'running install\n'}
+[5.616795] (py_srvcli) StdoutLine: {'line': b'running install_lib\n'}
+[5.640041] (-) TimerEvent: {}
+[5.710609] (py_srvcli) StdoutLine: {'line': b'copying /home/admin/playground_ws/build/py_srvcli/build/lib/py_srvcli/service_member_function.py -> /home/admin/playground_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli\n'}
+[5.714194] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/admin/playground_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli/service_member_function.py to service_member_function.cpython-312.pyc\n'}
+[5.717394] (py_srvcli) StdoutLine: {'line': b'running install_data\n'}
+[5.718457] (py_srvcli) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.740215] (-) TimerEvent: {}
+[5.818089] (py_srvcli) StdoutLine: {'line': b"removing '/home/admin/playground_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[5.820392] (py_srvcli) StdoutLine: {'line': b'Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/admin/playground_ws/install/py_srvcli/lib/python3.12/site-packages/py_srvcli-0.0.0-py3.12.egg-info\n'}
+[5.826687] (py_srvcli) StdoutLine: {'line': b'running install_scripts\n'}
+[5.840387] (-) TimerEvent: {}
+[5.941145] (-) TimerEvent: {}
+[6.042052] (-) TimerEvent: {}
+[6.142765] (-) TimerEvent: {}
+[6.243492] (-) TimerEvent: {}
+[6.344316] (-) TimerEvent: {}
+[6.444997] (-) TimerEvent: {}
+[6.545752] (-) TimerEvent: {}
+[6.568564] (py_srvcli) StdoutLine: {'line': b'Installing client script to /home/admin/playground_ws/install/py_srvcli/lib/py_srvcli\n'}
+[6.574971] (py_srvcli) StdoutLine: {'line': b'Installing service script to /home/admin/playground_ws/install/py_srvcli/lib/py_srvcli\n'}
+[6.577510] (py_srvcli) StdoutLine: {'line': b"writing list of installed files to '/home/admin/playground_ws/build/py_srvcli/install.log'\n"}
+[6.646027] (-) TimerEvent: {}
+[6.726941] (py_srvcli) CommandEnded: {'returncode': 0}
+[6.746502] (-) TimerEvent: {}
+[6.776578] (py_srvcli) JobEnded: {'identifier': 'py_srvcli', 'rc': 0}
+[6.780162] (-) EventReactorShutdown: {}

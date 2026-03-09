@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-83501d6e139ce021c5bd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "ri_seaweed_interfaces__py",
+					"jsonFile" : "directory-ri_seaweed_interfaces__py-82d2d31beb28aff3d4d3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces/ri_seaweed_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ri_seaweed_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_ri_seaweed_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_ri_seaweed_interfaces_egg-8ad1a987c964dcdf48f8.json",
+					"name" : "ament_cmake_python_build_ri_seaweed_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_ri_seaweed_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_ri_seaweed_interfaces-928398a3a9f1dcb7eab8.json",
+					"name" : "ament_cmake_python_copy_ri_seaweed_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces-2d694d80006cb6ca016c.json",
+					"name" : "ri_seaweed_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces__cpp-92c436f4878d2511db56.json",
+					"name" : "ri_seaweed_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ri_seaweed_interfaces__py::@ba779f0e0ee0a7ba72f1",
+					"jsonFile" : "target-ri_seaweed_interfaces__py-5bcf3436c9bcd43486f8.json",
+					"name" : "ri_seaweed_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces__rosidl_generator_c-4c705b1bfb6f728f82be.json",
+					"name" : "ri_seaweed_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces__rosidl_generator_py-6a7ac53e42dcb97b315f.json",
+					"name" : "ri_seaweed_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces__rosidl_generator_type_description-23a7c553415e466ca91b.json",
+					"name" : "ri_seaweed_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces__rosidl_typesupport_c-7740add6eff27135a5a3.json",
+					"name" : "ri_seaweed_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces__rosidl_typesupport_cpp-5e83d81a9d57e062e0aa.json",
+					"name" : "ri_seaweed_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces__rosidl_typesupport_fastrtps_c-fcc64197c2d87df863ea.json",
+					"name" : "ri_seaweed_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp-193904d6267f55513d73.json",
+					"name" : "ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces__rosidl_typesupport_introspection_c-af0c6d8af1d42b630556.json",
+					"name" : "ri_seaweed_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces__rosidl_typesupport_introspection_cpp-665c038fd7af159e20ef.json",
+					"name" : "ri_seaweed_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces_s__rosidl_typesupport_c-d97be762a3679a3588d0.json",
+					"name" : "ri_seaweed_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c-0883e01abc883ea49347.json",
+					"name" : "ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c-7af931a5a985551aacd0.json",
+					"name" : "ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ri_seaweed_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ri_seaweed_interfaces_uninstall-2aba8d9ae65661b03e01.json",
+					"name" : "ri_seaweed_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-57ff0bce73b7a5a34319.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces",
+		"source" : "/home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

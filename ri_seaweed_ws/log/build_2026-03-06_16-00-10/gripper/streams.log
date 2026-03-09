@@ -1,0 +1,26 @@
+[4.093s] Invoking command in '/home/admin/ri_seaweed_ws/src/gripper': PYTHONPATH=/home/admin/ri_seaweed_ws/build/gripper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages:/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages:/home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gripper build --build-base /home/admin/ri_seaweed_ws/build/gripper/build install --record /home/admin/ri_seaweed_ws/build/gripper/install.log --single-version-externally-managed install_data
+[5.358s] running egg_info
+[5.452s] writing ../../build/gripper/gripper.egg-info/PKG-INFO
+[5.453s] writing dependency_links to ../../build/gripper/gripper.egg-info/dependency_links.txt
+[5.455s] writing entry points to ../../build/gripper/gripper.egg-info/entry_points.txt
+[5.455s] writing requirements to ../../build/gripper/gripper.egg-info/requires.txt
+[5.457s] writing top-level names to ../../build/gripper/gripper.egg-info/top_level.txt
+[5.650s] reading manifest file '../../build/gripper/gripper.egg-info/SOURCES.txt'
+[5.651s] adding license file 'LICENSE'
+[5.654s] writing manifest file '../../build/gripper/gripper.egg-info/SOURCES.txt'
+[5.655s] running build
+[5.655s] running build_py
+[5.656s] copying gripper/gripper_controller.py -> /home/admin/ri_seaweed_ws/build/gripper/build/lib/gripper
+[5.658s] running install
+[5.682s] running install_lib
+[5.781s] copying /home/admin/ri_seaweed_ws/build/gripper/build/lib/gripper/gripper_controller.py -> /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper
+[5.784s] byte-compiling /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper/gripper_controller.py to gripper_controller.cpython-312.pyc
+[5.788s] running install_data
+[5.788s] running install_egg_info
+[5.890s] removing '/home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper-0.0.0-py3.12.egg-info' (and everything under it)
+[5.892s] Copying ../../build/gripper/gripper.egg-info to /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper-0.0.0-py3.12.egg-info
+[5.898s] running install_scripts
+[6.608s] Installing gripper_controller script to /home/admin/ri_seaweed_ws/install/gripper/lib/gripper
+[6.609s] Installing gripper_driver script to /home/admin/ri_seaweed_ws/install/gripper/lib/gripper
+[6.611s] writing list of installed files to '/home/admin/ri_seaweed_ws/build/gripper/install.log'
+[6.760s] Invoked command in '/home/admin/ri_seaweed_ws/src/gripper' returned '0': PYTHONPATH=/home/admin/ri_seaweed_ws/build/gripper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages:/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages:/home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/gripper build --build-base /home/admin/ri_seaweed_ws/build/gripper/build install --record /home/admin/ri_seaweed_ws/build/gripper/install.log --single-version-externally-managed install_data

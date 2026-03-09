@@ -1,0 +1,113 @@
+[0.000000] (-) TimerEvent: {}
+[0.001027] (gripper_package) JobQueued: {'identifier': 'gripper_package', 'dependencies': OrderedDict()}
+[0.002057] (gripper_package) JobStarted: {'identifier': 'gripper_package'}
+[0.099195] (-) TimerEvent: {}
+[0.199852] (-) TimerEvent: {}
+[0.300467] (-) TimerEvent: {}
+[0.401162] (-) TimerEvent: {}
+[0.501850] (-) TimerEvent: {}
+[0.602478] (-) TimerEvent: {}
+[0.703235] (-) TimerEvent: {}
+[0.803919] (-) TimerEvent: {}
+[0.904487] (-) TimerEvent: {}
+[1.005089] (-) TimerEvent: {}
+[1.105838] (-) TimerEvent: {}
+[1.206701] (-) TimerEvent: {}
+[1.307274] (-) TimerEvent: {}
+[1.407970] (-) TimerEvent: {}
+[1.508555] (-) TimerEvent: {}
+[1.609196] (-) TimerEvent: {}
+[1.709780] (-) TimerEvent: {}
+[1.810382] (-) TimerEvent: {}
+[1.911050] (-) TimerEvent: {}
+[2.011697] (-) TimerEvent: {}
+[2.112287] (-) TimerEvent: {}
+[2.212974] (-) TimerEvent: {}
+[2.313563] (-) TimerEvent: {}
+[2.414170] (-) TimerEvent: {}
+[2.514815] (-) TimerEvent: {}
+[2.615419] (-) TimerEvent: {}
+[2.716059] (-) TimerEvent: {}
+[2.816736] (-) TimerEvent: {}
+[2.917315] (-) TimerEvent: {}
+[3.017944] (-) TimerEvent: {}
+[3.118524] (-) TimerEvent: {}
+[3.219159] (-) TimerEvent: {}
+[3.319737] (-) TimerEvent: {}
+[3.420323] (-) TimerEvent: {}
+[3.520936] (-) TimerEvent: {}
+[3.621544] (-) TimerEvent: {}
+[3.722182] (-) TimerEvent: {}
+[3.822758] (-) TimerEvent: {}
+[3.923366] (-) TimerEvent: {}
+[4.024049] (-) TimerEvent: {}
+[4.124842] (-) TimerEvent: {}
+[4.226121] (-) TimerEvent: {}
+[4.317025] (gripper_package) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gripper_package', 'build', '--build-base', '/home/admin/ros2_ws_test1/build/gripper_package/build', 'install', '--record', '/home/admin/ros2_ws_test1/build/gripper_package/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/admin/ros2_ws_test1/src/gripper_package', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admin', 'SSH_CLIENT': '10.0.0.126 51465 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/admin/ros_ws/install/examples_rclcpp_wait_set/lib:/home/admin/ros_ws/install/examples_rclcpp_minimal_subscriber/lib:/home/admin/ros_ws/install/examples_rclcpp_minimal_composition/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'BROWSER': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/helpers/browser.sh', 'HOME': '/home/admin', 'OLDPWD': '/home/admin/ros2_ws_test1/src', 'TERM_PROGRAM_VERSION': '1.109.5', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-002952b0-60e8-40fa-a313-1cc582c36b8e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/admin/ros_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'admin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'screen.xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/home/admin/.vscode-server/cli/servers/Stable-072586267e68ece9a47aa43f8c108e0dcbf44622/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'C.UTF-8', 'STY': '22291.pts-4.RI-Seaweed', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cb13cc6d7b.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/admin/ros_ws/install/launch_testing_examples:/home/admin/ros_ws/install/examples_rclpy_pointcloud_publisher:/home/admin/ros_ws/install/examples_rclpy_minimal_subscriber:/home/admin/ros_ws/install/examples_rclpy_minimal_service:/home/admin/ros_ws/install/examples_rclpy_minimal_publisher:/home/admin/ros_ws/install/examples_rclpy_minimal_client:/home/admin/ros_ws/install/examples_rclpy_minimal_action_server:/home/admin/ros_ws/install/examples_rclpy_minimal_action_client:/home/admin/ros_ws/install/examples_rclpy_guard_conditions:/home/admin/ros_ws/install/examples_rclpy_executors:/home/admin/ros_ws/install/examples_rclcpp_wait_set:/home/admin/ros_ws/install/examples_rclcpp_multithreaded_executor:/home/admin/ros_ws/install/examples_rclcpp_minimal_timer:/home/admin/ros_ws/install/examples_rclcpp_minimal_subscriber:/home/admin/ros_ws/install/examples_rclcpp_minimal_service:/home/admin/ros_ws/install/examples_rclcpp_minimal_publisher:/home/admin/ros_ws/install/examples_rclcpp_minimal_composition:/home/admin/ros_ws/install/examples_rclcpp_minimal_client:/home/admin/ros_ws/install/examples_rclcpp_minimal_action_server:/home/admin/ros_ws/install/examples_rclcpp_minimal_action_client:/home/admin/ros_ws/install/examples_rclcpp_cbg_executor:/home/admin/ros_ws/install/examples_rclcpp_async_client:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'WINDOW': '0', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/admin/ros2_ws_test1/build/gripper_package', 'SSH_CONNECTION': '10.0.0.126 51465 10.0.0.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'TERMCAP': 'SC|screen.xterm-256color|VT 100/ANSI X3.64 virtual terminal:DO=\\E[%dB:LE=\\E[%dD:RI=\\E[%dC:UP=\\E[%dA:bs:bt=\\E[Z:cd=\\E[J:ce=\\E[K:cl=\\E[H\\E[J:cm=\\E[%i%d;%dH:ct=\\E[3g:do=^J:nd=\\E[C:pt:rc=\\E8:rs=\\Ec:sc=\\E7:st=\\EH:up=\\EM:le=^H:bl=^G:cr=^M:it#8:ho=\\E[H:nw=\\EE:ta=^I:is=\\E)0:li#31:co#260:am:xn:xv:LP:sr=\\EM:al=\\E[L:AL=\\E[%dL:cs=\\E[%i%d;%dr:dl=\\E[M:DL=\\E[%dM:dc=\\E[P:DC=\\E[%dP:im=\\E[4h:ei=\\E[4l:mi:IC=\\E[%d@:ks=\\E[?1h\\E=:ke=\\E[?1l\\E>:vi=\\E[?25l:ve=\\E[34h\\E[?25h:vs=\\E[34l:ti=\\E[?1049h:te=\\E[?1049l:us=\\E[4m:ue=\\E[24m:so=\\E[3m:se=\\E[23m:mb=\\E[5m:md=\\E[1m:mh=\\E[2m:mr=\\E[7m:me=\\E[m:ms:Co#8:pa#64:AF=\\E[3%dm:AB=\\E[4%dm:op=\\E[39;49m:AX:vb=\\Eg:G0:as=\\E(0:ae=\\E(B:ac=\\140\\140aaffggjjkkllmmnnooppqqrrssttuuvvwwxxyyzz{{||}}~~..--++,,hhII00:po=\\E[5i:pf=\\E[4i:Km=\\E[<:k0=\\E[10~:k1=\\EOP:k2=\\EOQ:k3=\\EOR:k4=\\EOS:k5=\\E[15~:k6=\\E[17~:k7=\\E[18~:k8=\\E[19~:k9=\\E[20~:k;=\\E[21~:F1=\\E[23~:F2=\\E[24~:kB=\\E[Z:kh=\\E[1~:@1=\\E[1~:kH=\\E[4~:@7=\\E[4~:kN=\\E[6~:kP=\\E[5~:kI=\\E[2~:kD=\\E[3~:ku=\\EOA:kd=\\EOB:kr=\\EOC:kl=\\EOD:km:', 'PYTHONPATH': '/home/admin/ros2_ws_test1/build/gripper_package/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin/ros2_ws_test1/install/gripper_package/lib/python3.12/site-packages:/home/admin/ros_ws/build/launch_testing_examples:/home/admin/ros_ws/install/launch_testing_examples/lib/python3.12/site-packages:/home/admin/ros_ws/build/examples_rclpy_pointcloud_publisher:/home/admin/ros_ws/install/examples_rclpy_pointcloud_publisher/lib/python3.12/site-packages:/home/admin/ros_ws/build/examples_rclpy_minimal_subscriber:/home/admin/ros_ws/install/examples_rclpy_minimal_subscriber/lib/python3.12/site-packages:/home/admin/ros_ws/build/examples_rclpy_minimal_service:/home/admin/ros_ws/install/examples_rclpy_minimal_service/lib/python3.12/site-packages:/home/admin/ros_ws/build/examples_rclpy_minimal_publisher:/home/admin/ros_ws/install/examples_rclpy_minimal_publisher/lib/python3.12/site-packages:/home/admin/ros_ws/build/examples_rclpy_minimal_client:/home/admin/ros_ws/install/examples_rclpy_minimal_client/lib/python3.12/site-packages:/home/admin/ros_ws/build/examples_rclpy_minimal_action_server:/home/admin/ros_ws/install/examples_rclpy_minimal_action_server/lib/python3.12/site-packages:/home/admin/ros_ws/build/examples_rclpy_minimal_action_client:/home/admin/ros_ws/install/examples_rclpy_minimal_action_client/lib/python3.12/site-packages:/home/admin/ros_ws/build/examples_rclpy_guard_conditions:/home/admin/ros_ws/install/examples_rclpy_guard_conditions/lib/python3.12/site-packages:/home/admin/ros_ws/build/examples_rclpy_executors:/home/admin/ros_ws/install/examples_rclpy_executors/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/admin/ros_ws/install/examples_rclcpp_wait_set:/home/admin/ros_ws/install/examples_rclcpp_multithreaded_executor:/home/admin/ros_ws/install/examples_rclcpp_minimal_timer:/home/admin/ros_ws/install/examples_rclcpp_minimal_subscriber:/home/admin/ros_ws/install/examples_rclcpp_minimal_service:/home/admin/ros_ws/install/examples_rclcpp_minimal_publisher:/home/admin/ros_ws/install/examples_rclcpp_minimal_composition:/home/admin/ros_ws/install/examples_rclcpp_minimal_client:/home/admin/ros_ws/install/examples_rclcpp_minimal_action_server:/home/admin/ros_ws/install/examples_rclcpp_minimal_action_client:/home/admin/ros_ws/install/examples_rclcpp_cbg_executor:/home/admin/ros_ws/install/examples_rclcpp_async_client:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[4.328301] (-) TimerEvent: {}
+[4.429409] (-) TimerEvent: {}
+[4.530083] (-) TimerEvent: {}
+[4.630747] (-) TimerEvent: {}
+[4.731350] (-) TimerEvent: {}
+[4.832002] (-) TimerEvent: {}
+[4.932650] (-) TimerEvent: {}
+[5.033232] (-) TimerEvent: {}
+[5.133889] (-) TimerEvent: {}
+[5.234473] (-) TimerEvent: {}
+[5.335227] (-) TimerEvent: {}
+[5.435871] (-) TimerEvent: {}
+[5.536439] (-) TimerEvent: {}
+[5.637138] (-) TimerEvent: {}
+[5.706896] (gripper_package) StdoutLine: {'line': b'running egg_info\n'}
+[5.708144] (gripper_package) StdoutLine: {'line': b'creating ../../build/gripper_package/gripper_package.egg-info\n'}
+[5.737309] (-) TimerEvent: {}
+[5.805241] (gripper_package) StdoutLine: {'line': b'writing ../../build/gripper_package/gripper_package.egg-info/PKG-INFO\n'}
+[5.806482] (gripper_package) StdoutLine: {'line': b'writing dependency_links to ../../build/gripper_package/gripper_package.egg-info/dependency_links.txt\n'}
+[5.807261] (gripper_package) StdoutLine: {'line': b'writing entry points to ../../build/gripper_package/gripper_package.egg-info/entry_points.txt\n'}
+[5.807946] (gripper_package) StdoutLine: {'line': b'writing requirements to ../../build/gripper_package/gripper_package.egg-info/requires.txt\n'}
+[5.808510] (gripper_package) StdoutLine: {'line': b'writing top-level names to ../../build/gripper_package/gripper_package.egg-info/top_level.txt\n'}
+[5.809158] (gripper_package) StdoutLine: {'line': b"writing manifest file '../../build/gripper_package/gripper_package.egg-info/SOURCES.txt'\n"}
+[5.837479] (-) TimerEvent: {}
+[5.938075] (-) TimerEvent: {}
+[6.005977] (gripper_package) StdoutLine: {'line': b"reading manifest file '../../build/gripper_package/gripper_package.egg-info/SOURCES.txt'\n"}
+[6.008977] (gripper_package) StdoutLine: {'line': b"writing manifest file '../../build/gripper_package/gripper_package.egg-info/SOURCES.txt'\n"}
+[6.009838] (gripper_package) StdoutLine: {'line': b'running build\n'}
+[6.010458] (gripper_package) StdoutLine: {'line': b'running build_py\n'}
+[6.011322] (gripper_package) StdoutLine: {'line': b'creating /home/admin/ros2_ws_test1/build/gripper_package/build\n'}
+[6.012136] (gripper_package) StdoutLine: {'line': b'creating /home/admin/ros2_ws_test1/build/gripper_package/build/lib\n'}
+[6.012589] (gripper_package) StdoutLine: {'line': b'creating /home/admin/ros2_ws_test1/build/gripper_package/build/lib/gripper_package\n'}
+[6.013155] (gripper_package) StdoutLine: {'line': b'copying gripper_package/gripper_node.py -> /home/admin/ros2_ws_test1/build/gripper_package/build/lib/gripper_package\n'}
+[6.013862] (gripper_package) StdoutLine: {'line': b'copying gripper_package/__init__.py -> /home/admin/ros2_ws_test1/build/gripper_package/build/lib/gripper_package\n'}
+[6.014705] (gripper_package) StdoutLine: {'line': b'running install\n'}
+[6.038242] (-) TimerEvent: {}
+[6.040188] (gripper_package) StdoutLine: {'line': b'running install_lib\n'}
+[6.137814] (gripper_package) StdoutLine: {'line': b'creating /home/admin/ros2_ws_test1/install/gripper_package/lib/python3.12/site-packages/gripper_package\n'}
+[6.138341] (-) TimerEvent: {}
+[6.138894] (gripper_package) StdoutLine: {'line': b'copying /home/admin/ros2_ws_test1/build/gripper_package/build/lib/gripper_package/gripper_node.py -> /home/admin/ros2_ws_test1/install/gripper_package/lib/python3.12/site-packages/gripper_package\n'}
+[6.139491] (gripper_package) StdoutLine: {'line': b'copying /home/admin/ros2_ws_test1/build/gripper_package/build/lib/gripper_package/__init__.py -> /home/admin/ros2_ws_test1/install/gripper_package/lib/python3.12/site-packages/gripper_package\n'}
+[6.143075] (gripper_package) StdoutLine: {'line': b'byte-compiling /home/admin/ros2_ws_test1/install/gripper_package/lib/python3.12/site-packages/gripper_package/gripper_node.py to gripper_node.cpython-312.pyc\n'}
+[6.145147] (gripper_package) StdoutLine: {'line': b'byte-compiling /home/admin/ros2_ws_test1/install/gripper_package/lib/python3.12/site-packages/gripper_package/__init__.py to __init__.cpython-312.pyc\n'}
+[6.146757] (gripper_package) StdoutLine: {'line': b'running install_data\n'}
+[6.147389] (gripper_package) StdoutLine: {'line': b'creating /home/admin/ros2_ws_test1/install/gripper_package/share/ament_index\n'}
+[6.147976] (gripper_package) StdoutLine: {'line': b'creating /home/admin/ros2_ws_test1/install/gripper_package/share/ament_index/resource_index\n'}
+[6.148477] (gripper_package) StdoutLine: {'line': b'creating /home/admin/ros2_ws_test1/install/gripper_package/share/ament_index/resource_index/packages\n'}
+[6.149096] (gripper_package) StdoutLine: {'line': b'copying resource/gripper_package -> /home/admin/ros2_ws_test1/install/gripper_package/share/ament_index/resource_index/packages\n'}
+[6.149581] (gripper_package) StdoutLine: {'line': b'copying package.xml -> /home/admin/ros2_ws_test1/install/gripper_package/share/gripper_package\n'}
+[6.150285] (gripper_package) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.238527] (-) TimerEvent: {}
+[6.253842] (gripper_package) StdoutLine: {'line': b'Copying ../../build/gripper_package/gripper_package.egg-info to /home/admin/ros2_ws_test1/install/gripper_package/lib/python3.12/site-packages/gripper_package-0.0.0-py3.12.egg-info\n'}
+[6.259897] (gripper_package) StdoutLine: {'line': b'running install_scripts\n'}
+[6.338704] (-) TimerEvent: {}
+[6.439282] (-) TimerEvent: {}
+[6.539867] (-) TimerEvent: {}
+[6.640503] (-) TimerEvent: {}
+[6.741209] (-) TimerEvent: {}
+[6.841838] (-) TimerEvent: {}
+[6.942515] (-) TimerEvent: {}
+[7.034051] (gripper_package) StdoutLine: {'line': b'Installing gripper_node script to /home/admin/ros2_ws_test1/install/gripper_package/lib/gripper_package\n'}
+[7.035626] (gripper_package) StdoutLine: {'line': b"writing list of installed files to '/home/admin/ros2_ws_test1/build/gripper_package/install.log'\n"}
+[7.042841] (-) TimerEvent: {}
+[7.143895] (-) TimerEvent: {}
+[7.185767] (gripper_package) CommandEnded: {'returncode': 0}
+[7.231247] (gripper_package) JobEnded: {'identifier': 'gripper_package', 'rc': 0}
+[7.234531] (-) EventReactorShutdown: {}

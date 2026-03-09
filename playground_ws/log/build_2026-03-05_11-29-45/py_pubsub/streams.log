@@ -1,0 +1,42 @@
+[4.499s] Invoking command in '/home/admin/playground_ws/src/py_pubsub': PYTHONPATH=/home/admin/playground_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin/playground_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/admin/playground_ws/build/py_pubsub/build install --record /home/admin/playground_ws/build/py_pubsub/install.log --single-version-externally-managed install_data
+[5.751s] running egg_info
+[5.752s] creating ../../build/py_pubsub/py_pubsub.egg-info
+[5.844s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[5.846s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[5.847s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[5.847s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[5.848s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[5.849s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[6.037s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[6.039s] adding license file 'LICENSE'
+[6.041s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[6.041s] running build
+[6.042s] running build_py
+[6.045s] creating /home/admin/playground_ws/build/py_pubsub/build
+[6.046s] creating /home/admin/playground_ws/build/py_pubsub/build/lib
+[6.047s] creating /home/admin/playground_ws/build/py_pubsub/build/lib/py_pubsub
+[6.048s] copying py_pubsub/__init__.py -> /home/admin/playground_ws/build/py_pubsub/build/lib/py_pubsub
+[6.048s] copying py_pubsub/subscriber_member_function.py -> /home/admin/playground_ws/build/py_pubsub/build/lib/py_pubsub
+[6.049s] copying py_pubsub/publisher_member_function.py -> /home/admin/playground_ws/build/py_pubsub/build/lib/py_pubsub
+[6.050s] running install
+[6.079s] running install_lib
+[6.202s] creating /home/admin/playground_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[6.203s] copying /home/admin/playground_ws/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/admin/playground_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[6.204s] copying /home/admin/playground_ws/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/admin/playground_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[6.205s] copying /home/admin/playground_ws/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/admin/playground_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub
+[6.208s] byte-compiling /home/admin/playground_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/__init__.py to __init__.cpython-312.pyc
+[6.210s] byte-compiling /home/admin/playground_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-312.pyc
+[6.212s] byte-compiling /home/admin/playground_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-312.pyc
+[6.215s] running install_data
+[6.217s] creating /home/admin/playground_ws/install/py_pubsub/share/ament_index
+[6.218s] creating /home/admin/playground_ws/install/py_pubsub/share/ament_index/resource_index
+[6.218s] creating /home/admin/playground_ws/install/py_pubsub/share/ament_index/resource_index/packages
+[6.219s] copying resource/py_pubsub -> /home/admin/playground_ws/install/py_pubsub/share/ament_index/resource_index/packages
+[6.219s] copying package.xml -> /home/admin/playground_ws/install/py_pubsub/share/py_pubsub
+[6.220s] running install_egg_info
+[6.319s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/admin/playground_ws/install/py_pubsub/lib/python3.12/site-packages/py_pubsub-0.0.0-py3.12.egg-info
+[6.325s] running install_scripts
+[7.030s] Installing listener script to /home/admin/playground_ws/install/py_pubsub/lib/py_pubsub
+[7.031s] Installing talker script to /home/admin/playground_ws/install/py_pubsub/lib/py_pubsub
+[7.032s] writing list of installed files to '/home/admin/playground_ws/build/py_pubsub/install.log'
+[7.182s] Invoked command in '/home/admin/playground_ws/src/py_pubsub' returned '0': PYTHONPATH=/home/admin/playground_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin/playground_ws/install/py_pubsub/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/admin/playground_ws/build/py_pubsub/build install --record /home/admin/playground_ws/build/py_pubsub/install.log --single-version-externally-managed install_data

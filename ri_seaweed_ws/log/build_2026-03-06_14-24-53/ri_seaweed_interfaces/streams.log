@@ -1,0 +1,51 @@
+[0.055s] Invoking command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces
+[0.124s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.215s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.225s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.416s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.543s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.851s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[2.852s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[2.853s]   ri_seaweed_interfaces --arguments-file
+[2.854s]   /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces/rosidl_adapter__arguments__ri_seaweed_interfaces.json
+[2.855s]   --output-dir
+[2.856s]   /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces/rosidl_adapter/ri_seaweed_interfaces
+[2.857s]   --output-file
+[2.858s]   /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces/rosidl_adapter/ri_seaweed_interfaces.idls)
+[2.860s]   returned error code 1:
+[2.862s] 
+[2.865s]   Traceback (most recent call last):
+[2.868s] 
+[2.870s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[2.872s]     File "<frozen runpy>", line 88, in _run_code
+[2.874s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[2.874s]       sys.exit(main())
+[2.875s]                ^^^^^^
+[2.876s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[2.877s]       abs_idl_file = convert_to_idl(
+[2.878s]                      ^^^^^^^^^^^^^^^
+[2.881s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[2.883s]       return convert_msg_to_idl(
+[2.884s]              ^^^^^^^^^^^^^^^^^^^
+[2.886s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[2.887s]       msg = parse_message_string(package_name, input_file.stem, content)
+[2.888s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2.889s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 545, in parse_message_string
+[2.891s]       msg = MessageSpecification(pkg_name, msg_name, fields, constants)
+[2.893s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2.895s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 389, in __init__
+[2.895s]       self.base_type = BaseType(
+[2.896s]                        ^^^^^^^^^
+[2.896s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[2.897s]       raise InvalidResourceName(
+[2.898s] 
+[2.898s]   rosidl_adapter.parser.InvalidResourceName: 'gripper' is an invalid message
+[2.898s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[2.899s] 
+[2.899s] Call Stack (most recent call first):
+[2.900s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[2.900s]   CMakeLists.txt:14 (rosidl_generate_interfaces)
+[2.901s] 
+[2.901s] [0m
+[2.902s] -- Configuring incomplete, errors occurred!
+[2.903s] Invoked command in '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces -DCMAKE_INSTALL_PREFIX=/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces

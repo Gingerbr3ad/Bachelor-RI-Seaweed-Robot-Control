@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from ri_seaweed_interfaces/msg/Gripper.msg
+// generated code does not contain a copyright notice
+
+
+module ri_seaweed_interfaces {
+  module msg {
+    struct Gripper {
+      boolean gripper_state;
+
+      boolean close_request;
+    };
+  };
+};

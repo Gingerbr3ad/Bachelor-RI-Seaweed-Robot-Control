@@ -1,0 +1,509 @@
+[0.000000] (-) TimerEvent: {}
+[0.000672] (gripper) JobQueued: {'identifier': 'gripper', 'dependencies': OrderedDict()}
+[0.000903] (ri_seaweed_interfaces) JobQueued: {'identifier': 'ri_seaweed_interfaces', 'dependencies': OrderedDict()}
+[0.006738] (gripper) JobStarted: {'identifier': 'gripper'}
+[0.099213] (-) TimerEvent: {}
+[0.112493] (ri_seaweed_interfaces) JobStarted: {'identifier': 'ri_seaweed_interfaces'}
+[0.199443] (-) TimerEvent: {}
+[0.304175] (-) TimerEvent: {}
+[0.405278] (-) TimerEvent: {}
+[0.507668] (-) TimerEvent: {}
+[0.611184] (-) TimerEvent: {}
+[0.712304] (-) TimerEvent: {}
+[0.813247] (-) TimerEvent: {}
+[0.916738] (-) TimerEvent: {}
+[1.020148] (-) TimerEvent: {}
+[1.121749] (-) TimerEvent: {}
+[1.226212] (-) TimerEvent: {}
+[1.327243] (-) TimerEvent: {}
+[1.432349] (-) TimerEvent: {}
+[1.533548] (-) TimerEvent: {}
+[1.638210] (-) TimerEvent: {}
+[1.739737] (-) TimerEvent: {}
+[1.842612] (-) TimerEvent: {}
+[1.947605] (-) TimerEvent: {}
+[2.048913] (-) TimerEvent: {}
+[2.055497] (ri_seaweed_interfaces) JobProgress: {'identifier': 'ri_seaweed_interfaces', 'progress': 'cmake'}
+[2.065804] (ri_seaweed_interfaces) JobProgress: {'identifier': 'ri_seaweed_interfaces', 'progress': 'build'}
+[2.070903] (ri_seaweed_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admin', 'SSH_CLIENT': '10.0.0.126 57274 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh', 'HOME': '/home/admin', 'OLDPWD': '/home/admin/ri_seaweed_ws/src', 'TERM_PROGRAM_VERSION': '1.110.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-bf3f620d-6000-4237-b21a-d60542ed0753.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'admin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-47b8c5bef1c488a4.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/admin/.vscode-server/data/User/workspaceStorage/e69a6fc4da48aef553f5632a4d14a5f0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-b75a3c0d0d.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces', 'SSH_CONNECTION': '10.0.0.126 57274 10.0.0.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[2.150193] (-) TimerEvent: {}
+[2.254413] (-) TimerEvent: {}
+[2.357207] (-) TimerEvent: {}
+[2.425308] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[2.458167] (-) TimerEvent: {}
+[2.561146] (-) TimerEvent: {}
+[2.639442] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.664118] (-) TimerEvent: {}
+[2.764994] (-) TimerEvent: {}
+[2.867172] (-) TimerEvent: {}
+[2.969245] (-) TimerEvent: {}
+[3.072280] (-) TimerEvent: {}
+[3.182106] (-) TimerEvent: {}
+[3.283314] (-) TimerEvent: {}
+[3.301540] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[3.333153] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.384634] (-) TimerEvent: {}
+[3.489135] (-) TimerEvent: {}
+[3.591749] (-) TimerEvent: {}
+[3.667997] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.694007] (-) TimerEvent: {}
+[3.797511] (-) TimerEvent: {}
+[3.900231] (-) TimerEvent: {}
+[3.950178] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[4.000441] (-) TimerEvent: {}
+[4.102847] (-) TimerEvent: {}
+[4.204081] (-) TimerEvent: {}
+[4.306427] (-) TimerEvent: {}
+[4.407864] (-) TimerEvent: {}
+[4.510105] (-) TimerEvent: {}
+[4.611060] (-) TimerEvent: {}
+[4.712205] (-) TimerEvent: {}
+[4.814235] (-) TimerEvent: {}
+[4.919749] (-) TimerEvent: {}
+[5.024210] (-) TimerEvent: {}
+[5.127097] (-) TimerEvent: {}
+[5.233191] (-) TimerEvent: {}
+[5.336186] (-) TimerEvent: {}
+[5.441238] (-) TimerEvent: {}
+[5.545289] (-) TimerEvent: {}
+[5.613127] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[5.646081] (-) TimerEvent: {}
+[5.748109] (-) TimerEvent: {}
+[5.848739] (-) TimerEvent: {}
+[5.950155] (-) TimerEvent: {}
+[6.051380] (-) TimerEvent: {}
+[6.155165] (-) TimerEvent: {}
+[6.213709] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.255429] (-) TimerEvent: {}
+[6.356524] (-) TimerEvent: {}
+[6.457772] (-) TimerEvent: {}
+[6.558717] (-) TimerEvent: {}
+[6.659695] (-) TimerEvent: {}
+[6.761119] (-) TimerEvent: {}
+[6.830062] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.837585] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[6.861302] (-) TimerEvent: {}
+[6.962102] (-) TimerEvent: {}
+[7.062872] (-) TimerEvent: {}
+[7.164438] (-) TimerEvent: {}
+[7.265928] (-) TimerEvent: {}
+[7.366738] (-) TimerEvent: {}
+[7.467706] (-) TimerEvent: {}
+[7.569107] (-) TimerEvent: {}
+[7.669883] (-) TimerEvent: {}
+[7.771176] (-) TimerEvent: {}
+[7.872684] (-) TimerEvent: {}
+[7.876831] (gripper) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/gripper', 'build', '--build-base', '/home/admin/ri_seaweed_ws/build/gripper/build', 'install', '--record', '/home/admin/ri_seaweed_ws/build/gripper/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/admin/ri_seaweed_ws/src/gripper', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admin', 'SSH_CLIENT': '10.0.0.126 57274 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh', 'HOME': '/home/admin', 'OLDPWD': '/home/admin/ri_seaweed_ws/src', 'TERM_PROGRAM_VERSION': '1.110.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-bf3f620d-6000-4237-b21a-d60542ed0753.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'admin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-47b8c5bef1c488a4.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/admin/.vscode-server/data/User/workspaceStorage/e69a6fc4da48aef553f5632a4d14a5f0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-b75a3c0d0d.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/admin/ri_seaweed_ws/build/gripper', 'SSH_CONNECTION': '10.0.0.126 57274 10.0.0.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/admin/ri_seaweed_ws/build/gripper/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[7.972898] (-) TimerEvent: {}
+[8.073681] (-) TimerEvent: {}
+[8.174438] (-) TimerEvent: {}
+[8.276109] (-) TimerEvent: {}
+[8.377405] (-) TimerEvent: {}
+[8.479895] (-) TimerEvent: {}
+[8.581350] (-) TimerEvent: {}
+[8.675444] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[8.681508] (-) TimerEvent: {}
+[8.725875] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[8.781702] (-) TimerEvent: {}
+[8.829424] (ri_seaweed_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.841236] (ri_seaweed_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.862784] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Configuring done (6.5s)\n'}
+[8.881869] (-) TimerEvent: {}
+[8.982534] (-) TimerEvent: {}
+[9.083634] (-) TimerEvent: {}
+[9.184469] (-) TimerEvent: {}
+[9.202161] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Generating done (0.3s)\n'}
+[9.284658] (-) TimerEvent: {}
+[9.298307] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces\n'}
+[9.385160] (-) TimerEvent: {}
+[9.485868] (-) TimerEvent: {}
+[9.588042] (-) TimerEvent: {}
+[9.596632] (ri_seaweed_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[9.690139] (-) TimerEvent: {}
+[9.792239] (gripper) StdoutLine: {'line': b'running egg_info\n'}
+[9.793326] (-) TimerEvent: {}
+[9.853212] (ri_seaweed_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_ri_seaweed_interfaces\n'}
+[9.893748] (-) TimerEvent: {}
+[9.995917] (-) TimerEvent: {}
+[10.101129] (-) TimerEvent: {}
+[10.194071] (gripper) StdoutLine: {'line': b'writing ../../build/gripper/gripper.egg-info/PKG-INFO\n'}
+[10.194893] (gripper) StdoutLine: {'line': b'writing dependency_links to ../../build/gripper/gripper.egg-info/dependency_links.txt\n'}
+[10.201998] (gripper) StdoutLine: {'line': b'deleting ../../build/gripper/gripper.egg-info/entry_points.txt\n'}
+[10.207421] (-) TimerEvent: {}
+[10.208182] (gripper) StdoutLine: {'line': b'writing requirements to ../../build/gripper/gripper.egg-info/requires.txt\n'}
+[10.209118] (gripper) StdoutLine: {'line': b'writing top-level names to ../../build/gripper/gripper.egg-info/top_level.txt\n'}
+[10.314111] (-) TimerEvent: {}
+[10.418441] (-) TimerEvent: {}
+[10.523447] (-) TimerEvent: {}
+[10.624404] (-) TimerEvent: {}
+[10.725734] (-) TimerEvent: {}
+[10.727722] (gripper) StdoutLine: {'line': b"reading manifest file '../../build/gripper/gripper.egg-info/SOURCES.txt'\n"}
+[10.730825] (gripper) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[10.734616] (gripper) StdoutLine: {'line': b"writing manifest file '../../build/gripper/gripper.egg-info/SOURCES.txt'\n"}
+[10.738257] (gripper) StdoutLine: {'line': b'running build\n'}
+[10.740206] (gripper) StdoutLine: {'line': b'running build_py\n'}
+[10.743389] (gripper) StdoutLine: {'line': b'copying gripper/gripper_driver.py -> /home/admin/ri_seaweed_ws/build/gripper/build/lib/gripper\n'}
+[10.744353] (gripper) StdoutLine: {'line': b'copying gripper/__init__.py -> /home/admin/ri_seaweed_ws/build/gripper/build/lib/gripper\n'}
+[10.746146] (gripper) StdoutLine: {'line': b'copying gripper/gripper_dummy_controller.py -> /home/admin/ri_seaweed_ws/build/gripper/build/lib/gripper\n'}
+[10.750226] (gripper) StdoutLine: {'line': b'running install\n'}
+[10.778336] (gripper) StdoutLine: {'line': b'running install_lib\n'}
+[10.825988] (-) TimerEvent: {}
+[10.919270] (gripper) StdoutLine: {'line': b'copying /home/admin/ri_seaweed_ws/build/gripper/build/lib/gripper/gripper_driver.py -> /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper\n'}
+[10.922083] (gripper) StdoutLine: {'line': b'copying /home/admin/ri_seaweed_ws/build/gripper/build/lib/gripper/__init__.py -> /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper\n'}
+[10.924110] (gripper) StdoutLine: {'line': b'copying /home/admin/ri_seaweed_ws/build/gripper/build/lib/gripper/gripper_dummy_controller.py -> /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper\n'}
+[10.927130] (-) TimerEvent: {}
+[10.928700] (gripper) StdoutLine: {'line': b'byte-compiling /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper/gripper_driver.py to gripper_driver.cpython-312.pyc\n'}
+[10.931778] (gripper) StdoutLine: {'line': b'byte-compiling /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper/__init__.py to __init__.cpython-312.pyc\n'}
+[10.935526] (gripper) StdoutLine: {'line': b'byte-compiling /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper/gripper_dummy_controller.py to gripper_dummy_controller.cpython-312.pyc\n'}
+[10.941108] (gripper) StdoutLine: {'line': b'running install_data\n'}
+[10.941762] (gripper) StdoutLine: {'line': b'copying resource/gripper -> /home/admin/ri_seaweed_ws/install/gripper/share/ament_index/resource_index/packages\n'}
+[10.942543] (gripper) StdoutLine: {'line': b'copying package.xml -> /home/admin/ri_seaweed_ws/install/gripper/share/gripper\n'}
+[10.944294] (gripper) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.027406] (-) TimerEvent: {}
+[11.090357] (gripper) StdoutLine: {'line': b"removing '/home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper-0.0.0-py3.12.egg-info' (and everything under it)\n"}
+[11.097173] (gripper) StdoutLine: {'line': b'Copying ../../build/gripper/gripper.egg-info to /home/admin/ri_seaweed_ws/install/gripper/lib/python3.12/site-packages/gripper-0.0.0-py3.12.egg-info\n'}
+[11.112559] (gripper) StdoutLine: {'line': b'running install_scripts\n'}
+[11.127683] (-) TimerEvent: {}
+[11.230130] (-) TimerEvent: {}
+[11.233077] (ri_seaweed_interfaces) StdoutLine: {'line': b'[  2%] Built target ri_seaweed_interfaces__rosidl_generator_type_description\n'}
+[11.319142] (ri_seaweed_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[11.331460] (-) TimerEvent: {}
+[11.397239] (ri_seaweed_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[11.431703] (-) TimerEvent: {}
+[11.535119] (-) TimerEvent: {}
+[11.637290] (-) TimerEvent: {}
+[11.741099] (-) TimerEvent: {}
+[11.758411] (ri_seaweed_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[11.841421] (-) TimerEvent: {}
+[11.931804] (ri_seaweed_interfaces) StdoutLine: {'line': b'writing ri_seaweed_interfaces.egg-info/PKG-INFO\n'}
+[11.938082] (ri_seaweed_interfaces) StdoutLine: {'line': b'writing dependency_links to ri_seaweed_interfaces.egg-info/dependency_links.txt\n'}
+[11.938832] (ri_seaweed_interfaces) StdoutLine: {'line': b'writing top-level names to ri_seaweed_interfaces.egg-info/top_level.txt\n'}
+[11.945028] (-) TimerEvent: {}
+[12.045751] (-) TimerEvent: {}
+[12.146577] (-) TimerEvent: {}
+[12.250096] (-) TimerEvent: {}
+[12.290275] (gripper) StdoutLine: {'line': b"writing list of installed files to '/home/admin/ri_seaweed_ws/build/gripper/install.log'\n"}
+[12.352378] (-) TimerEvent: {}
+[12.455130] (-) TimerEvent: {}
+[12.489026] (gripper) CommandEnded: {'returncode': 0}
+[12.556238] (-) TimerEvent: {}
+[12.566258] (ri_seaweed_interfaces) StdoutLine: {'line': b"reading manifest file 'ri_seaweed_interfaces.egg-info/SOURCES.txt'\n"}
+[12.579366] (ri_seaweed_interfaces) StdoutLine: {'line': b"writing manifest file 'ri_seaweed_interfaces.egg-info/SOURCES.txt'\n"}
+[12.602415] (gripper) JobEnded: {'identifier': 'gripper', 'rc': 0}
+[12.656819] (-) TimerEvent: {}
+[12.760354] (-) TimerEvent: {}
+[12.853188] (ri_seaweed_interfaces) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_ri_seaweed_interfaces_egg\n'}
+[12.860512] (-) TimerEvent: {}
+[12.962518] (-) TimerEvent: {}
+[13.009246] (ri_seaweed_interfaces) StdoutLine: {'line': b'[  8%] Built target ri_seaweed_interfaces__cpp\n'}
+[13.064118] (-) TimerEvent: {}
+[13.099287] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/ri_seaweed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ri_seaweed_interfaces/msg/detail/gripper__description.c.o\x1b[0m\n'}
+[13.100472] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/ri_seaweed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ri_seaweed_interfaces/msg/detail/gripper__functions.c.o\x1b[0m\n'}
+[13.103180] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/ri_seaweed_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ri_seaweed_interfaces/msg/detail/gripper__type_support.c.o\x1b[0m\n'}
+[13.164391] (-) TimerEvent: {}
+[13.265264] (-) TimerEvent: {}
+[13.366067] (-) TimerEvent: {}
+[13.467140] (-) TimerEvent: {}
+[13.568082] (-) TimerEvent: {}
+[13.668922] (-) TimerEvent: {}
+[13.770025] (-) TimerEvent: {}
+[13.870915] (-) TimerEvent: {}
+[13.972040] (-) TimerEvent: {}
+[13.981689] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libri_seaweed_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[14.072276] (-) TimerEvent: {}
+[14.173132] (-) TimerEvent: {}
+[14.273907] (-) TimerEvent: {}
+[14.278525] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 20%] Built target ri_seaweed_interfaces__rosidl_generator_c\n'}
+[14.354859] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[14.356222] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[14.359043] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[14.365240] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[14.374246] (-) TimerEvent: {}
+[14.479119] (-) TimerEvent: {}
+[14.581245] (-) TimerEvent: {}
+[14.683640] (-) TimerEvent: {}
+[14.787732] (-) TimerEvent: {}
+[14.888925] (-) TimerEvent: {}
+[14.991746] (-) TimerEvent: {}
+[15.095167] (-) TimerEvent: {}
+[15.196152] (-) TimerEvent: {}
+[15.297011] (-) TimerEvent: {}
+[15.402184] (-) TimerEvent: {}
+[15.503606] (-) TimerEvent: {}
+[15.605674] (-) TimerEvent: {}
+[15.709924] (-) TimerEvent: {}
+[15.752290] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ri_seaweed_interfaces/msg/gripper__type_support.cpp.o\x1b[0m\n'}
+[15.810163] (-) TimerEvent: {}
+[15.840725] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ri_seaweed_interfaces/msg/gripper__type_support.cpp.o\x1b[0m\n'}
+[15.902868] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ri_seaweed_interfaces/msg/detail/gripper__type_support.c.o\x1b[0m\n'}
+[15.910377] (-) TimerEvent: {}
+[16.011097] (-) TimerEvent: {}
+[16.045703] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ri_seaweed_interfaces/msg/detail/gripper__type_support_c.cpp.o\x1b[0m\n'}
+[16.111295] (-) TimerEvent: {}
+[16.212312] (-) TimerEvent: {}
+[16.226921] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking C shared library libri_seaweed_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[16.312520] (-) TimerEvent: {}
+[16.414174] (-) TimerEvent: {}
+[16.492458] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 47%] Built target ri_seaweed_interfaces__rosidl_typesupport_introspection_c\n'}
+[16.514375] (-) TimerEvent: {}
+[16.562241] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[16.614571] (-) TimerEvent: {}
+[16.715474] (-) TimerEvent: {}
+[16.816353] (-) TimerEvent: {}
+[16.917256] (-) TimerEvent: {}
+[17.018120] (-) TimerEvent: {}
+[17.025155] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library libri_seaweed_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[17.118369] (-) TimerEvent: {}
+[17.220204] (-) TimerEvent: {}
+[17.314124] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 52%] Built target ri_seaweed_interfaces__rosidl_typesupport_c\n'}
+[17.323125] (-) TimerEvent: {}
+[17.397683] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[17.425269] (-) TimerEvent: {}
+[17.526303] (-) TimerEvent: {}
+[17.631157] (-) TimerEvent: {}
+[17.732300] (-) TimerEvent: {}
+[17.837504] (-) TimerEvent: {}
+[17.941201] (-) TimerEvent: {}
+[18.043202] (-) TimerEvent: {}
+[18.095160] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ri_seaweed_interfaces/msg/detail/dds_fastrtps/gripper__type_support.cpp.o\x1b[0m\n'}
+[18.146140] (-) TimerEvent: {}
+[18.247151] (-) TimerEvent: {}
+[18.351768] (-) TimerEvent: {}
+[18.456095] (-) TimerEvent: {}
+[18.557033] (-) TimerEvent: {}
+[18.659530] (-) TimerEvent: {}
+[18.762867] (-) TimerEvent: {}
+[18.865565] (-) TimerEvent: {}
+[18.971160] (-) TimerEvent: {}
+[19.072338] (-) TimerEvent: {}
+[19.175081] (-) TimerEvent: {}
+[19.283620] (-) TimerEvent: {}
+[19.313351] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libri_seaweed_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[19.386170] (-) TimerEvent: {}
+[19.491570] (-) TimerEvent: {}
+[19.503119] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/ri_seaweed_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ri_seaweed_interfaces/msg/detail/gripper__type_support.cpp.o\x1b[0m\n'}
+[19.593208] (-) TimerEvent: {}
+[19.696153] (-) TimerEvent: {}
+[19.751970] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 64%] Built target ri_seaweed_interfaces__rosidl_typesupport_cpp\n'}
+[19.797190] (-) TimerEvent: {}
+[19.899147] (-) TimerEvent: {}
+[20.001159] (-) TimerEvent: {}
+[20.102215] (-) TimerEvent: {}
+[20.204463] (-) TimerEvent: {}
+[20.306194] (-) TimerEvent: {}
+[20.408169] (-) TimerEvent: {}
+[20.475391] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libri_seaweed_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[20.508416] (-) TimerEvent: {}
+[20.610203] (-) TimerEvent: {}
+[20.712872] (-) TimerEvent: {}
+[20.815120] (-) TimerEvent: {}
+[20.818304] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 67%] Built target ri_seaweed_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[20.915375] (-) TimerEvent: {}
+[21.016581] (-) TimerEvent: {}
+[21.117598] (-) TimerEvent: {}
+[21.218529] (-) TimerEvent: {}
+[21.319469] (-) TimerEvent: {}
+[21.389419] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libri_seaweed_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[21.419778] (-) TimerEvent: {}
+[21.521078] (-) TimerEvent: {}
+[21.523127] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[21.622138] (-) TimerEvent: {}
+[21.625461] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 73%] Built target ri_seaweed_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[21.722372] (-) TimerEvent: {}
+[21.794311] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 73%] Built target ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[21.822601] (-) TimerEvent: {}
+[21.923443] (-) TimerEvent: {}
+[21.925453] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 73%] Built target ri_seaweed_interfaces\n'}
+[22.023684] (-) TimerEvent: {}
+[22.055043] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[22.123867] (-) TimerEvent: {}
+[22.224574] (-) TimerEvent: {}
+[22.325350] (-) TimerEvent: {}
+[22.426054] (-) TimerEvent: {}
+[22.526729] (-) TimerEvent: {}
+[22.627435] (-) TimerEvent: {}
+[22.728116] (-) TimerEvent: {}
+[22.828795] (-) TimerEvent: {}
+[22.929509] (-) TimerEvent: {}
+[23.030388] (-) TimerEvent: {}
+[23.133218] (-) TimerEvent: {}
+[23.234194] (-) TimerEvent: {}
+[23.248325] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 76%] Built target ri_seaweed_interfaces__py\n'}
+[23.334380] (-) TimerEvent: {}
+[23.401250] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/ri_seaweed_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ri_seaweed_interfaces/msg/_gripper_s.c.o\x1b[0m\n'}
+[23.434596] (-) TimerEvent: {}
+[23.535431] (-) TimerEvent: {}
+[23.636349] (-) TimerEvent: {}
+[23.737131] (-) TimerEvent: {}
+[23.838099] (-) TimerEvent: {}
+[23.938826] (-) TimerEvent: {}
+[24.002633] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libri_seaweed_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[24.039146] (-) TimerEvent: {}
+[24.140161] (-) TimerEvent: {}
+[24.235223] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 82%] Built target ri_seaweed_interfaces__rosidl_generator_py\n'}
+[24.240346] (-) TimerEvent: {}
+[24.342117] (-) TimerEvent: {}
+[24.398148] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[24.399069] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[24.429192] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/ri_seaweed_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[24.443458] (-) TimerEvent: {}
+[24.547052] (-) TimerEvent: {}
+[24.649418] (-) TimerEvent: {}
+[24.753622] (-) TimerEvent: {}
+[24.854715] (-) TimerEvent: {}
+[24.955466] (-) TimerEvent: {}
+[25.010132] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[25.014187] (ri_seaweed_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[25.017501] (ri_seaweed_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[25.055783] (-) TimerEvent: {}
+[25.159179] (-) TimerEvent: {}
+[25.218058] (ri_seaweed_interfaces) StdoutLine: {'line': b'[100%] Built target ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[25.230012] (ri_seaweed_interfaces) StdoutLine: {'line': b'[100%] Built target ri_seaweed_interfaces_s__rosidl_typesupport_c\n'}
+[25.237133] (ri_seaweed_interfaces) StdoutLine: {'line': b'[100%] Built target ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[25.259346] (-) TimerEvent: {}
+[25.302887] (ri_seaweed_interfaces) CommandEnded: {'returncode': 0}
+[25.305270] (ri_seaweed_interfaces) JobProgress: {'identifier': 'ri_seaweed_interfaces', 'progress': 'install'}
+[25.353607] (ri_seaweed_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces'], 'cwd': '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'admin', 'SSH_CLIENT': '10.0.0.126 57274 22', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/helpers/browser.sh', 'HOME': '/home/admin', 'OLDPWD': '/home/admin/ri_seaweed_ws/src', 'TERM_PROGRAM_VERSION': '1.110.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-bf3f620d-6000-4237-b21a-d60542ed0753.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/node', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_colcon_cd_root': '/opt/ros/jazzy/', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'admin', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'PATH': '/home/admin/.vscode-server/cli/servers/Stable-61b3d0ab13be7dda2389f1d3e60a119c7f660cc3/server/bin/remote-cli:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/bundled/scripts/noConfigScripts', 'XDG_RUNTIME_DIR': '/run/user/1000', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/admin/.vscode-server/extensions/ms-python.debugpy-2025.18.0/.noConfigDebugAdapterEndpoints/endpoint-47b8c5bef1c488a4.txt', 'LANG': 'C.UTF-8', 'PYTHONSTARTUP': '/home/admin/.vscode-server/data/User/workspaceStorage/e69a6fc4da48aef553f5632a4d14a5f0/ms-python.python/pythonrc.py', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-b75a3c0d0d.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/admin/ri_seaweed_ws/build/ri_seaweed_interfaces', 'SSH_CONNECTION': '10.0.0.126 57274 10.0.0.31 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[25.359492] (-) TimerEvent: {}
+[25.402411] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.403307] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ament_index/resource_index/rosidl_interfaces/ri_seaweed_interfaces\n'}
+[25.403904] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/msg/Gripper.json\n'}
+[25.405025] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces\n'}
+[25.405672] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg\n'}
+[25.406282] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail\n'}
+[25.406785] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__type_support.h\n'}
+[25.408120] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__functions.h\n'}
+[25.409575] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__description.c\n'}
+[25.411123] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__struct.h\n'}
+[25.412517] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__functions.c\n'}
+[25.414020] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__type_support.c\n'}
+[25.415417] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[25.416019] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/gripper.h\n'}
+[25.417271] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/library_path.sh\n'}
+[25.417883] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/library_path.dsv\n'}
+[25.421079] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_generator_c.so\n'}
+[25.424631] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_generator_c.so" to ""\n'}
+[25.425346] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces\n'}
+[25.425833] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg\n'}
+[25.426469] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail\n'}
+[25.426865] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__rosidl_typesupport_fastrtps_c.h\n'}
+[25.428100] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[25.431193] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[25.434770] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[25.435532] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces\n'}
+[25.436093] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg\n'}
+[25.436616] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[25.437094] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail\n'}
+[25.437717] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__rosidl_typesupport_introspection_c.h\n'}
+[25.438548] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__type_support.c\n'}
+[25.442901] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[25.446246] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[25.449280] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_c.so\n'}
+[25.452688] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[25.453401] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces\n'}
+[25.454043] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg\n'}
+[25.454582] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[25.455556] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/gripper.hpp\n'}
+[25.456899] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail\n'}
+[25.457589] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__traits.hpp\n'}
+[25.458905] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__struct.hpp\n'}
+[25.459629] (-) TimerEvent: {}
+[25.460452] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__type_support.hpp\n'}
+[25.461908] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__builder.hpp\n'}
+[25.463592] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces\n'}
+[25.464716] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg\n'}
+[25.465853] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[25.466785] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail\n'}
+[25.467744] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/dds_fastrtps\n'}
+[25.468289] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.471219] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[25.474698] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[25.475492] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces\n'}
+[25.476162] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg\n'}
+[25.476695] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail\n'}
+[25.477234] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__type_support.cpp\n'}
+[25.478114] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/include/ri_seaweed_interfaces/ri_seaweed_interfaces/msg/detail/gripper__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.482440] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[25.485915] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[25.489050] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_cpp.so\n'}
+[25.492421] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[25.493128] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/pythonpath.sh\n'}
+[25.493736] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/pythonpath.dsv\n'}
+[25.494294] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces-0.0.0-py3.12.egg-info\n'}
+[25.494770] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[25.495700] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[25.497220] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[25.498605] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[25.500125] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces\n'}
+[25.500725] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[25.502239] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg\n'}
+[25.502807] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg/__init__.py\n'}
+[25.504196] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg/_gripper_s.c\n'}
+[25.505436] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg/_gripper.py\n'}
+[25.506823] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[25.508325] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/__init__.py\n'}
+[25.509507] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[25.511764] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/_ri_seaweed_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[25.513266] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[25.515436] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_c.so\n'}
+[25.559846] (-) TimerEvent: {}
+[25.660611] (-) TimerEvent: {}
+[25.701066] (ri_seaweed_interfaces) StdoutLine: {'line': b"Listing '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces'...\n"}
+[25.702659] (ri_seaweed_interfaces) StdoutLine: {'line': b"Compiling '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/__init__.py'...\n"}
+[25.703904] (ri_seaweed_interfaces) StdoutLine: {'line': b"Listing '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg'...\n"}
+[25.705359] (ri_seaweed_interfaces) StdoutLine: {'line': b"Compiling '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg/__init__.py'...\n"}
+[25.706628] (ri_seaweed_interfaces) StdoutLine: {'line': b"Compiling '/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/msg/_gripper.py'...\n"}
+[25.735187] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[25.738771] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[25.741123] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[25.745437] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[25.747707] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_c.so\n'}
+[25.751269] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/python3.12/site-packages/ri_seaweed_interfaces/ri_seaweed_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[25.754699] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_generator_py.so\n'}
+[25.758339] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/lib/libri_seaweed_interfaces__rosidl_generator_py.so" to ""\n'}
+[25.759197] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/msg/Gripper.idl\n'}
+[25.760472] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/msg/Gripper.msg\n'}
+[25.761155] (-) TimerEvent: {}
+[25.762688] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ament_index/resource_index/package_run_dependencies/ri_seaweed_interfaces\n'}
+[25.763590] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ament_index/resource_index/parent_prefix_path/ri_seaweed_interfaces\n'}
+[25.764281] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/ament_prefix_path.sh\n'}
+[25.764898] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/ament_prefix_path.dsv\n'}
+[25.765666] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/path.sh\n'}
+[25.766403] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/environment/path.dsv\n'}
+[25.766886] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/local_setup.bash\n'}
+[25.768359] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/local_setup.sh\n'}
+[25.768999] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/local_setup.zsh\n'}
+[25.769592] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/local_setup.dsv\n'}
+[25.770395] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Installing: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.dsv\n'}
+[25.770847] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ament_index/resource_index/packages/ri_seaweed_interfaces\n'}
+[25.772100] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_generator_cExport.cmake\n'}
+[25.772745] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[25.774309] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[25.774921] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[25.776539] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[25.777261] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[25.778747] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[25.779399] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[25.780817] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_generator_cppExport.cmake\n'}
+[25.782471] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[25.783187] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[25.784725] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[25.785392] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[25.786867] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[25.787534] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[25.788966] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_generator_pyExport.cmake\n'}
+[25.789591] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/export_ri_seaweed_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[25.790192] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[25.790735] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[25.791400] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[25.791839] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[25.792542] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[25.793064] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[25.793594] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[25.794203] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfacesConfig.cmake\n'}
+[25.794669] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/cmake/ri_seaweed_interfacesConfig-version.cmake\n'}
+[25.795359] (ri_seaweed_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/admin/ri_seaweed_ws/install/ri_seaweed_interfaces/share/ri_seaweed_interfaces/package.xml\n'}
+[25.804050] (ri_seaweed_interfaces) CommandEnded: {'returncode': 0}
+[25.861390] (-) TimerEvent: {}
+[25.913335] (ri_seaweed_interfaces) JobEnded: {'identifier': 'ri_seaweed_interfaces', 'rc': 0}
+[25.916575] (-) EventReactorShutdown: {}
