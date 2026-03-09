@@ -2,6 +2,10 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool
 
+
+#This is a dummy gripper controller node, it periodically sends lock/unlock commands to the 'gripper/close_command' topic.
+#The purpouse of this node is to test the gripper driver node without the rest of the system for legitimate gripper lock/unlock calls.
+
 class GripperDummyController(Node):
 
     def __init__(self):
@@ -12,6 +16,7 @@ class GripperDummyController(Node):
 
         self.close_commad = False
 
+    #Sends the lock/unlock command on timer callback
     def timer_callback(self):
         msg = Bool()
 
