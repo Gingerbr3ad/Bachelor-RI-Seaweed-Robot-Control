@@ -1,9 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.001161] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
-[0.001862] (-) JobUnselected: {'identifier': 'gripper_package'}
-[0.002200] (-) JobUnselected: {'identifier': 'polygon_base'}
-[0.002720] (-) JobUnselected: {'identifier': 'py_pubsub'}
-[0.003033] (-) JobUnselected: {'identifier': 'py_srvcli'}
-[0.003418] (-) JobUnselected: {'identifier': 'python_parameters'}
-[0.003592] (-) JobUnselected: {'identifier': 'tutorial_interfaces'}
-[0.003680] (-) EventReactorShutdown: {}

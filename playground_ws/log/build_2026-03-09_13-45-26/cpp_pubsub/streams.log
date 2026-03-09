@@ -1,6 +1,0 @@
-[0.107s] Invoking command in '/home/admin/RI-Seaweed/playground_ws/build/cpp_pubsub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/RI-Seaweed/playground_ws/build/cpp_pubsub -- -j4 -l4
-[1.160s] [0mCMake Error: The current CMakeCache.txt directory /home/admin/RI-Seaweed/playground_ws/build/cpp_pubsub/CMakeCache.txt is different than the directory /home/admin/playground_ws/build/cpp_pubsub where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[1.161s] [0mCMake Error: The source directory "/home/admin/playground_ws/src/cpp_pubsub" does not exist.
-[1.162s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[1.164s] gmake: *** [Makefile:308: cmake_check_build_system] Error 1
-[1.240s] Invoked command in '/home/admin/RI-Seaweed/playground_ws/build/cpp_pubsub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/RI-Seaweed/playground_ws/build/cpp_pubsub -- -j4 -l4

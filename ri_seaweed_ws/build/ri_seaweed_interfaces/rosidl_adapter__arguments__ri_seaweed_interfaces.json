@@ -1,6 +1,0 @@
-{
-  "package_name": "ri_seaweed_interfaces",
-  "non_idl_tuples": [
-    "/home/admin/ri_seaweed_ws/src/ri_seaweed_interfaces:msg/Gripper.msg"
-  ]
-}

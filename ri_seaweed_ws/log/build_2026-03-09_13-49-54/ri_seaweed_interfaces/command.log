@@ -1,2 +1,0 @@
-Invoking command in '/home/admin/RI-Seaweed/ri_seaweed_ws/build/ri_seaweed_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/RI-Seaweed/ri_seaweed_ws/build/ri_seaweed_interfaces -- -j4 -l4
-Invoked command in '/home/admin/RI-Seaweed/ri_seaweed_ws/build/ri_seaweed_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/admin/RI-Seaweed/ri_seaweed_ws/build/ri_seaweed_interfaces -- -j4 -l4

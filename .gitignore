@@ -1,0 +1,13 @@
+# ROS build artifacts
+**/build/
+**/install/
+**/log/
+
+# Python artifacts
+**/__pycache__/
+**/*.pyc
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

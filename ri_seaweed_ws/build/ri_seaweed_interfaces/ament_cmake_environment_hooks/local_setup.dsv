@@ -1,4 +1,0 @@
-source;share/ri_seaweed_interfaces/environment/ament_prefix_path.sh
-source;share/ri_seaweed_interfaces/environment/library_path.sh
-source;share/ri_seaweed_interfaces/environment/path.sh
-source;share/ri_seaweed_interfaces/environment/pythonpath.sh
