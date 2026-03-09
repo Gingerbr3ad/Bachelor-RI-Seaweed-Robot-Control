@@ -1,3 +1,5 @@
+//Original code written by Jakob Midtun and later edited by Wiktor Rutkowski and Mert Can Sarikaya
+
 #include <Servo.h>
 
 Servo myServoG;
