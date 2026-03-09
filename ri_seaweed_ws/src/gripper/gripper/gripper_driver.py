@@ -24,8 +24,8 @@ class GripperDriver(Node):
         self.lock_pin.off()
 
         #Interrupt callbacks for sensor pin
-        self.sensor_pin.when_activated = self.gripper_closed
-        self.sensor_pin.when_deactivated = self.gripper_open
+        self.sensor_pin.when_activated = self.gripper_open
+        self.sensor_pin.when_deactivated = self.gripper_closed
 
     #Publisher function for gripper sensor pin for 'gripper/state' topic
     def gripper_closed(self):
@@ -44,9 +44,10 @@ class GripperDriver(Node):
     def listener_callback(self, msg):
         if(msg.data):
             self.lock_pin.on()
-
+            self.get_logger().info("Gripper command pin set: CLOSED")
         elif (msg.data != True):
             self.lock_pin.off()
+            self.get_logger().info("Gripper command pin set: OPEN")
 
 
 def main(args=None):
