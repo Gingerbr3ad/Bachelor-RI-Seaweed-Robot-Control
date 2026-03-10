@@ -1,7 +1,6 @@
 
 import rclpy
 from rclpy.node import Node
-from ri_seaweed_interfaces.msg import Gripper
 from std_msgs.msg import Bool
 
 from gpiozero import DigitalInputDevice
@@ -19,8 +18,8 @@ class GripperDriver(Node):
         self.subscription = self.create_subscription(Bool, 'gripper/close_command', self.listener_callback, 10)
         self.subscription #Avoids 'vaiable unused' warning
         
-        self.sensor_pin = DigitalInputDevice(17, pull_up=False) #Sensor pin from arduino is configured to GPIO 17
-        self.lock_pin = OutputDevice(4)                         #Pin for sending gripper lock command is configured to GPIO 4
+        self.sensor_pin = DigitalInputDevice(17, pull_up=False, bounce_time=0.1) #Sensor pin from arduino is configured to GPIO 17
+        self.lock_pin = OutputDevice(4)                                          #Pin for sending gripper lock command is configured to GPIO 4
         self.lock_pin.off()
 
         #Interrupt callbacks for sensor pin
