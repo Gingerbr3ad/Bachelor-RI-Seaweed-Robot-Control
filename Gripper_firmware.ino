@@ -9,14 +9,14 @@ Servo myServoR;
 //Servo limit values
 const int limGup = 163;
 const int limGdown = 102;
-const int limRup = 40;
-const int limRdown = 115;
+const int limRup = 0;
+const int limRdown = 60;
 
 //Hall sensors treshhold values
 const int threshG1 = 490;
 const int threshG2 = 522;
-const int threshR1 = 530;
-const int threshR2 = 559;
+const int threshR1 = 550;
+const int threshR2 = 500;
 
 //Pin values
 const int signalPinIn = 2;
@@ -36,9 +36,6 @@ int valHallG1 = 0;
 int valHallG2 = 0;
 int valHallR1 = 0;
 int valHallR2 = 0;
-
-int angle1 = (limGup+limGdown)/2;           
-int angle2 = (limRup+limRdown)/2;
 
 //################SETUP################
 void setup() {
@@ -69,14 +66,14 @@ void loop() {
 
   //Check if claws closed from hall sensors
   bool conditionsOKG = ((valHallG1 < threshG1) && (valHallG2 > threshG2));
-  bool conditionsOKR = ((valHallR1 > threshR1) && (valHallR2 > threshR2));
+  bool conditionsOKR = ((valHallR1 < threshR1) && (valHallR2 > threshR2));
 
   //Close the gripper if conditions OK
-  if (close == 1){
+  if (close == 0){
     if (conditionsOKG == 1){
       myServoG.write(limGdown);  // Move the servo
       Serial.println("Green Claw Closed");
-      Gfalg = true;
+      Gflag = true;
     }
     if (conditionsOKR == 1){
       myServoR.write(limRdown);  // Move the servo
@@ -85,16 +82,16 @@ void loop() {
     }
 
     if (Gflag && Rflag){
-      digitalWrite(signalPinOut, true);
+      digitalWrite(signalPinOut, false);
       Serial.println("Gripper Closed");
       delay(500);
     }
 
   //Open the gripper if open command on input pin
-  } else if (close == 0){
+  } else if (close == 1){
     myServoG.write(limGup);  // Move the servo
     myServoR.write(limRup);  // Move the servo
-    digitalWrite(signalPinOut, false);
+    digitalWrite(signalPinOut, true);
     Serial.println("Gripper Open");
     delay(500);
   }
@@ -102,8 +99,12 @@ void loop() {
   //Info logging
   Serial.print("Hall effect Red1: ");
   Serial.println(valHallR1);
+  Serial.print("Hall effect Red2: ");
+  Serial.println(valHallR2);
   Serial.print("Hall effect Green1: ");
   Serial.println(valHallG1);
+  Serial.print("Hall effect Green2: ");
+  Serial.println(valHallG2);
   Serial.print("Gripper close command: ");
   Serial.println(close);
   Serial.print("-------------------------------");
