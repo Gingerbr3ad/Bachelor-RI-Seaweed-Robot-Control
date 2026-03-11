@@ -4,19 +4,20 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import DBSCAN
 
 #program variables
-DB_epsilion = 0.01 #0.05 works well
+DB_epsilion = 0.1 #0.05 works well
 DB_min_samples = 10 #5 works well
 downsample = 1 #Only takes n-th point from the pointcloud (set to 1 for no downsampling)
 shutter_delay = 3 #seconds
 camera_fps = 5
 resolution = [640, 480]
 object_min_points = 0 #Objects from clusters with less points that this are removed (set to 0 to enable dynamic scaling)
-object_min_points_scale = 0.5 #Dynamic scaling of min objects based on max depth from camera
+object_min_points_scale = 1 #Dynamic scaling of min objects based on max depth from camera
+plane_distance_treshhold = 0.1
 
 the_cheese_flag = False #Important
 
 #Function AI generated
-def fit_plane_ransac(points, n_iter=150, distance_thresh=0.01):
+def fit_plane_ransac(points, n_iter, distance_thresh):
     """
     Fit a plane ax + by + cz + d = 0 with simple RANSAC.
     Returns:
@@ -56,6 +57,7 @@ def fit_plane_ransac(points, n_iter=150, distance_thresh=0.01):
             best_inliers = inliers
             best_plane = np.array([normal[0], normal[1], normal[2], d])
 
+    print("Found plane with ", best_count, " points.")
     return best_plane, best_inliers
 
 
@@ -95,11 +97,7 @@ points = points[~np.all(points == 0, axis=1)] #Removes invalid point data
 points = points[:: downsample]
 
 #Removes the planes using the AI generated plan detection function (to remove flors, wallSs, etc.)
-plane, plane_inliers = fit_plane_ransac(
-    points,
-    n_iter=200,
-    distance_thresh=0.01
-)
+plane, plane_inliers = fit_plane_ransac(points, n_iter= 200, distance_thresh = plane_distance_treshhold)
 points_objects = points[~plane_inliers]
 
 
@@ -119,7 +117,7 @@ labels = labels[labels != -1]
 
 #Removes obect wit too few points
 unique_labels, points_per_object = np.unique(labels, return_counts=True)
-print("Points per object cluster", points_per_object)
+print("Points per object cluster", np.sort(points_per_object))
 temp_points = np.array([])
 temp_labels = np.array([])
 if (object_min_points == 0):
