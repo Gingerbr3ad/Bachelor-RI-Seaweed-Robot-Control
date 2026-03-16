@@ -1,5 +1,6 @@
 import rclpy
 from rclpy.node import Node
+from rclpy.logging import LoggingSeverity
 from std_msgs.msg import Bool
 
 
@@ -17,6 +18,7 @@ class GripperDummyController(Node):
         self.close_commad = False
 
     #Sends the lock/unlock command on timer callback
+    rclpy.logging.set_logger_level('gripper_dummy_controller', LoggingSeverity.DEBUG)
     def timer_callback(self):
         msg = Bool()
 
