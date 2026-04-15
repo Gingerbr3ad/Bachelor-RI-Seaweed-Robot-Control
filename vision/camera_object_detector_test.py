@@ -2,17 +2,18 @@ import pyrealsense2 as rs
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.cluster import DBSCAN
+from sklearn.decomposition import PCA
 
 #program variables
-DB_epsilion = 0.1 #0.05 works well
-DB_min_samples = 10 #5 works well
-downsample = 1 #Only takes n-th point from the pointcloud (set to 1 for no downsampling)
+DB_epsilion = 0.05 #0.05 works well
+DB_min_samples = 3 #5 works well
+downsample = 20 #Only takes n-th point from the pointcloud (set to 1 for no downsampling)
 shutter_delay = 3 #seconds
 camera_fps = 5
-resolution = [640, 480]
+resolution = [848, 480]
 object_min_points = 0 #Objects from clusters with less points that this are removed (set to 0 to enable dynamic scaling)
-object_min_points_scale = 2 #Dynamic scaling of min objects based on max depth from camera
-plane_distance_treshhold = 0.3
+object_min_points_scale = 1 #Dynamic scaling of min objects based on max depth from camera
+plane_distance_treshhold = 0.02
 
 the_cheese_flag = False #Important
 
@@ -136,12 +137,19 @@ for i in range(len(points_objects)):
 labels = temp_labels
 points_objects = np.reshape(temp_points, (-1, 3))
 
-#Find centers of objects
+#Find centers and directions of objects
 centroids = np.array([])
+longest_axises = np.array([])
+pca = PCA(n_components=1)
 for j in np.unique(labels):
     points_of_cluster= points_objects[labels==j,:]
-    centroids = np.append(centroids, np.mean(points_of_cluster, axis=0))
+    pca.fit(points_of_cluster)
+    longest_axises = np.append(longest_axises, pca.components_)
+    centroid = np.mean(points_of_cluster, axis=0)
+    centroid[2] = centroid[2] + 0.115/2
+    centroids = np.append(centroids, centroid)
 centroids = np.reshape(centroids, (-1, 3))
+longest_axises = np.reshape(longest_axises, (-1, 3))
 
 
 if(points_objects.size != 0):
@@ -155,6 +163,12 @@ if(points_objects.size != 0):
     ax.set_xlim(np.min(points_objects[:, 0])-0.1, np.max(points_objects[:, 0])+0.1)
     ax.set_ylim(-(np.max(points_objects[:, 1])+0.1), -(np.min(points_objects[:, 1])-0.1))
     ax.set_zlim(-np.max(points_objects[:, 2]), 0)
+
+    for c in range(len(centroids)):
+        p1 = centroids[c] - longest_axises[c] * 0.5
+        p2 = centroids[c] + longest_axises[c] * 0.5
+
+        ax.plot([p1[0], p2[0]], [-p1[1], -p2[1]], [-p1[2], -p2[2]], linewidth=3)
     
     ax.set_xlabel("X")
     ax.set_ylabel("Y")
@@ -164,6 +178,12 @@ if(points_objects.size != 0):
     ax2 = fig.add_subplot(1,2,2)
     ax2.scatter(points_objects[:, 0], -points_objects[:, 1], c=labels) #'z' need to be inverted since the camera measures depth and is looking down, 'y' also needs to be inverted for the plot to match reality but I dunno why
     ax2.scatter(centroids[:, 0], -centroids[:, 1], marker='*', color='white', edgecolor='black', s=200, label="Centroids")
+
+    for c in range(len(centroids)):
+        p1 = centroids[c] - longest_axises[c] * 0.5
+        p2 = centroids[c] + longest_axises[c] * 0.5
+
+        ax2.plot([p1[0], p2[0]], [-p1[1], -p2[1]], linewidth=3)
 
     ax2.set_xlabel("X")
     ax2.set_ylabel("Y")

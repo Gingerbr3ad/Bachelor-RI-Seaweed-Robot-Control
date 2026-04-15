@@ -1,0 +1,283 @@
+<?xml version="1.0" ?>
+<robot name="gripper" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<xacro:macro name="gripper">
+<xacro:include filename="$(find gripper_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find gripper_description)/urdf/gripper.trans" />
+<xacro:include filename="$(find gripper_description)/urdf/gripper.gazebo" />
+<link name="gripper-base_link">
+  <inertial>
+    <origin xyz="2.1316282072803005e-16 -2.55351295663786e-17 -0.0014999999999999946" rpy="0 0 0"/>
+    <mass value="0.0017494744089678134"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="bar_1">
+  <inertial>
+    <origin xyz="1.901057089526148e-11 -3.493640713698731e-06 -0.009977862695465682" rpy="0 0 0"/>
+    <mass value="0.5478414730698096"/>
+    <inertia ixx="4.1e-05" iyy="0.020157" izz="0.020157" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/bar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>d)/urdf
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 0.003" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/bar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lock_l_1">
+  <inertial>
+    <origin xyz="0.0025278748180643795 7.89994332103805e-08 -0.014132337298240554" rpy="0 0 0"/>
+    <mass value="0.003835984002304337"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.329796 0.035074 -0.003402" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/lock_l_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="0.329796 0.035074 -0.003402" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/lock_l_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="finger2_l_1">
+  <inertial>
+    <origin xyz="0.0022745659169534638 -0.008772297894871002 -0.007897715055483742" rpy="0 0 0"/>
+    <mass value="0.004845614789206538"/>
+    <inertia ixx="4e-06" iyy="3e-06" izz="1e-06" ixy="-0.0" iyz="1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.3294 -0.025177 0.077438" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/finger2_l_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="0.3294 -0.025177 0.077438" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/finger2_l_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="finger1_l_1">
+  <inertial>
+    <origin xyz="0.002274564332067741 0.008763184932397555 -0.007902714273589156" rpy="0 0 0"/>
+    <mass value="0.004845614849704048"/>
+    <inertia ixx="4e-06" iyy="3e-06" izz="1e-06" ixy="-0.0" iyz="-1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.3294 0.094598 0.077433" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/finger1_l_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="0.3294 0.094598 0.077433" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/finger1_l_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lock_r_1">
+  <inertial>
+    <origin xyz="-0.0025278748180642685 7.89994332034416e-08 -0.014132337298240538" rpy="0 0 0"/>
+    <mass value="0.003835984002304337"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.329796 0.035074 -0.003402" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/lock_r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.329796 0.035074 -0.003402" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/lock_r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="finger1_r_1">
+  <inertial>
+    <origin xyz="-0.0022745643320676856 0.008763184932397583 -0.007902714273589503" rpy="0 0 0"/>
+    <mass value="0.004845614849704048"/>
+    <inertia ixx="4e-06" iyy="3e-06" izz="1e-06" ixy="0.0" iyz="-1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.3294 0.094598 0.077433" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/finger1_r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.3294 0.094598 0.077433" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/finger1_r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="finger2_r_1">
+  <inertial>
+    <origin xyz="-0.0022745659169534083 -0.008772297894871009 -0.007897715055483506" rpy="0 0 0"/>
+    <mass value="0.004845614789206536"/>
+    <inertia ixx="4e-06" iyy="3e-06" izz="1e-06" ixy="0.0" iyz="1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.3294 -0.025177 0.077438" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/finger2_r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="black"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.3294 -0.025177 0.077438" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/finger2_r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="claw_body_l_1">
+  <inertial>
+    <origin xyz="-0.03524534109739269 -0.02407588018524227 -0.020152637061963123" rpy="0 0 0"/>
+    <mass value="0.044924940451362305"/>
+    <inertia ixx="6.7e-05" iyy="2.4e-05" izz="4.9e-05" ixy="-0.0" iyz="-1e-06" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.282494 0.009862 0.013057" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/claw_body_l_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="green"/>
+  </visual>
+  <collision>
+    <origin xyz="0.282494 0.009862 0.013057" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/claw_body_l_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="claw_body_r_1">
+  <inertial>
+    <origin xyz="0.0352453410973928 -0.024075880185242326 -0.020152637061963248" rpy="0 0 0"/>
+    <mass value="0.04492494045136231"/>
+    <inertia ixx="6.7e-05" iyy="2.4e-05" izz="4.9e-05" ixy="0.0" iyz="-1e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.282494 0.009862 0.013057" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/claw_body_r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="red"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.282494 0.009862 0.013057" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find gripper_description)/meshes/claw_body_r_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="base" type="fixed">
+  <origin xyz="0.0 0.0 -0.003" rpy="0 0 0"/>
+  <parent link="gripper-base_link"/>
+  <child link="bar_1"/>
+</joint>
+
+<joint name="lock_l" type="prismatic">
+  <origin xyz="-0.047302 -0.025212 0.016459" rpy="0 0 0"/>
+  <parent link="claw_body_l_1"/>
+  <child link="lock_l_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+  <limit upper="0.0" lower="-0.02" effort="100" velocity="100"/>
+</joint>
+
+<joint name="finger2_l" type="revolute">
+  <origin xyz="-0.046906 0.035039 -0.064381" rpy="0 0 0"/>
+  <parent link="claw_body_l_1"/>
+  <child link="finger2_l_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="0.087266" lower="-0.15708" effort="100" velocity="100"/>
+</joint>
+
+<joint name="finger1_l" type="revolute">
+  <origin xyz="-0.046906 -0.084736 -0.064376" rpy="0 0 0"/>
+  <parent link="claw_body_l_1"/>
+  <child link="finger1_l_1"/>
+  <axis xyz="-1.0 0.0 0.0"/>
+  <limit upper="0.15708" lower="-0.087266" effort="100" velocity="100"/>
+</joint>
+
+<joint name="lock_r" type="prismatic">
+  <origin xyz="0.047302 -0.025212 0.016459" rpy="0 0 0"/>
+  <parent link="claw_body_r_1"/>
+  <child link="lock_r_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+  <limit upper="0.02" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="finger1_r" type="revolute">
+  <origin xyz="0.046906 -0.084736 -0.064376" rpy="0 0 0"/>
+  <parent link="claw_body_r_1"/>
+  <child link="finger1_r_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+  <limit upper="0.087266" lower="-0.15708" effort="100" velocity="100"/>
+</joint>
+
+<joint name="finger2_r" type="revolute">
+  <origin xyz="0.046906 0.035039 -0.064381" rpy="0 0 0"/>
+  <parent link="claw_body_r_1"/>
+  <child link="finger2_r_1"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+  <limit upper="0.15708" lower="-0.087266" effort="100" velocity="100"/>
+</joint>
+
+<joint name="claw_body_l" type="fixed">
+  <origin xyz="-0.282494 -0.009862 -0.010057" rpy="0 0 0"/>
+  <parent link="bar_1"/>
+  <child link="claw_body_l_1"/>
+</joint>
+
+<joint name="claw_body_r" type="fixed">
+  <origin xyz="0.282494 -0.009862 -0.010057" rpy="0 0 0"/>
+  <parent link="bar_1"/>
+  <child link="claw_body_r_1"/>
+</joint>
+</xacro:macro>
+</robot>
