@@ -1,8 +1,6 @@
 from setuptools import find_packages, setup
-import os
-from glob import glob
 
-package_name = 'python_parameters'
+package_name = 'franka_test'
 
 setup(
     name=package_name,
@@ -12,14 +10,13 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'launch'), glob('launch/*')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='admin',
-    maintainer_email='admin@todo.todo',
+    maintainer='wiktor',
+    maintainer_email='rwiktor4627@gmail.com',
     description='TODO: Package description',
-    license='Apache-2.0',
+    license='TODO: License declaration',
     extras_require={
         'test': [
             'pytest',
@@ -27,7 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'minimal_param_node = python_parameters.python_parameters_node:main',
+            'franka_moveit = franka_test.franka_test:main',
         ],
     },
 )
