@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'moveit_commander = moveit_commander.moveit_commander:main',
+            'franka_moveit_commander = moveit_commander.franka_moveit_commander:main',
         ],
     },
 )

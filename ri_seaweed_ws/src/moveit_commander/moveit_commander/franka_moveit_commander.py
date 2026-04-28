@@ -35,11 +35,11 @@ class KukaMoveItCommander(Node):
         self._action_client = ActionClient(self, MoveGroup, '/move_action')
         self._action_server = ActionServer(self, MoveToPose, '/goal_pose', self.execute_callback)
 
-        # KUKA repo defaults
-        self.planning_group = 'manipulator'
-        self.end_effector_link = 'flange'
-        self.base_frame = 'base_link'
-
+        # Franka manipulator 
+        self.planning_group = 'fr3_arm'
+        self.end_effector_link = 'fr3_link8'
+        self.base_frame = 'fr3_link0'
+        
         self._moveit_done_event = Event()
 
     def send_pose_goal(self, x, y, z, qx=0.0, qy=0.0, qz=0.0, qw=1.0):
@@ -52,18 +52,18 @@ class KukaMoveItCommander(Node):
         request.group_name = self.planning_group
         request.num_planning_attempts = 10
         request.allowed_planning_time = 5.0
-        request.max_velocity_scaling_factor = 0.2
-        request.max_acceleration_scaling_factor = 0.2
+        request.max_velocity_scaling_factor = 0.3
+        request.max_acceleration_scaling_factor = 0.3
 
         # Workspace
         request.workspace_parameters = WorkspaceParameters()
         request.workspace_parameters.header.frame_id = self.base_frame
-        request.workspace_parameters.min_corner.x = -2.0
-        request.workspace_parameters.min_corner.y = -2.0
-        request.workspace_parameters.min_corner.z = -0.5
-        request.workspace_parameters.max_corner.x = 2.0
-        request.workspace_parameters.max_corner.y = 2.0
-        request.workspace_parameters.max_corner.z = 2.0
+        request.workspace_parameters.min_corner.x = -1.0
+        request.workspace_parameters.min_corner.y = -1.0
+        request.workspace_parameters.min_corner.z = 0.2
+        request.workspace_parameters.max_corner.x = 1.0
+        request.workspace_parameters.max_corner.y = 1.0
+        request.workspace_parameters.max_corner.z = 1.0
 
         # Target pose
         target_pose = PoseStamped()

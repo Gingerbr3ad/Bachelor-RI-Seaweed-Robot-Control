@@ -100,7 +100,7 @@ points = verts.view(np.float32).reshape(-1, 3)
 points = points[~np.all(points == 0, axis=1)] #Removes invalid point data
 points = points[:: downsample]
 
-#Removes the planes using the AI generated plan detection function (to remove flors, wallSs, etc.)
+#Removes planes using the RANSAC algorithm to find thme (to remove flors, walls, etc.)
 plane, plane_inliers = fit_plane_ransac(points, n_iter= 200, distance_thresh = plane_distance_treshhold)
 points_objects = points[~plane_inliers]
 
