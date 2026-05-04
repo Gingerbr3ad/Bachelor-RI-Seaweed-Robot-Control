@@ -279,5 +279,14 @@
   <parent link="bar_1"/>
   <child link="claw_body_r_1"/>
 </joint>
+
+<!-- Transfer from camera to gripper base -->
+<link name="camera_frame"></link>
+<joint name="gripper-base_link_to_camera_joint" type="fixed">
+  <parent link="gripper-base_link"/>
+  <child link="camera_frame"/>
+  <origin xyz="-0.17 0.033 -0.033" rpy="3.14159265 0 0"/>
+</joint>
+
 </xacro:macro>
 </robot>

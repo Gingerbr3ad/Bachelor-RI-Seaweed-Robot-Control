@@ -27,6 +27,7 @@ endif()
 
 set(action_files
   "action/MoveToPose.action"
+  "srv/GetObjects.srv"
   DEPENDENCIES geometry_msgs
 )
 
