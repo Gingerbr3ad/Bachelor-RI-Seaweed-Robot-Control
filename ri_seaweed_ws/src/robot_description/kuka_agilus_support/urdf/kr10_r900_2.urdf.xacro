@@ -37,7 +37,7 @@
   <!-- gripper extension -->
   <xacro:gripper/>
   <joint name="flange-gripper-base_link" type="fixed">
-    <origin xyz="0 0 0" rpy="1.5708 0 -1.5708" />
+    <origin xyz="0 0 0" rpy="1.5708 3.14159265 -1.5708" />
     <parent link="flange" />
     <child link="gripper-base_link" />
   </joint>
