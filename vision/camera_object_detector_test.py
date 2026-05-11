@@ -5,14 +5,14 @@ from sklearn.cluster import DBSCAN
 from sklearn.decomposition import PCA
 
 #program variables
-DB_epsilion = 0.05 #0.05 works well
+DB_epsilion = 0.02 #0.05 works well
 DB_min_samples = 3 #5 works well
-downsample = 20 #Only takes n-th point from the pointcloud (set to 1 for no downsampling)
+downsample = 10 #Only takes n-th point from the pointcloud (set to 1 for no downsampling)
 shutter_delay = 3 #seconds
 camera_fps = 5
 resolution = [848, 480]
-object_min_points = 0 #Objects from clusters with less points that this are removed (set to 0 to enable dynamic scaling)
-object_min_points_scale = 1 #Dynamic scaling of min objects based on max depth from camera
+object_min_points = 4000 #Objects from clusters with less points that this are removed (set to 0 to enable dynamic scaling)
+object_min_points_scale = 8 #Dynamic scaling of min objects based on max depth from camera
 plane_distance_treshhold = 0.02
 
 the_cheese_flag = False #Important
@@ -64,6 +64,17 @@ def fit_plane_ransac(points, n_iter, distance_thresh):
     print("Found plane with ", best_count, " points.")
     return best_plane, best_inliers
 
+# Function for cropping the pointcloud to a harcoded bounds (in meters)
+# Should be changed with cropping based on markers (such as fiducial markers) in the future
+def crop(points, min_bounds, max_bounds):
+    mask = ((points[:, 0] >= min_bounds[0]) & (points[:, 0] <= max_bounds[1]) &
+            (points[:, 1] >= min_bounds[0]) & (points[:, 1] <= max_bounds[1]) &
+            (points[:, 2] >= min_bounds[0]) & (points[:, 2] <= max_bounds[1])
+            )
+
+    return points[mask]
+
+
 
 #Create the pipeline from camera to python
 pipeline = rs.pipeline()
@@ -99,6 +110,7 @@ verts = np.asanyarray(pc.calculate(depth).get_vertices()) #Gets verticies from p
 points = verts.view(np.float32).reshape(-1, 3)
 points = points[~np.all(points == 0, axis=1)] #Removes invalid point data
 points = points[:: downsample]
+points = crop(points, [-1, -1, -1], [1, 1, 1])
 
 #Removes planes using the RANSAC algorithm to find thme (to remove flors, walls, etc.)
 plane, plane_inliers = fit_plane_ransac(points, n_iter= 200, distance_thresh = plane_distance_treshhold)

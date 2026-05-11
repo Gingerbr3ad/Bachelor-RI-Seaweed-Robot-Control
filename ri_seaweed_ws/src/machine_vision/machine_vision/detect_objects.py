@@ -28,12 +28,15 @@ class CameraObjectDetector(Node):
 
     def detect_objects(self):
         # Program variables
-        DB_epsilon = 0.1                # 0.05 works well
-        DB_min_samples = 3               # 5 works well
-        downsample = 10                  # Only takes n-th point from the pointcloud (set to 1 for no downsampling)
-        object_min_points = 0            # Objects from clusters with less points that this are removed (set to 0 to enable dynamic scaling)
-        object_min_points_scale = 10    # Dynamic scaling of min objects based on max depth from camera
-        plane_distance_treshhold = 0.025
+        DB_epsilon = 0.02                                   # 0.05 works well
+        DB_min_samples = 3                                  # 5 works well
+        downsample = 10                                     # Only takes n-th point from the pointcloud (set to 1 for no downsampling)
+        object_min_points = 4000                            # Objects from clusters with less points that this are removed (set to 0 to enable dynamic scaling)
+        object_min_points_scale = 10                        # Dynamic scaling of min objects based on max depth from camera
+        plane_distance_treshhold = 0.02                     # Threshold for points to count as a flat plane [m]
+        min_bounds, max_bounds = [-1, -1, -1], [1, 1, 1]    # Bounds for x,y,z values for points for cropping [m]
+
+
 
         # Some rules to make the orintation deterministic, based on the current placement of the camera and the refrence frame of the end effector
         right_ref = np.array([1.0, 0.0, 0.0])  # cylinder x axis (longest axis) points to the camera right
@@ -84,6 +87,17 @@ class CameraObjectDetector(Node):
 
             self.get_logger().info(f"Found plane with {best_count}  points.")
             return best_inliers
+        
+        # Function for cropping the pointcloud to a harcoded bounds (in meters)
+        # Should be changed with cropping based on markers (such as fiducial markers) in the future
+        def crop(points, min_bounds, max_bounds):
+            mask = ((points[:, 0] >= min_bounds[0]) & (points[:, 0] <= max_bounds[1]) &
+                    (points[:, 1] >= min_bounds[0]) & (points[:, 1] <= max_bounds[1]) &
+                    (points[:, 2] >= min_bounds[0]) & (points[:, 2] <= max_bounds[1])
+                    )
+
+            return points[mask]
+
 
         # Simple function for normalizing vector
         def normalize(v):
@@ -98,14 +112,17 @@ class CameraObjectDetector(Node):
         points = np.asarray(cloud_array, dtype=np.float32).reshape(-1, 3)
         points = points[~np.all(points == 0, axis=1)]
         points = points[::downsample]
+        points = crop(points, min_bounds, max_bounds)        
 
         # Removes planes using the RANSAC algorithm (to remove flors, walls, etc.) untill no more planes with <80 000 points remain
-        count = 50001
-        while count > 50000/downsample:
+        plane_point_thershold = 50000/(downsample/2)
+        count = plane_point_thershold + 1
+        while count > plane_point_thershold:
             plane_inliers = fit_plane_ransac(points, n_iter= 200, distance_thresh = plane_distance_treshhold)
             count = np.count_nonzero(plane_inliers)
-            if count > 50000/downsample:
+            if count > plane_point_thershold:
                 points = points[~plane_inliers]
+                self.get_logger().info(f"Removing plane with {count}  points.")
 
         # Clustering the points with DBSCAN to find objects
         db = DBSCAN(eps=DB_epsilon, min_samples=DB_min_samples).fit(points)
@@ -170,13 +187,19 @@ class CameraObjectDetector(Node):
 
             # Creates a rotation matrix for the axes and creates a quaternion from it
             rot_matrix = np.column_stack((x_axis, y_axis, z_axis))
-            qx, qy, qz, qw = Rotation.from_matrix(rot_matrix).as_quat()
+            camera_offset = np.array([[-0.7071068,  0.7071068, 0.0],
+                                      [-0.7071068, -0.7071068, 0.0],
+                                      [ 0.0,        0.0,       1.0]])
+            qx, qy, qz, qw = Rotation.from_matrix(rot_matrix@camera_offset).as_quat()
 
             coordinates.append(centroids[c])
             orientations.append([qx, qy, qz, qw])
 
         
-        """ fig = plt.figure(figsize=(14,6))
+        """ # Plotting for debugging only
+        # Will crash the node when uncommented
+
+        fig = plt.figure(figsize=(14,6))
         ax = fig.add_subplot(1, 2, 1, projection="3d")
 
         ax.scatter(points[:, 0], -points[:, 1], -points[:, 2], c=labels) #'z' need to be inverted since the camera measures depth and is looking down, 'y' also needs to be inverted for the plot to match reality but I dunno why
@@ -227,14 +250,14 @@ class CameraObjectDetector(Node):
         response.object_pose.header.stamp = self.get_clock().now().to_msg()
         response.object_pose.header.frame_id = "camera_frame"
 
-        response.object_pose.pose.position.x = float(coordinates[0, 0])
-        response.object_pose.pose.position.y = float(coordinates[0, 1])
-        response.object_pose.pose.position.z = float(coordinates[0, 2])
+        response.object_pose.pose.position.x = float(coordinates[0,0])
+        response.object_pose.pose.position.y = float(coordinates[0,1])
+        response.object_pose.pose.position.z = float(coordinates[0,2])
 
-        response.object_pose.pose.orientation.x = float(orientations[0, 0])
-        response.object_pose.pose.orientation.y = float(orientations[0, 1])
-        response.object_pose.pose.orientation.z = float(orientations[0, 2])
-        response.object_pose.pose.orientation.w = float(orientations[0, 3])
+        response.object_pose.pose.orientation.x = float(orientations[0,0])
+        response.object_pose.pose.orientation.y = float(orientations[0,1])
+        response.object_pose.pose.orientation.z = float(orientations[0,2])
+        response.object_pose.pose.orientation.w = float(orientations[0,3])
 
         self.get_logger().info(f"{response}")
 

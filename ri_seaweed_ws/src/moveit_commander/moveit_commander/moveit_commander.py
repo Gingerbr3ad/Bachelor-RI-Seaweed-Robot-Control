@@ -52,8 +52,8 @@ class KukaMoveItCommander(Node):
         request.group_name = self.planning_group
         request.num_planning_attempts = 10
         request.allowed_planning_time = 5.0
-        request.max_velocity_scaling_factor = 0.2
-        request.max_acceleration_scaling_factor = 0.2
+        request.max_velocity_scaling_factor = 0.25
+        request.max_acceleration_scaling_factor = 0.25
 
         # Workspace
         request.workspace_parameters = WorkspaceParameters()
