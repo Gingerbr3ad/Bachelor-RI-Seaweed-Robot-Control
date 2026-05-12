@@ -9,6 +9,8 @@ import tf2_ros
 import tf2_geometry_msgs  # needed for PoseStamped TF support
 
 from geometry_msgs.msg import PoseStamped
+from std_srvs.srv import SetBool
+
 from ri_seaweed_interfaces.srv import GetObjects
 from ri_seaweed_interfaces.action import MoveToPose
 
@@ -22,6 +24,8 @@ class DetectTransformMove(Node):
         self.target_frame = 'fr3_link0'
 
         self.detect_client = self.create_client(GetObjects, 'get_objects')
+        self.gripper_client = self.create_client(SetBool, 'gripper_command')
+
         self.move_client = ActionClient(self, MoveToPose, '/goal_pose')
 
         self.tf_buffer = tf2_ros.Buffer()
@@ -31,21 +35,25 @@ class DetectTransformMove(Node):
         self.timer = self.create_timer(0.5, self.start_once)
 
         self.current_done_callback = None
+
         self.approach_pose = None
+        self.lower_pose = None
+        self.lift_pose = None
 
         # Distance above the cylinder for the approach pose.
-        # The robot will later lower by this same distance.
         self.approach_offset_z = 0.2
 
+        # Distance to lift after gripping the cylinder.
+        self.lift_offset_z = 0.05
+
         # Predefined pose before object detection.
-        # Adjust these values for your robot/workspace.
         self.predefined_pose = PoseStamped()
         self.predefined_pose.header.frame_id = self.target_frame
 
         self.predefined_pose.pose.position.x = 0.3898
         self.predefined_pose.pose.position.y = -0.2290
         self.predefined_pose.pose.position.z = 0.7260
-        
+
         orientation = Rotation.from_euler('xyz', [179, 0, 45], degrees=True)
         q = orientation.as_quat()
         self.predefined_pose.pose.orientation.x = q[0]
@@ -53,12 +61,32 @@ class DetectTransformMove(Node):
         self.predefined_pose.pose.orientation.z = q[2]
         self.predefined_pose.pose.orientation.w = q[3]
 
+        # Final predefined pose after dropping the cylinder.
+        # Change these values to your desired final pose.
+        self.final_pose = PoseStamped()
+        self.final_pose.header.frame_id = self.target_frame
+
+        self.final_pose.pose.position.x = 0.3898
+        self.final_pose.pose.position.y = 0.0
+        self.final_pose.pose.position.z = 0.5260
+
+        final_orientation = Rotation.from_euler('xyz', [179, 0, 45], degrees=True)
+        q_final = final_orientation.as_quat()
+        self.final_pose.pose.orientation.x = q_final[0]
+        self.final_pose.pose.orientation.y = q_final[1]
+        self.final_pose.pose.orientation.z = q_final[2]
+        self.final_pose.pose.orientation.w = q_final[3]
+
     def start_once(self):
         if self.started:
             return
 
         if not self.detect_client.wait_for_service(timeout_sec=0.1):
             self.get_logger().info('Waiting for get_objects service...')
+            return
+
+        if not self.gripper_client.wait_for_service(timeout_sec=0.1):
+            self.get_logger().info('Waiting for gripper_command service...')
             return
 
         if not self.move_client.wait_for_server(timeout_sec=0.1):
@@ -152,8 +180,10 @@ class DetectTransformMove(Node):
             return
 
         lower_pose = copy.deepcopy(self.approach_pose)
-        lower_pose.pose.position.z -= 0.070
+        lower_pose.pose.position.z -= 0.074
         lower_pose.header.stamp = self.get_clock().now().to_msg()
+
+        self.lower_pose = lower_pose
 
         self.get_logger().info(
             f'Lowering onto cylinder: '
@@ -168,8 +198,93 @@ class DetectTransformMove(Node):
         )
 
     def after_lower_pose(self):
-        self.get_logger().info('Finished lowering onto cylinder.')
+        self.get_logger().info('Reached cylinder. Closing gripper...')
+
+        self.send_gripper_command(
+            close=True,
+            done_callback=self.after_gripper_closed
+        )
+
+    def after_gripper_closed(self):
+        if self.lower_pose is None:
+            self.get_logger().error('No lower pose stored. Cannot lift.')
+            rclpy.shutdown()
+            return
+
+        lift_pose = copy.deepcopy(self.lower_pose)
+        lift_pose.pose.position.z += self.lift_offset_z
+        lift_pose.header.stamp = self.get_clock().now().to_msg()
+
+        self.lift_pose = lift_pose
+
+        self.get_logger().info(
+            f'Gripper closed. Lifting cylinder by {self.lift_offset_z:.3f} m: '
+            f'x={lift_pose.pose.position.x:.3f}, '
+            f'y={lift_pose.pose.position.y:.3f}, '
+            f'z={lift_pose.pose.position.z:.3f}'
+        )
+
+        self.send_move_goal(
+            lift_pose,
+            done_callback=self.after_lift_pose
+        )
+
+    def after_lift_pose(self):
+        self.get_logger().info('Lift completed. Opening gripper to drop cylinder...')
+
+        self.send_gripper_command(
+            close=False,
+            done_callback=self.after_gripper_opened
+        )
+
+    def after_gripper_opened(self):
+        self.get_logger().info('Cylinder dropped. Moving to final predefined pose...')
+
+        self.final_pose.header.stamp = self.get_clock().now().to_msg()
+
+        self.send_move_goal(
+            self.final_pose,
+            done_callback=self.after_final_pose
+        )
+
+    def after_final_pose(self):
+        self.get_logger().info('Finished full pick/drop sequence.')
         rclpy.shutdown()
+
+    def send_gripper_command(self, close: bool, done_callback):
+        request = SetBool.Request()
+        request.data = close
+
+        command_name = 'CLOSE' if close else 'OPEN'
+        self.get_logger().info(f'Sending gripper command: {command_name}')
+
+        future = self.gripper_client.call_async(request)
+
+        def handle_gripper_response(future):
+            try:
+                response = future.result()
+            except Exception as e:
+                self.get_logger().error(f'Gripper service call failed: {e}')
+                rclpy.shutdown()
+                return
+
+            if not response.success:
+                self.get_logger().error(
+                    f'Gripper command {command_name} failed: {response.message}'
+                )
+                rclpy.shutdown()
+                return
+
+            self.get_logger().info(
+                f'Gripper command {command_name} succeeded: {response.message}'
+            )
+
+            if done_callback is not None:
+                done_callback()
+            else:
+                rclpy.shutdown()
+
+        future.add_done_callback(handle_gripper_response)
 
     def send_move_goal(self, pose: PoseStamped, done_callback):
         goal = MoveToPose.Goal()

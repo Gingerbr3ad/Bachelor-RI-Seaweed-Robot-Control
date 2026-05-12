@@ -15,7 +15,7 @@ class GripperDummyController(Node):
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.get_logger().info('service not available, waiting again...')
         
-        timer_period = 5 # seconds
+        timer_period = 6 # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.close_command = False

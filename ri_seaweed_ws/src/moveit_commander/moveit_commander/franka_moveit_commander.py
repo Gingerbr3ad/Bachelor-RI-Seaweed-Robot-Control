@@ -23,8 +23,8 @@ from shape_msgs.msg import SolidPrimitive
 from ri_seaweed_interfaces.action import MoveToPose
 
 # Planning tolerances
-ORIENTATION_TOLERANCE = 0.01       #[rad]
-TRANSLATION_TOLERACNE = [0.01]    #[m]
+ORIENTATION_TOLERANCE = 0.001       #[rad]
+TRANSLATION_TOLERACNE = [0.001]    #[m]
 
 
 class KukaMoveItCommander(Node):
