@@ -25,7 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'gripper_driver = gripper.gripper_driver:main',
-            'gripper_dummy_controller = gripper.gripper_dummy_controller:main',
+            'gripper_communication_test = gripper.gripper_communication_test:main'
         ],
     },
 )

@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'motions'
+package_name = 'examples'
 
 setup(
     name=package_name,
@@ -16,7 +16,7 @@ setup(
     maintainer='wiktor',
     maintainer_email='rwiktor4627@gmail.com',
     description='TODO: Package description',
-    license='Apache-2.0',
+    license='TODO: License declaration',
     extras_require={
         'test': [
             'pytest',
@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'pick_up_test = motions.pick_up_test:main'
+            'camera_example = examples.camera_example:main',
+            'gripper_example = examples.gripper_example:main'
         ],
     },
 )

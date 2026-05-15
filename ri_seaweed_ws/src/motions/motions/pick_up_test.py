@@ -1,4 +1,5 @@
 import copy
+import numpy as np
 
 import rclpy
 from rclpy.node import Node
@@ -17,9 +18,9 @@ from ri_seaweed_interfaces.action import MoveToPose
 from scipy.spatial.transform import Rotation
 
 
-class DetectTransformMove(Node):
+class AutoPickUpExample(Node):
     def __init__(self):
-        super().__init__('detect_transform_move')
+        super().__init__('auto_pick_up_example')
 
         self.target_frame = 'fr3_link0'
 
@@ -41,10 +42,16 @@ class DetectTransformMove(Node):
         self.lift_pose = None
 
         # Distance above the cylinder for the approach pose.
-        self.approach_offset_z = 0.2
+        self.approach_offset_z = 0.10
 
         # Distance to lift after gripping the cylinder.
-        self.lift_offset_z = 0.05
+        self.lift_offset_z = 0.008
+
+        # Distance from gripper base frame to cylinder center / grasp point.
+        # Sign depends on your gripper frame convention.
+        self.gripper_base_to_cylinder_center_z = 0.0
+        self.gripper_base_to_cylinder_center_y = 0.0
+        self.gripper_base_to_cylinder_center_x = 0.0
 
         # Predefined pose before object detection.
         self.predefined_pose = PoseStamped()
@@ -52,9 +59,9 @@ class DetectTransformMove(Node):
 
         self.predefined_pose.pose.position.x = 0.3898
         self.predefined_pose.pose.position.y = -0.2290
-        self.predefined_pose.pose.position.z = 0.7260
+        self.predefined_pose.pose.position.z = 0.59
 
-        orientation = Rotation.from_euler('xyz', [179, 0, 45], degrees=True)
+        orientation = Rotation.from_euler('xyz', [0,0,90], degrees=True)
         q = orientation.as_quat()
         self.predefined_pose.pose.orientation.x = q[0]
         self.predefined_pose.pose.orientation.y = q[1]
@@ -68,14 +75,34 @@ class DetectTransformMove(Node):
 
         self.final_pose.pose.position.x = 0.3898
         self.final_pose.pose.position.y = 0.0
-        self.final_pose.pose.position.z = 0.5260
+        self.final_pose.pose.position.z = 0.4160
 
-        final_orientation = Rotation.from_euler('xyz', [179, 0, 45], degrees=True)
+        final_orientation = Rotation.from_euler('xyz', [0, 0, 90], degrees=True)
         q_final = final_orientation.as_quat()
         self.final_pose.pose.orientation.x = q_final[0]
         self.final_pose.pose.orientation.y = q_final[1]
         self.final_pose.pose.orientation.z = q_final[2]
         self.final_pose.pose.orientation.w = q_final[3]
+
+    def apply_local_offset(self, pose_stamped, dx=0.0, dy=0.0, dz=0.0):
+        q = pose_stamped.pose.orientation
+
+        R = Rotation.from_quat([
+            q.x,
+            q.y,
+            q.z,
+            q.w
+        ]).as_matrix()
+
+        local_offset = np.array([dx, dy, dz])
+        world_offset = R @ local_offset
+
+        pose_out = copy.deepcopy(pose_stamped)
+        pose_out.pose.position.x += float(world_offset[0])
+        pose_out.pose.position.y += float(world_offset[1])
+        pose_out.pose.position.z += float(world_offset[2])
+
+        return pose_out
 
     def start_once(self):
         if self.started:
@@ -139,6 +166,14 @@ class DetectTransformMove(Node):
                 self.target_frame,
                 timeout=Duration(seconds=1.0)
             )
+
+            grasp_pose = self.apply_local_offset(
+                pose_base,
+                dx=-self.gripper_base_to_cylinder_center_x,
+                dy=-self.gripper_base_to_cylinder_center_y,
+                dz=-self.gripper_base_to_cylinder_center_z
+            )
+
         except Exception as e:
             self.get_logger().error(
                 f'Could not transform pose from '
@@ -155,7 +190,7 @@ class DetectTransformMove(Node):
         )
 
         # Create approach pose above the cylinder in the base frame.
-        approach_pose = copy.deepcopy(pose_base)
+        approach_pose = copy.deepcopy(grasp_pose)
         approach_pose.pose.position.z += self.approach_offset_z
         approach_pose.header.stamp = self.get_clock().now().to_msg()
 
@@ -180,7 +215,7 @@ class DetectTransformMove(Node):
             return
 
         lower_pose = copy.deepcopy(self.approach_pose)
-        lower_pose.pose.position.z -= 0.074
+        lower_pose.pose.position.z -= (self.approach_offset_z/2)
         lower_pose.header.stamp = self.get_clock().now().to_msg()
 
         self.lower_pose = lower_pose
@@ -198,6 +233,30 @@ class DetectTransformMove(Node):
         )
 
     def after_lower_pose(self):
+        if self.approach_pose is None:
+            self.get_logger().error('No approach pose stored. Cannot lower.')
+            rclpy.shutdown()
+            return
+
+        lower_pose2 = copy.deepcopy(self.lower_pose)
+        lower_pose2.pose.position.z -= (self.approach_offset_z/2 + 0.015)
+        lower_pose2.header.stamp = self.get_clock().now().to_msg()
+
+        self.lower_pose2 = lower_pose2
+
+        self.get_logger().info(
+            f'Lowering onto cylinder: '
+            f'x={lower_pose2.pose.position.x:.3f}, '
+            f'y={lower_pose2.pose.position.y:.3f}, '
+            f'z={lower_pose2.pose.position.z:.3f}'
+        )
+
+        self.send_move_goal(
+            lower_pose2,
+            done_callback=self.after_lower2_pose
+        )
+
+    def after_lower2_pose(self):
         self.get_logger().info('Reached cylinder. Closing gripper...')
 
         self.send_gripper_command(
@@ -352,7 +411,7 @@ class DetectTransformMove(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    node = DetectTransformMove()
+    node = AutoPickUpExample()
 
     try:
         rclpy.spin(node)

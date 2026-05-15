@@ -23,8 +23,8 @@ from shape_msgs.msg import SolidPrimitive
 from ri_seaweed_interfaces.action import MoveToPose
 
 # Planning tolerances
-ORIENTATION_TOLERANCE = 0.001       #[rad]
-TRANSLATION_TOLERACNE = [0.001]    #[m]
+ORIENTATION_TOLERANCE = 0.005       #[rad]
+TRANSLATION_TOLERACNE = [0.005]    #[m]
 
 
 class KukaMoveItCommander(Node):
@@ -37,7 +37,7 @@ class KukaMoveItCommander(Node):
 
         # Franka manipulator 
         self.planning_group = 'fr3_arm'
-        self.end_effector_link = 'fr3_link8'
+        self.end_effector_link = 'TCP'
         self.base_frame = 'fr3_link0'
         
         self._moveit_done_event = Event()
@@ -50,8 +50,8 @@ class KukaMoveItCommander(Node):
 
         request = MotionPlanRequest()
         request.group_name = self.planning_group
-        request.num_planning_attempts = 10
-        request.allowed_planning_time = 5.0
+        request.num_planning_attempts = 20
+        request.allowed_planning_time = 10.0
         request.max_velocity_scaling_factor = 0.3
         request.max_acceleration_scaling_factor = 0.3
 
