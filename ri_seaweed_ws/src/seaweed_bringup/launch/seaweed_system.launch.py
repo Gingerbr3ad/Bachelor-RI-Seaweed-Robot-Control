@@ -18,6 +18,8 @@ def generate_launch_description():
         ),
         launch_arguments={
             "pointcloud__neon_.enable": "true", # CHANGE TO "pointcloud.enable": "true" FOR NON ARM SYSTEMS
+            "pointcloud__neon_.stream_filter": "1",
+            "enable_color": "false",
         }.items(),
     )
 
