@@ -48,7 +48,7 @@ class AutoPickUpExample(Node):
         self.lift_offset_z = 0.008
 
         #Distance to push into the cylinder
-        self.cylinder_push_offset_z =  0.025
+        self.cylinder_push_offset_z =  0.018
 
         # Predefined pose before object detection.
         self.predefined_pose = PoseStamped()
