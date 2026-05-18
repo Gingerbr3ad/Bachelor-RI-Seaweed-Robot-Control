@@ -30,6 +30,7 @@ class GripperDriver(Node):
 
         self.publisher = self.create_publisher(Bool, "gripper/state", 10)
         self.srv = self.create_service(SetBool, 'gripper_command', self.gripper_command_callback)
+        self.get_logger().info(f"Gripper Driver started")
 
         self.command_timeout = 5.0
 

@@ -34,6 +34,7 @@ class KukaMoveItCommander(Node):
         # MoveIt action server
         self._action_client = ActionClient(self, MoveGroup, '/move_action')
         self._action_server = ActionServer(self, MoveToPose, '/goal_pose', self.execute_callback)
+        self.get_logger().info(f"MoveIt Commander started")
 
         # KUKA repo defaults
         self.planning_group = 'manipulator'

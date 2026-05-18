@@ -34,6 +34,7 @@ class KukaMoveItCommander(Node):
         # MoveIt action server
         self._action_client = ActionClient(self, MoveGroup, '/move_action')
         self._action_server = ActionServer(self, MoveToPose, '/goal_pose', self.execute_callback)
+        self.get_logger().info(f"Franka MoveIt Commander started")
 
         # Franka manipulator 
         self.planning_group = 'fr3_arm'

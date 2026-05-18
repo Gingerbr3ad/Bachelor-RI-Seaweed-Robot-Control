@@ -24,14 +24,14 @@ void loop() {
 
   // Close command is active LOW because signalPinIn uses INPUT_PULLUP
   if (Signal == false) {
-      Serial.println("Recieving Close");
+      Serial.println("Recieving HIGH");
       digitalWrite(signalPinOut, HIGH);
-      Serial.println("Sending Closed");
+      Serial.println("Sending HIGH");
   
   } else {
-    Serial.println("Recieving Open");
+    Serial.println("Recieving LOW");
     digitalWrite(signalPinOut, LOW);
-    Serial.println("Sending Opened");
+    Serial.println("Sending LOW");
   }
   
   Serial.println("-------------------------------");

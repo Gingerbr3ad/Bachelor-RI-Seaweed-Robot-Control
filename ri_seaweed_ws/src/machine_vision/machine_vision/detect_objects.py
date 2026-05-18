@@ -31,6 +31,7 @@ class CameraObjectDetector(Node):
             self.cloud_callback,
             10
         )
+        self.get_logger().info(f"Detect Objects service started")
     
     
     def cloud_callback(self, msg):
