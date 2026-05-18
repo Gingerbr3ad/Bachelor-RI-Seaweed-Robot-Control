@@ -259,49 +259,6 @@ class CameraObjectDetector(Node):
             coordinates.append(centroids[c])
             orientations.append([qx, qy, qz, qw])
 
-        
-        """ # Plotting for debugging only
-        # Will crash the node when uncommented
-
-        fig = plt.figure(figsize=(14,6))
-        ax = fig.add_subplot(1, 2, 1, projection="3d")
-
-        ax.scatter(points[:, 0], -points[:, 1], -points[:, 2], c=labels) #'z' need to be inverted since the camera measures depth and is looking down, 'y' also needs to be inverted for the plot to match reality but I dunno why
-        ax.scatter(centroids[:, 0], -centroids[:, 1], -centroids[:, 2], marker='x', c='black', s=100, linewidths=2, label="Centroids")
-
-        ax.set_xlim(-1, 1)
-        ax.set_ylim(-1, 1)
-        ax.set_zlim(-2, 0)
-
-        for c in range(len(centroids)):
-            p1 = centroids[c] - longest_axises[c] * 0.5
-            p2 = centroids[c] + longest_axises[c] * 0.5
-
-            ax.plot([p1[0], p2[0]], [-p1[1], -p2[1]], [-p1[2], -p2[2]], linewidth=3)
-        
-            ax.set_xlabel("X")
-            ax.set_ylabel("Y")
-            ax.set_zlabel("Z")
-            ax.set_title("Detected object clusters")
-
-            ax2 = fig.add_subplot(1,2,2)
-            ax2.scatter(points[:, 0], -points[:, 1], c=labels) #'z' need to be inverted since the camera measures depth and is looking down, 'y' also needs to be inverted for the plot to match reality but I dunno why
-            ax2.scatter(centroids[:, 0], -centroids[:, 1], marker='*', color='white', edgecolor='black', s=200, label="Centroids")
-
-            for c in range(len(centroids)):
-                p1 = centroids[c] - longest_axises[c] * 0.5
-                p2 = centroids[c] + longest_axises[c] * 0.5
-
-                ax2.plot([p1[0], p2[0]], [-p1[1], -p2[1]], linewidth=3)
-
-            ax2.set_xlabel("X")
-            ax2.set_ylabel("Y")
-            ax2.grid()
-            ax2.set_title("2D projection")
-            ax2.legend()
-
-            plt.show() """
-
         return np.array(coordinates), np.array(orientations)
     
     def get_objects_callback(self, request, response):

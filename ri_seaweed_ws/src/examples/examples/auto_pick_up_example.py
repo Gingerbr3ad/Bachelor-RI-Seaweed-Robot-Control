@@ -47,11 +47,8 @@ class AutoPickUpExample(Node):
         # Distance to lift after gripping the cylinder.
         self.lift_offset_z = 0.008
 
-        # Distance from gripper base frame to cylinder center / grasp point.
-        # Sign depends on your gripper frame convention.
-        self.gripper_base_to_cylinder_center_z = 0.0
-        self.gripper_base_to_cylinder_center_y = 0.0
-        self.gripper_base_to_cylinder_center_x = 0.0
+        #Distance to push into the cylinder
+        self.cylinder_push_offset_z =  0.025
 
         # Predefined pose before object detection.
         self.predefined_pose = PoseStamped()
@@ -83,26 +80,6 @@ class AutoPickUpExample(Node):
         self.final_pose.pose.orientation.y = q_final[1]
         self.final_pose.pose.orientation.z = q_final[2]
         self.final_pose.pose.orientation.w = q_final[3]
-
-    def apply_local_offset(self, pose_stamped, dx=0.0, dy=0.0, dz=0.0):
-        q = pose_stamped.pose.orientation
-
-        R = Rotation.from_quat([
-            q.x,
-            q.y,
-            q.z,
-            q.w
-        ]).as_matrix()
-
-        local_offset = np.array([dx, dy, dz])
-        world_offset = R @ local_offset
-
-        pose_out = copy.deepcopy(pose_stamped)
-        pose_out.pose.position.x += float(world_offset[0])
-        pose_out.pose.position.y += float(world_offset[1])
-        pose_out.pose.position.z += float(world_offset[2])
-
-        return pose_out
 
     def start_once(self):
         if self.started:
@@ -161,17 +138,10 @@ class AutoPickUpExample(Node):
         )
 
         try:
-            pose_base = self.tf_buffer.transform(
+            grasp_pose = self.tf_buffer.transform(
                 pose_camera,
                 self.target_frame,
                 timeout=Duration(seconds=1.0)
-            )
-
-            grasp_pose = self.apply_local_offset(
-                pose_base,
-                dx=-self.gripper_base_to_cylinder_center_x,
-                dy=-self.gripper_base_to_cylinder_center_y,
-                dz=-self.gripper_base_to_cylinder_center_z
             )
 
         except Exception as e:
@@ -181,13 +151,6 @@ class AutoPickUpExample(Node):
             )
             rclpy.shutdown()
             return
-
-        self.get_logger().info(
-            f'Detected cylinder pose in {self.target_frame}: '
-            f'x={pose_base.pose.position.x:.3f}, '
-            f'y={pose_base.pose.position.y:.3f}, '
-            f'z={pose_base.pose.position.z:.3f}'
-        )
 
         # Create approach pose above the cylinder in the base frame.
         approach_pose = copy.deepcopy(grasp_pose)
@@ -239,7 +202,7 @@ class AutoPickUpExample(Node):
             return
 
         lower_pose2 = copy.deepcopy(self.lower_pose)
-        lower_pose2.pose.position.z -= (self.approach_offset_z/2 + 0.015)
+        lower_pose2.pose.position.z -= (self.approach_offset_z/2 + self.cylinder_push_offset_z)
         lower_pose2.header.stamp = self.get_clock().now().to_msg()
 
         self.lower_pose2 = lower_pose2

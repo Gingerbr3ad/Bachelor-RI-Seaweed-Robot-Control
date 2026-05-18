@@ -25,7 +25,10 @@ setup(
     entry_points={
         'console_scripts': [
             'camera_example = examples.camera_example:main',
-            'gripper_example = examples.gripper_example:main'
+            'gripper_example = examples.gripper_example:main',
+            'motion_example = examples.motion_example:main',
+            'auto_pick_up_example = examples.auto_pick_up_example:main',
+            'camera_latency_measure = examples.camera_latency_measure:main'
         ],
     },
 )

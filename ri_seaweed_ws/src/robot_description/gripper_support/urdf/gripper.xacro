@@ -280,12 +280,19 @@
   <child link="claw_body_r_1"/>
 </joint>
 
+<link name="TCP"></link>
+<joint name="gripper-base_link_to_TCP_joint" type="fixed">
+  <parent link="gripper-base_link"/>
+  <child link="TCP"/>  
+  <origin xyz="0 -0.04 -0.09" rpy="0 0 0"/>
+</joint>
+
 <!-- Transfer from camera to gripper base -->
 <link name="camera_frame"></link>
 <joint name="gripper-base_link_to_camera_joint" type="fixed">
   <parent link="gripper-base_link"/>
-  <child link="camera_frame"/>
-  <origin xyz="0.205 -0.023 -0.033" rpy="3.14159265 0 3.14159265"/>
+  <child link="camera_frame"/>  
+  <origin xyz="0.2 -0.035 -0.015" rpy="3.14159265 0 3.14159265"/>
 </joint>
 
 </xacro:macro>

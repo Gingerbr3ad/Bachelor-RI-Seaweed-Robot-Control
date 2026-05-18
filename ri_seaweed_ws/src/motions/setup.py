@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'pick_up_test = motions.pick_up_test:main'
+            'return_home = motions.return_home:main',
+            'auto_pick_up_example = motions.auto_pick_up_example:main'
         ],
     },
 )
