@@ -80,7 +80,7 @@ void loop() {
     if (conditionsOKG) {
       myServoG.write(limGdown);
       Gflag = true;
-      Serial.println("Green Claw Locked");
+      //Serial.println("Green Claw Locked");
     } else {
       // Green claw is no longer in lockable position
       Gflag = false;
@@ -90,7 +90,7 @@ void loop() {
     if (conditionsOKR) {
       myServoR.write(limRdown);
       Rflag = true;
-      Serial.println("Red Claw Locked");
+      //Serial.println("Red Claw Locked");
     } else {
       // Red claw is no longer in lockable position
       Rflag = false;
@@ -99,7 +99,7 @@ void loop() {
     // Only report closed if both claws are currently confirmed locked
     if (Gflag && Rflag) {
       digitalWrite(signalPinOut, HIGH);
-      Serial.println("Gripper Closed");
+      //Serial.println("Gripper Closed");
     } else {
       digitalWrite(signalPinOut, LOW);
     }
@@ -114,10 +114,10 @@ void loop() {
 
     digitalWrite(signalPinOut, LOW);
 
-    Serial.println("Gripper Open");
+    //Serial.println("Gripper Open");
   }
 
-  // Info logging
+  /* // Info logging
   Serial.print("Hall effect Red1: ");
   Serial.println(valHallR1);
   Serial.print("Hall effect Red2: ");
@@ -138,5 +138,6 @@ void loop() {
   Serial.println(Rflag);
   Serial.println("-------------------------------");
 
-  delay(1000);
+  delay(999); */
+  delay(1);
 }
